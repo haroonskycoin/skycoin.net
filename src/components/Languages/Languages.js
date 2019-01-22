@@ -31,10 +31,10 @@ export default () => (
         <Language><StyledLink to="/zh/">中文</StyledLink></Language>
       )}
     />
-    {/* <Flag
-      name="russian"
+    <Flag
+      name="japanese"
       render={() => (
-        <Language><StyledLink to="/ru/">Ру́сский</StyledLink></Language>
+        <Language><StyledLink to="/ja/">日本語</StyledLink></Language>
       )}
     />
     <Flag
@@ -42,6 +42,6 @@ export default () => (
       render={() => (
         <Language><StyledLink to="/ko/">한국어</StyledLink></Language>
       )}
-    /> */}
+    />
   </Languages>
 );
