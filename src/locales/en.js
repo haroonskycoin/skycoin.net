@@ -31,8 +31,12 @@ export default {
       gallery: 'Gallery',
       events: 'Events',
       explorerApi: 'Explorer API',
-      merchandise: 'Merchandise store ',
+      merchandise: 'Merchandise store',
+      hardwareStore: 'Hardware store',
     },
+  },
+  footer: {
+    rightsReserved: 'All rights reserved',
   },
   // footer: {
   //   bounty: 'Bounty Channel',
@@ -335,8 +339,8 @@ export default {
       heading: 'Download Skycoin Consensus Whitepapers',
       download: 'Download',
       skywireWhitepaper: 'Skywire whitepaper — coming soon',
-      skycoinWhitepaper: 'Skycoin whitepaper',
-      skycoinWhitepaperV32: 'Skycoin whitepaper V3.2中文版',
+      skycoinWhitepaper: 'Skycoin whitepaper V1.1',
+      skycoinWhitepaperV32: 'Skycoin whitepaper V3.3中文版',
       cryptocurrencyNetwork: '加密货币网络分布式共识算法白皮书',
       skyFramework: 'Sky: an Opinion Dynamics Framework and Model for Consensus over P2P Network',
       skyHashConsensus: 'SkyHash: an Opinion Dynamics Model for Hash Consensus over P2P network',
@@ -349,14 +353,20 @@ export default {
       guidelines: 'Skycoin Brand Guidelines',
       logo: 'Skycoin Logo PNGs',
       font: 'Skycoin Sans font',
+      branding: 'Skycoin品牌视觉规范 v1.6.1',
     },
     skywire: {
       heading: 'Skywire',
+      installationGuide: 'Skywire Installation Guide v1.0',
       minerAssemblyManual: 'Skywire Miner Assembly Manual',
+      skyminer: 'Skyminer矿机安装手册 v2.2',
     },
     roadmap: {
       heading: 'Roadmap',
     },
+  },
+  thankYou: {
+    message: 'Thank you! Your response has been recorded.',
   },
   // infographics: {
   //   title: 'Infographics',
@@ -455,13 +465,13 @@ export default {
       heading: 'Explore Skyminer',
       subheading: 'Skywire Miner: hardware for the new internet',
       paragraph1: 'The Skywire "miner" is meticulously designed and configured to provide a backbone for the new internet. Its custom-built hardware exceeds technical specifications to deliver maximum power and performance. Skywire functions as a “miner” for Skycoins. It acts as a specialized VPN, using the following hardware configuration:',
-      paragraph2: 'Each board features an ARM processor, 2 GB of RAM, and anywhere from 32 to 256 GB flash storage. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. The setup can be further customized to consist of 4, 8, 16, or 32 boards.',
+      paragraph2: 'Each board features an ARM processor, 2 GB of RAM, and anywhere from 16 to 256 GB flash storage. The hardware is segmented in such a way that even if one service is compromised, the other services on the same machine can’t be. An OpenWRT router with strict packet forwarding rules and access control increases security. The setup can be further customized to consist of 4, 8, 16, or 32 boards.',
       paragraph3: 'Nodes operating on the Skywire network will be receiving a network incentive reward to help build out the network, in addition to traffic forwarding payments. For the Skywire miners, we’d like to increase this network incentive reward. However, we’re still working out a mechanism for distinguishing the Skywire miners from other nodes, which could be any machine on the network.',
       list: {
         item0: '8 CPU boards',
         item1: '2 GB of RAM per board',
         item2: '4 CPU cores per board',
-        item3: '64 GB of storage per board',
+        item3: '16 GB of storage per board',
         item4: '64-bit Linux (Alpine Linux)',
         item5: 'Gigabit ethernet, 8+1 port switch',
       },
@@ -925,6 +935,55 @@ export default {
     footNote: '*You will be redirected to our partners website to complete your purchase',
     conversionError: 'Error: unable to get currency conversion. Try again later.',
     transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
+  },
+  landing: {
+    skyware: {
+      hero: {
+        title: 'Skywire',
+        heading: 'Skywire is the next evolutionary step in the internet’s development and use. Our goal is to provide everyone with access to fast, secure, private and reliable internet.',
+        button: 'Learn more',
+      },
+      watchNow: {
+        title: 'Watch now!',
+        description: 'Check out these YouTube videos to learn more about Skywire',
+        youtube: {
+          what: 'What is Skywire?',
+          solution: 'A Solution to Censorship',
+          isp: 'Why ISPs need to be Replaced',
+        },
+      },
+      afee: {
+        text: '“To free Crypto from the bonds of corrupt power, we need more than distributed exchanges. We need to bypass the existing Internet. Mesh networks solve this problem. Skywire  is the only one designed by and for the Crypto Space.” ',
+        name: 'John McAfee',
+      },
+      divider: 'Everyone will be able to contribute to and benefit from Skywire',
+      bottom: {
+        text: 'Its <b>private</b>, <b>secure</b> and <b>decentralized</b>. Join over 1,450+ nodes now on Skywire with our current special promotion!',
+        button: 'Order a skyminer',
+      },
+      features: {
+        speed: {
+          title: 'Speed',
+          description: 'Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.',
+        },
+        privacy: {
+          title: 'Privacy',
+          description: 'With default end-to-end encryption, Skywire ensures that all traffic is private and users will never have  their data tracked, stored, or sold.',
+        },
+        security: {
+          title: 'Security',
+          description: 'Today, internet users have no say in how ISPs operate. Skywire gives this decision making power back to  the community in the form of a web-of-trust system.',
+        },
+        ecosystem: {
+          title: 'Self-sustaining ecosystem',
+          description: 'By providing Skycoin and Coin Hour rewards to  node operators, we offer incentives for people to contribute to the network.',
+        },
+        internet: {
+          title: 'Foundation of the new internet',
+          description: 'Skywire lays the foundation for distributed bandwidth, storage, and computation essential to the new  peer-to-peer internet',
+        },
+      },
+    },
   },
 };
 
