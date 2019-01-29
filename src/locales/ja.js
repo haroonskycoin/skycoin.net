@@ -76,6 +76,28 @@ export default {
     hero: {
       heading: '新時代で新たなインターネット',
       paragraph: 'Skycoin プラットフォームは世界で最も先進なブロックチェーンアプリケーション生態システムである。Skycoinはビットコインとイーサリアムの早期貢献者より共同開発し、完全に安全で、無限拡張可能、ISPから独立しているプラットフォームである。Skycoinはブロードバンド、メモリとコンピューティングを後ろ盾とし、中本聡の当初ビジョンを実現することを目指している',
+      slider: {
+        revolutionary: {
+          title: 'Skycoin is Revolutionary',
+          description: 'A new blockchain ecosystem built from the ground up.',
+        },
+        obelisk: {
+          title: 'Skycoin is Obelisk',
+          description: 'A new consensus protocol solving core inefficiencies in PoS and PoW.',
+        },
+        cx: {
+          title: 'Skycoin is CX',
+          description: 'A new, powerful, turing complete language for blockchain development.',
+        },
+        skywire: {
+          title: 'Skycoin is Skywire',
+          description: 'An stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
+        },
+        fiber: {
+          title: 'Skycoin is Fiber',
+          description: 'An infinitely scalable, fully customizable platform capable of Visa-like speeds and security.',
+        },
+      },
       buy: 'Skycoinを購入',
       wallet: {
         get: '財布をダウンロード',

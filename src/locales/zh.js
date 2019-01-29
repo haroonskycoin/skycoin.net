@@ -72,6 +72,28 @@ export default {
     hero: {
       heading: '新时代的新互联网',
       paragraph: 'Skycoin 平台是世界上最先进的区块链应用生态系统。Skycoin 由比特币和以太 坊的早期贡献者共同开发，它是一个完全安全、可无限扩展、并且独立于 ISP 的平台。Skycoin 以带宽、存储和算力作为后盾，旨在实现中本聪的最初愿景。',
+      slider: {
+        revolutionary: {
+          title: 'Skycoin is Revolutionary',
+          description: 'A new blockchain ecosystem built from the ground up.',
+        },
+        obelisk: {
+          title: 'Skycoin is Obelisk',
+          description: 'A new consensus protocol solving core inefficiencies in PoS and PoW.',
+        },
+        cx: {
+          title: 'Skycoin is CX',
+          description: 'A new, powerful, turing complete language for blockchain development.',
+        },
+        skywire: {
+          title: 'Skycoin is Skywire',
+          description: 'An stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
+        },
+        fiber: {
+          title: 'Skycoin is Fiber',
+          description: 'An infinitely scalable, fully customizable platform capable of Visa-like speeds and security.',
+        },
+      },
       buy: '购买天空链',
       wallet: {
         get: '下载钱包',

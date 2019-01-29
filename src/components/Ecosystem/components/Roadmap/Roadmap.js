@@ -45,7 +45,7 @@ const Roadmap = () => (
     {/* </Heading> */}
     {/* <Graphic src={marketingRoadmap} /> */}
     {/* <Graphic src={marketingRoadmapSm} mobile /> */}
-    {/* </Box>*/}
+    {/* </Box> */}
   </Container>
 );
 

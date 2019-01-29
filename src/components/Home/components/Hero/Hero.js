@@ -6,7 +6,7 @@ import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
 import Container from 'components/Container';
 import CanvasBg from './components/CanvasBg';
-import Introduction from './components/Introduction';
+import Slider from './components/Slider';
 
 const Wrapper = styled.div`
   background: ${COLOR.dark};
@@ -33,8 +33,8 @@ const Hero = () => (
       <Box mt={[0, 8, 8]} pb={[8, 8, 0]}>
         <Container>
           <Flex row wrap align="center">
-            <Box width={[1 / 1]}>
-              <Introduction />
+            <Box width={[1]}>
+              <Slider />
             </Box>
           </Flex>
         </Container>
