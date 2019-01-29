@@ -29,7 +29,7 @@ const CarouselItemContainer = styled(Flex)`
 
 const CarouselItem = ({ title, content, position, numItems }) =>
   (<CarouselItemContainer>
-    <Heading heavy as="h6" color="white" fontSize={[4, 5, 6]} mb={7}>
+    <Heading heavy as="h6" color="white" fontSize={[4, 5, 6]}>
       <StyledSpan>{position}/{numItems}.</StyledSpan> <FormattedMessage id={title} />
     </Heading>
     <Paragraph>
