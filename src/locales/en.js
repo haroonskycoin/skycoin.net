@@ -122,7 +122,7 @@ export default {
       button: 'Visit store',
     },
     hero: {
-      heading: 'What is Skycoin',
+      heading: 'What is Skycoin?',
       slider: {
         revolutionary: {
           title: 'Skycoin is Revolutionary',

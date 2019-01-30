@@ -4,12 +4,16 @@ import { SPACE, COLOR, FONT_SIZES } from 'config';
 import styled from 'styled-components';
 import { Flex } from 'grid-styled';
 import { rem } from 'polished';
+import media from 'utils/media';
 
 import CarouselPosition from './CarouselPosition';
 
 
-const ITEM_WITH_VALUE = 400;
-const ITEM_WIDTH = `${ITEM_WITH_VALUE}px`;
+const ITEM_WIDTH_VALUE = 350;
+const ITEM_WIDTH = `${ITEM_WIDTH_VALUE}px`;
+
+const ITEM_WIDTH_SM_VALUE = 250;
+const ITEM_WIDTH_SM = `${ITEM_WIDTH_SM_VALUE}px`;
 
 const StyledContainer = styled(Flex)`
 `;
@@ -20,16 +24,28 @@ const StyledCarouselContainer = styled(Flex)`
 
 const CarouselContent = styled(Flex)`
     transition:transform 1s ease;
-    transform: translateX(calc(-${props => props.position * ITEM_WITH_VALUE}px));
+    transform: translateX(calc(-${props => props.position * ITEM_WIDTH_SM_VALUE}px));
+    ${media.sm.css`
+    transform: translateX(calc(-${props => props.position * ITEM_WIDTH_VALUE}px));
+    `}
+    
 `;
 
 const Wrapper = styled(Flex)`
-    width: ${ITEM_WIDTH};
+  width:${ITEM_WIDTH_SM};    
     overflow: hidden;
+
+    ${media.sm.css`
+    width: ${ITEM_WIDTH};
+  `}
 `;
 
 const CarouselSlot = styled(Flex)`
-    width: ${ITEM_WIDTH};
+width:${ITEM_WIDTH_SM};
+
+    ${media.sm.css`
+      width: ${ITEM_WIDTH};
+  `}
 `;
 
 class CarouselContainer extends Component {

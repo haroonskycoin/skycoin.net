@@ -12,8 +12,8 @@ color:white
 const Point = styled.span`
     &:before {
         content: ' \\25CF';
-        font-size: ${rem(FONT_SIZES[5])};
-        color:${COLOR.white};
+        font-size: ${rem(FONT_SIZES[4])};
+        color:rgba(255,255,255,0.3);
     }
 `;
 const PositionPoint = styled(Point)`

@@ -24,7 +24,7 @@ import CarouselContainer from './CarouselContainer';
 const Intro = styled(Box)`
   
   ${media.sm.css`
-    background-color: ${rgba(COLOR.dark, 0.9)};
+    background-color: ${rgba(16,31,52,0.9)};
   `}
   
   ${media.md.css`
@@ -33,17 +33,25 @@ const Intro = styled(Box)`
 `;
 
 const ButtonsContainer = styled(Flex)`
-  padding: ${rem(SPACE[5])} ${rem(SPACE[5])};
+  padding: ${rem(SPACE[5])} 0;
+  
+
+  ${media.sm.css`
+    padding: ${rem(SPACE[5])} ${rem(SPACE[8])};
+  `}
 `;
 
 const StyledBuy = styled(Buy)`
   padding: ${rem(SPACE[3])} 0;
   margin-right:${rem(SPACE[5])};
+
 `;
 
 const StyledDownloads = styled(Button)`
   padding: ${rem(SPACE[3])} 0;
   margin-left:${rem(SPACE[5])};
+
+ 
 `;
 
 const StyledButton = styled(Flex)`
@@ -105,11 +113,11 @@ class Slider extends Component {
 
   render() {
     return (
-      <Flex wrap row px={0} mx={-5} width={'100%'} pt={[0, 0, 9]}>
-        <Intro width={[1, 1, 1 / 2]} >
+      <Flex wrap row px={0} width={'100%'} pt={[0, 0, 9]}>
+        <Intro width={['100%','auto','auto']} p={[0,5,5]}>
           <Flex column>
             <Flex row>
-              <StyledButton ml={rem(SPACE[2])} mr={rem(SPACE[6])} onClick={() => this.prevSlide()}>
+              <StyledButton mr={rem(SPACE[6])} onClick={() => this.prevSlide()}>
                 <Icon icon={faChevronLeft} />
               </StyledButton>
               <Flex column>
@@ -124,7 +132,7 @@ class Slider extends Component {
                   <CarouselItem title="home.hero.slider.fiber.title" content="home.hero.slider.fiber.description" position={5} numItems={this.getNumItems()} />
                 </CarouselContainer>
               </Flex>
-              <StyledButton onClick={() => this.nextSlide()}>
+              <StyledButton onClick={() => this.nextSlide()} ml={rem(SPACE[6])}>
                 <Icon icon={faChevronRight} />
               </StyledButton>
             </Flex>

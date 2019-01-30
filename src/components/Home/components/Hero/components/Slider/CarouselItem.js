@@ -9,13 +9,14 @@ import { rem } from 'polished';
 import Heading from 'components/Heading';
 
 const Paragraph = styled.p`
-  font-size: ${rem(FONT_SIZES[4])};
+  font-size: ${rem(FONT_SIZES[3])};
   color: ${COLOR.white};
   font-family: ${FONT_FAMILIES.sans};
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-transform: none;
   word-wrap:break-word;
+  opacity:0.6;
 `;
 
 const StyledSpan = styled.span`
@@ -29,7 +30,7 @@ const CarouselItemContainer = styled(Flex)`
 
 const CarouselItem = ({ title, content, position, numItems }) =>
   (<CarouselItemContainer>
-    <Heading heavy as="h6" color="white" fontSize={[4, 5, 6]}>
+    <Heading heavy as="h6" color="white" fontSize={[4, 5, 5]} mb={[2]}>
       <StyledSpan>{position}/{numItems}.</StyledSpan> <FormattedMessage id={title} />
     </Heading>
     <Paragraph>
