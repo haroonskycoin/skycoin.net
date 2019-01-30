@@ -114,21 +114,21 @@ export default class InputRow extends Component {
 }
 
 InputRow.propTypes = {
-  suggestions: PropTypes.arrayOf(PropTypes.object),
-  onSuggestionsFetchRequested: PropTypes.func,
-  onSuggestionsClearRequested: PropTypes.func,
-  label: PropTypes.string,
-  required: PropTypes.string,
-  setInputValue: PropTypes.func,
-  id: PropTypes.string,
-  icon: PropTypes.object, // eslint-disable-line react/forbid-prop-types
-  index: PropTypes.string,
-  isArray: PropTypes.bool,
-  count: PropTypes.string,
-  errorBorder: PropTypes.bool,
-  inputProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  suggestions: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onSuggestionsFetchRequested: PropTypes.func.isRequired,
+  onSuggestionsClearRequested: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired,
+  required: PropTypes.string.isRequired,
+  setInputValue: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  index: PropTypes.string.isRequired,
+  isArray: PropTypes.bool.isRequired,
+  count: PropTypes.string.isRequired,
+  errorBorder: PropTypes.bool.isRequired,
+  inputProps: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   values: PropTypes.string.isRequired,
-  touched: PropTypes.object, // eslint-disable-line react/forbid-prop-types
-  errors: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  touched: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  errors: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   handleBlur: PropTypes.func.isRequired,
 };

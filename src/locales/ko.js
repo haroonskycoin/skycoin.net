@@ -120,6 +120,28 @@ export default {
     hero: {
       heading: '새로운 시대속 신형 브라우저',
       paragraph: 'Skycoin 플랫폼은 세계적으로 가장 선진적인 블록체인 어플리케이션의 생태시스템입니다. Skycoin은 비트코인과 이더리움의 초기 공헌자들이 공동으로 개발한 것으로, 절대적으로 안전하고 무한 확장 가능하며 ISP과는 독립된 플랫폼입니다. Skycoin은 대역폭, 스토리지 및 해시레이트를 방패막으로 하여 사토시(Satoshi)의 가장 초기 전망을 구현하는 것을 목적으로 개발 되었습니다.',
+      slider: {
+        revolutionary: {
+          title: 'Skycoin is Revolutionary',
+          description: 'A new blockchain ecosystem built from the ground up.',
+        },
+        obelisk: {
+          title: 'Skycoin is Obelisk',
+          description: 'A new consensus protocol solving core inefficiencies in PoS and PoW.',
+        },
+        cx: {
+          title: 'Skycoin is CX',
+          description: 'A new, powerful, turing complete language for blockchain development.',
+        },
+        skywire: {
+          title: 'Skycoin is Skywire',
+          description: 'An stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
+        },
+        fiber: {
+          title: 'Skycoin is Fiber',
+          description: 'An infinitely scalable, fully customizable platform capable of Visa-like speeds and security.',
+        },
+      },
       buy: 'Skycoin 구매',
       community: '커뮤니티',
       whitepapers: '백서',

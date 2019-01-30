@@ -500,7 +500,7 @@ Navigation.defaultProps = {
   social: false,
   showBuy: false,
   showNav: true,
-  mobile: false,
+  isMobile: false,
   socialWhite: false,
 };
 
