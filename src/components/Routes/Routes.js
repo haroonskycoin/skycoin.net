@@ -14,17 +14,19 @@ import TeamPage from '../TeamPage';
 import Ecosystem from '../Ecosystem';
 import Skyminer from '../Skyminer';
 import Skywire from '../Skywire';
+import SkywireLanding from '../SkywireLanding';
 import CXO from '../CXO';
 import CX from '../CX';
 import Fiber from '../Fiber';
 import Jobs from '../JobsPage';
-import Whitelist from '../Whitelist';
+import WhiteListRedirect from '../Whitelist/WhiteListRedirect';
 import WhitelistForm from '../WhitelistForm';
 import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
 import GalleryPage from '../GalleryPage';
 import BuyFiatPage from '../BuyFiatPage/BuyFiatPage';
 import BuyOptionsPage from '../BuyOptionsPage/BuyOptionsPage';
+import ThankYouPage from '../ThankYouPage';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -42,16 +44,18 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}ecosystem`} exact component={Ecosystem} />
       <Route path={`${prefix}skyminer`} exact component={Skyminer} />
       <Route path={`${prefix}skywire`} exact component={Skywire} />
+      <Route path={`${prefix}landing/skywire`} exact component={SkywireLanding} />
       <Route path={`${prefix}cxo`} exact component={CXO} />
       <Route path={`${prefix}cx`} exact component={CX} />
       <Route path={`${prefix}fiber`} exact component={Fiber} />
       <Route path={`${prefix}jobs`} exact component={Jobs} />
-      <Route path={`${prefix}whiteList`} exact component={Whitelist} />
+      <Route path={`${prefix}whiteList`} exact component={WhiteListRedirect} />
       <Route path={`${prefix}orderskyminer`} exact component={SkyminerForm} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
       <Route path={`${prefix}obelisk`} exact component={Obelisk} />
       <Route path={`${prefix}gallery`} exact component={GalleryPage} />
       <Route path={`${prefix}buy-fiat`} exact component={BuyFiatPage} />
+      <Route path={`${prefix}thankyou`} exact component={ThankYouPage} />
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
