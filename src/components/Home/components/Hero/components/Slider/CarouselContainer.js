@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { SPACE, COLOR, FONT_SIZES } from 'config';
+
 import styled from 'styled-components';
 import { Flex } from 'grid-styled';
-import { rem } from 'polished';
 import media from 'utils/media';
 
 import CarouselPosition from './CarouselPosition';
@@ -49,7 +48,6 @@ width:${ITEM_WIDTH_SM};
 `;
 
 class CarouselContainer extends Component {
-
   getNumItems() {
     return this.props.children.length || 1;
   }
@@ -77,7 +75,7 @@ class CarouselContainer extends Component {
 
 CarouselContainer.propTypes = {
   children: PropTypes.arrayOf(PropTypes.node).isRequired,
-  position: PropTypes.number.isRequired
+  position: PropTypes.number.isRequired,
 };
 
 export default CarouselContainer;

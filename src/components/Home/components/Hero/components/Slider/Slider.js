@@ -17,14 +17,14 @@ import Buy from 'components/Buy';
 import Heading from 'components/Heading';
 
 
-import { SPACE, COLOR,FONT_SIZES } from 'config';
+import { SPACE, COLOR, FONT_SIZES } from 'config';
 import CarouselItem from './CarouselItem';
 import CarouselContainer from './CarouselContainer';
 
 const Intro = styled(Box)`
   
   ${media.sm.css`
-    background-color: ${rgba(16,31,52,0.9)};
+    background-color: ${rgba(16, 31, 52, 0.9)};
   `}
   
   ${media.md.css`
@@ -82,6 +82,8 @@ class Slider extends Component {
     };
   }
 
+  getNumItems = () => 5
+
   prevSlide = () => {
     const position = this.state.position - 1;
 
@@ -106,15 +108,11 @@ class Slider extends Component {
     this.setState({ position });
   }
 
-  getNumItems = () => {
-    return 5;
-  }
-
 
   render() {
     return (
       <Flex wrap row px={0} width={'100%'} pt={[0, 0, 9]}>
-        <Intro width={['100%','auto','auto']} p={[0,5,5]}>
+        <Intro width={['100%', 'auto', 'auto']} p={[0, 5, 5]}>
           <Flex column>
             <Flex row>
               <StyledButton mr={rem(SPACE[6])} onClick={() => this.prevSlide()}>
