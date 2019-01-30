@@ -254,7 +254,8 @@ export default {
     skywire: {
       heading: 'Skywire',
       installationGuide: 'Skywireインストールガイド v1.0',
-      minerAssemblyManual: 'Skywireマイニングマシン組立マニュアル',
+      minerAssemblyManual: 'Skywireマイニングマシン組立マニュアル v2.2',
+      minerAssemblyManualHiRes: 'Skywireマイニングマシン組立マニュアル Hi-Res v2.2',
       skyminer: 'Skyminerマイニングマシン取付マニュアルv2.2',
     },
     roadmap: {

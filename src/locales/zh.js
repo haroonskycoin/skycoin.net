@@ -245,7 +245,8 @@ export default {
     },
     skywire: {
       heading: 'Skywire',
-      minerAssemblyManual: 'Skywire矿机组装手册',
+      minerAssemblyManual: 'Skywire矿机组装手册 v2.2',
+      minerAssemblyManualHiRes: 'Skywire矿机组装手册 Hi-Res v2.2',
     },
     roadmap: {
       heading: 'Roadmap',
