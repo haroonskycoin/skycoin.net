@@ -8,11 +8,11 @@ import media from 'utils/media';
 import CarouselPosition from './CarouselPosition';
 
 
-const ITEM_WIDTH_VALUE = 350;
-const ITEM_WIDTH = `${ITEM_WIDTH_VALUE}px`;
+export const ITEM_WIDTH_VALUE = 450;
+export const ITEM_WIDTH = `${ITEM_WIDTH_VALUE}px`;
 
-const ITEM_WIDTH_SM_VALUE = 250;
-const ITEM_WIDTH_SM = `${ITEM_WIDTH_SM_VALUE}px`;
+export const ITEM_WIDTH_SM_VALUE = 250;
+export const ITEM_WIDTH_SM = `${ITEM_WIDTH_SM_VALUE}px`;
 
 const StyledContainer = styled(Flex)`
 `;
@@ -55,7 +55,11 @@ class CarouselContainer extends Component {
 
   render() {
     return (
-      <StyledContainer column>
+      <StyledContainer
+        column
+        onMouseEnter={this.props.onMouseEnter}
+        onMouseLeave={this.props.onMouseLeave}
+      >
         <StyledCarouselContainer row>
           <Wrapper>
             <CarouselContent position={this.props.position}>
@@ -76,6 +80,13 @@ class CarouselContainer extends Component {
 CarouselContainer.propTypes = {
   children: PropTypes.arrayOf(PropTypes.node).isRequired,
   position: PropTypes.number.isRequired,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
+};
+
+CarouselContainer.defaultProps = {
+  onMouseEnter: () => {},
+  onMouseLeave: () => {},
 };
 
 export default CarouselContainer;
