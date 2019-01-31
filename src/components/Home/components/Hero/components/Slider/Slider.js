@@ -19,7 +19,7 @@ import Heading from 'components/Heading';
 
 import { SPACE, COLOR, FONT_SIZES } from 'config';
 import CarouselItem from './CarouselItem';
-import CarouselContainer from './CarouselContainer';
+import CarouselContainer,{ITEM_WIDTH} from './CarouselContainer';
 
 const Intro = styled(Box)`
   
@@ -34,22 +34,34 @@ const Intro = styled(Box)`
 
 const ButtonsContainer = styled(Flex)`
   padding: ${rem(SPACE[5])} 0;
+  width:100%;
+  flex-direction:column;
   
 
   ${media.sm.css`
-    padding: ${rem(SPACE[5])} ${rem(SPACE[8])};
+    padding: ${rem(SPACE[5])} 0;
+    width:${ITEM_WIDTH};
+    flex-direction:row;
   `}
 `;
 
 const StyledBuy = styled(Buy)`
-  padding: ${rem(SPACE[3])} 0;
-  margin-right:${rem(SPACE[5])};
+  padding: ${rem(SPACE[3])} ${rem(SPACE[5])};
+  margin-bottom:${rem(SPACE[3])};
+  
+  ${media.sm.css`
+    margin-right:${rem(SPACE[5])};
+    margin-bottom:0;
+  `}
 
 `;
 
 const StyledDownloads = styled(Button)`
-  padding: ${rem(SPACE[3])} 0;
-  margin-left:${rem(SPACE[5])};
+  padding: ${rem(SPACE[3])} ${rem(SPACE[5])};
+
+  ${media.sm.css`
+    margin-left:${rem(SPACE[5])};
+  `}
 
  
 `;
@@ -74,15 +86,36 @@ Icon.propTypes = {
 };
 
 
+const TEXT_CYCLE = 4000;
+
 class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
       position: 0,
+      textCycle:true
     };
   }
 
+  componentDidMount () {
+    this.textCycle();
+  }
+
+  textCycle(){
+    setTimeout(() => {
+      if(this.state.textCycle){
+        this.nextSlide();
+      }
+      this.textCycle();
+    },TEXT_CYCLE);
+  }
+
   getNumItems = () => 5
+
+  handlePrevSlide = ()=>{
+    this.setState({textCycle:false});
+    this.prevSlide();
+  }
 
   prevSlide = () => {
     const position = this.state.position - 1;
@@ -91,6 +124,11 @@ class Slider extends Component {
       return;
     }
     this.doSliding(position);
+  }
+
+  handleNextSlide = () => {
+    this.setState({textCycle:false});
+    this.nextSlide();
   }
 
   nextSlide = () => {
@@ -113,36 +151,34 @@ class Slider extends Component {
     return (
       <Flex wrap row px={0} width={'100%'} pt={[0, 0, 9]}>
         <Intro width={['100%', 'auto', 'auto']} p={[0, 5, 5]}>
-          <Flex column>
-            <Flex row>
-              <StyledButton mr={rem(SPACE[6])} onClick={() => this.prevSlide()}>
-                <Icon icon={faChevronLeft} />
-              </StyledButton>
-              <Flex column>
-                <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={rem(SPACE[3])} alignItem="center">
-                  <FormattedMessage id="home.hero.heading" />
-                </Heading>
-                <CarouselContainer column position={this.state.position}>
-                  <CarouselItem title="home.hero.slider.revolutionary.title" content="home.hero.slider.revolutionary.description" position={1} numItems={this.getNumItems()} />
-                  <CarouselItem title="home.hero.slider.obelisk.title" content="home.hero.slider.obelisk.description" position={2} numItems={this.getNumItems()} />
-                  <CarouselItem title="home.hero.slider.cx.title" content="home.hero.slider.cx.description" position={3} numItems={this.getNumItems()} />
-                  <CarouselItem title="home.hero.slider.skywire.title" content="home.hero.slider.skywire.description" position={4} numItems={this.getNumItems()} />
-                  <CarouselItem title="home.hero.slider.fiber.title" content="home.hero.slider.fiber.description" position={5} numItems={this.getNumItems()} />
-                </CarouselContainer>
-              </Flex>
-              <StyledButton onClick={() => this.nextSlide()} ml={rem(SPACE[6])}>
-                <Icon icon={faChevronRight} />
-              </StyledButton>
+          <Flex row>
+            <StyledButton mr={rem(SPACE[6])} onClick={() => this.handlePrevSlide()}>
+              <Icon icon={faChevronLeft} />
+            </StyledButton>
+            <Flex column>
+              <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={rem(SPACE[3])} alignItem="center">
+                <FormattedMessage id="home.hero.heading" />
+              </Heading>
+              <CarouselContainer column position={this.state.position}>
+                <CarouselItem title="home.hero.slider.revolutionary.title" content="home.hero.slider.revolutionary.description" position={1} numItems={this.getNumItems()} />
+                <CarouselItem title="home.hero.slider.obelisk.title" content="home.hero.slider.obelisk.description" position={2} numItems={this.getNumItems()} />
+                <CarouselItem title="home.hero.slider.cx.title" content="home.hero.slider.cx.description" position={3} numItems={this.getNumItems()} />
+                <CarouselItem title="home.hero.slider.skywire.title" content="home.hero.slider.skywire.description" position={4} numItems={this.getNumItems()} />
+                <CarouselItem title="home.hero.slider.fiber.title" content="home.hero.slider.fiber.description" position={5} numItems={this.getNumItems()} />
+              </CarouselContainer>
+              <ButtonsContainer row spaceBetween align="center" width={[1]}>
+                  <StyledBuy color="white" bg="base" width={'100%'} pill>
+                    <FormattedMessage id="home.hero.buy" />
+                  </StyledBuy>
+                  <StyledDownloads to="downloads" color="base" bg="white" width={'100%'} pill>
+                    <FormattedMessage id="home.hero.wallet.get" />
+                  </StyledDownloads>
+                </ButtonsContainer>
             </Flex>
-            <ButtonsContainer row spaceBetween align="center" width={[1]}>
-              <StyledBuy color="white" bg="base" width={'100%'} pill>
-                <FormattedMessage id="home.hero.buy" />
-              </StyledBuy>
-              <StyledDownloads to="downloads" color="base" bg="white" width={'100%'} pill>
-                <FormattedMessage id="home.hero.wallet.get" />
-              </StyledDownloads>
-            </ButtonsContainer>
-          </Flex>
+            <StyledButton onClick={() => this.handleNextSlide()} ml={rem(SPACE[6])}>
+              <Icon icon={faChevronRight} />
+            </StyledButton>
+          </Flex>            
         </Intro>
       </Flex>
     );

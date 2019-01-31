@@ -8,11 +8,11 @@ import media from 'utils/media';
 import CarouselPosition from './CarouselPosition';
 
 
-const ITEM_WIDTH_VALUE = 350;
-const ITEM_WIDTH = `${ITEM_WIDTH_VALUE}px`;
+export const ITEM_WIDTH_VALUE = 450;
+export const ITEM_WIDTH = `${ITEM_WIDTH_VALUE}px`;
 
-const ITEM_WIDTH_SM_VALUE = 250;
-const ITEM_WIDTH_SM = `${ITEM_WIDTH_SM_VALUE}px`;
+export const ITEM_WIDTH_SM_VALUE = 250;
+export const ITEM_WIDTH_SM = `${ITEM_WIDTH_SM_VALUE}px`;
 
 const StyledContainer = styled(Flex)`
 `;
