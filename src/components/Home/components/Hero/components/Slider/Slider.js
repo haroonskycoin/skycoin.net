@@ -86,7 +86,7 @@ Icon.propTypes = {
 };
 
 
-const TEXT_CYCLE = 4000;
+const TEXT_CYCLE = 6000;
 
 class Slider extends Component {
   constructor(props) {
@@ -94,6 +94,7 @@ class Slider extends Component {
     this.state = {
       position: 0,
       textCycle: true,
+      timeoutId:null,
     };
   }
 
@@ -104,38 +105,50 @@ class Slider extends Component {
   getNumItems = () => 5
 
   textCycle() {
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       if (this.state.textCycle) {
         this.nextSlide();
       }
       this.textCycle();
     }, TEXT_CYCLE);
+    this.setState({timeoutId})
+  }
+
+  clearTimeout = () => {
+    if(this.state.timeoutId){
+      clearTimeout(this.state.timeoutId);
+      this.setState({timeoutId:null});
+    }
   }
 
 
   handlePrevSlide = () => {
+    this.clearTimeout();
+    this.textCycle();
     this.prevSlide();
   }
 
   prevSlide = () => {
-    const position = this.state.position - 1;
+    let position = this.state.position - 1;
 
     if (position < 0) {
-      return;
+      position = this.getNumItems() -1;
     }
     this.doSliding(position);
   }
 
   handleNextSlide = () => {
+    this.clearTimeout();
+    this.textCycle();
     this.nextSlide();
   }
 
   nextSlide = () => {
-    const position = this.state.position + 1;
+    let position = this.state.position + 1;
     const numItems = this.getNumItems();
 
     if (position > numItems - 1) {
-      return;
+      position = 0;
     }
 
     this.doSliding(position);
