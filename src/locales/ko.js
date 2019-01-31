@@ -375,7 +375,8 @@ export default {
     skywire: {
       heading: 'Skywire',
       installationGuide: 'Skywire설치 안내 v1.0',
-      minerAssemblyManual: 'Skywire채굴기 조립 안내',
+      minerAssemblyManual: 'Skywire채굴기 조립 안내 v2.2',
+      minerAssemblyManualHiRes: 'Skywire채굴기 조립 안내 Hi-Res v2.2',
     },
     roadmap: {
       heading: '로드맵',
