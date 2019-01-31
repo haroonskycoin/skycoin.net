@@ -55,7 +55,7 @@ class CarouselContainer extends Component {
 
   render() {
     return (
-      <StyledContainer column>
+      <StyledContainer column onMouseEnter={this.props.onMouseEnter} onMouseLeave={this.props.onMouseLeave}>
         <StyledCarouselContainer row>
           <Wrapper>
             <CarouselContent position={this.props.position}>

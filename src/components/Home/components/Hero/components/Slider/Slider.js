@@ -113,7 +113,6 @@ class Slider extends Component {
   getNumItems = () => 5
 
   handlePrevSlide = ()=>{
-    this.setState({textCycle:false});
     this.prevSlide();
   }
 
@@ -127,7 +126,6 @@ class Slider extends Component {
   }
 
   handleNextSlide = () => {
-    this.setState({textCycle:false});
     this.nextSlide();
   }
 
@@ -146,6 +144,13 @@ class Slider extends Component {
     this.setState({ position });
   }
 
+  handleMouseEnter = ()=>{
+    this.setState({textCycle:false});
+  }
+
+  handleMouseLeave = ()=>{
+    this.setState({textCycle:true});
+  }
 
   render() {
     return (
@@ -159,7 +164,7 @@ class Slider extends Component {
               <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={rem(SPACE[3])} alignItem="center">
                 <FormattedMessage id="home.hero.heading" />
               </Heading>
-              <CarouselContainer column position={this.state.position}>
+              <CarouselContainer column position={this.state.position} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
                 <CarouselItem title="home.hero.slider.revolutionary.title" content="home.hero.slider.revolutionary.description" position={1} numItems={this.getNumItems()} />
                 <CarouselItem title="home.hero.slider.obelisk.title" content="home.hero.slider.obelisk.description" position={2} numItems={this.getNumItems()} />
                 <CarouselItem title="home.hero.slider.cx.title" content="home.hero.slider.cx.description" position={3} numItems={this.getNumItems()} />
