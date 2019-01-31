@@ -55,7 +55,11 @@ class CarouselContainer extends Component {
 
   render() {
     return (
-      <StyledContainer column onMouseEnter={this.props.onMouseEnter} onMouseLeave={this.props.onMouseLeave}>
+      <StyledContainer
+        column
+        onMouseEnter={this.props.onMouseEnter}
+        onMouseLeave={this.props.onMouseLeave}
+      >
         <StyledCarouselContainer row>
           <Wrapper>
             <CarouselContent position={this.props.position}>
@@ -76,6 +80,13 @@ class CarouselContainer extends Component {
 CarouselContainer.propTypes = {
   children: PropTypes.arrayOf(PropTypes.node).isRequired,
   position: PropTypes.number.isRequired,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
+};
+
+CarouselContainer.defaultProps = {
+  onMouseEnter: () => {},
+  onMouseLeave: () => {},
 };
 
 export default CarouselContainer;

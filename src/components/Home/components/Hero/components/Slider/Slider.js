@@ -19,7 +19,7 @@ import Heading from 'components/Heading';
 
 import { SPACE, COLOR, FONT_SIZES } from 'config';
 import CarouselItem from './CarouselItem';
-import CarouselContainer,{ITEM_WIDTH} from './CarouselContainer';
+import CarouselContainer, { ITEM_WIDTH } from './CarouselContainer';
 
 const Intro = styled(Box)`
   
@@ -93,26 +93,27 @@ class Slider extends Component {
     super(props);
     this.state = {
       position: 0,
-      textCycle:true
+      textCycle: true,
     };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.textCycle();
-  }
-
-  textCycle(){
-    setTimeout(() => {
-      if(this.state.textCycle){
-        this.nextSlide();
-      }
-      this.textCycle();
-    },TEXT_CYCLE);
   }
 
   getNumItems = () => 5
 
-  handlePrevSlide = ()=>{
+  textCycle() {
+    setTimeout(() => {
+      if (this.state.textCycle) {
+        this.nextSlide();
+      }
+      this.textCycle();
+    }, TEXT_CYCLE);
+  }
+
+
+  handlePrevSlide = () => {
     this.prevSlide();
   }
 
@@ -144,12 +145,12 @@ class Slider extends Component {
     this.setState({ position });
   }
 
-  handleMouseEnter = ()=>{
-    this.setState({textCycle:false});
+  handleMouseEnter = () => {
+    this.setState({ textCycle: false });
   }
 
-  handleMouseLeave = ()=>{
-    this.setState({textCycle:true});
+  handleMouseLeave = () => {
+    this.setState({ textCycle: true });
   }
 
   render() {
@@ -164,7 +165,12 @@ class Slider extends Component {
               <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={rem(SPACE[3])} alignItem="center">
                 <FormattedMessage id="home.hero.heading" />
               </Heading>
-              <CarouselContainer column position={this.state.position} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+              <CarouselContainer
+                column
+                position={this.state.position}
+                onMouseEnter={this.handleMouseEnter}
+                onMouseLeave={this.handleMouseLeave}
+              >
                 <CarouselItem title="home.hero.slider.revolutionary.title" content="home.hero.slider.revolutionary.description" position={1} numItems={this.getNumItems()} />
                 <CarouselItem title="home.hero.slider.obelisk.title" content="home.hero.slider.obelisk.description" position={2} numItems={this.getNumItems()} />
                 <CarouselItem title="home.hero.slider.cx.title" content="home.hero.slider.cx.description" position={3} numItems={this.getNumItems()} />
@@ -172,18 +178,18 @@ class Slider extends Component {
                 <CarouselItem title="home.hero.slider.fiber.title" content="home.hero.slider.fiber.description" position={5} numItems={this.getNumItems()} />
               </CarouselContainer>
               <ButtonsContainer row spaceBetween align="center" width={[1]}>
-                  <StyledBuy color="white" bg="base" width={'100%'} pill>
-                    <FormattedMessage id="home.hero.buy" />
-                  </StyledBuy>
-                  <StyledDownloads to="downloads" color="base" bg="white" width={'100%'} pill>
-                    <FormattedMessage id="home.hero.wallet.get" />
-                  </StyledDownloads>
-                </ButtonsContainer>
+                <StyledBuy color="white" bg="base" width={'100%'} pill>
+                  <FormattedMessage id="home.hero.buy" />
+                </StyledBuy>
+                <StyledDownloads to="downloads" color="base" bg="white" width={'100%'} pill>
+                  <FormattedMessage id="home.hero.wallet.get" />
+                </StyledDownloads>
+              </ButtonsContainer>
             </Flex>
             <StyledButton onClick={() => this.handleNextSlide()} ml={rem(SPACE[6])}>
               <Icon icon={faChevronRight} />
             </StyledButton>
-          </Flex>            
+          </Flex>
         </Intro>
       </Flex>
     );
