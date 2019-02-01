@@ -19,7 +19,7 @@ import Heading from 'components/Heading';
 
 import { SPACE, COLOR, FONT_SIZES } from 'config';
 import CarouselItem from './CarouselItem';
-import CarouselContainer, { ITEM_WIDTH, ANIMATION_DURATION } from './CarouselContainer';
+import CarouselContainer, { ITEM_WIDTH } from './CarouselContainer';
 
 const Intro = styled(Box)`
   
@@ -94,8 +94,8 @@ class Slider extends Component {
     this.state = {
       position: 0,
       textCycle: true,
-      timeoutId:null,
-      sliderAnimated:true,
+      timeoutId: null,
+      sliderAnimated: true,
     };
   }
 
@@ -112,32 +112,32 @@ class Slider extends Component {
       }
       this.textCycle();
     }, TEXT_CYCLE);
-    this.setState({timeoutId})
+    this.setState({ timeoutId });
   }
 
   clearTimeout = () => {
-    if(this.state.timeoutId){
+    if (this.state.timeoutId) {
       clearTimeout(this.state.timeoutId);
-      this.setState({timeoutId:null});
+      this.setState({ timeoutId: null });
     }
   }
 
 
   handlePrevSlide = () => {
-    this.setState({sliderAnimated:true});
+    this.setState({ sliderAnimated: true });
     this.clearTimeout();
     this.textCycle();
     this.prevSlide();
   }
 
   prevSlide = () => {
-    let position = this.state.position - 1;
+    const position = this.state.position - 1;
 
     if (position < 0) {
-      this.setState({position:this.getNumItems(),sliderAnimated:false}, ()=>{
-        setTimeout(()=>{
-          this.setState({position:this.getNumItems() -1,sliderAnimated:true});
-        },50);
+      this.setState({ position: this.getNumItems(), sliderAnimated: false }, () => {
+        setTimeout(() => {
+          this.setState({ position: this.getNumItems() - 1, sliderAnimated: true });
+        }, 50);
       });
       return;
     }
@@ -145,21 +145,21 @@ class Slider extends Component {
   }
 
   handleNextSlide = () => {
-    this.setState({sliderAnimated:true});
+    this.setState({ sliderAnimated: true });
     this.clearTimeout();
     this.textCycle();
     this.nextSlide();
   }
 
   nextSlide = () => {
-    let position = this.state.position + 1;
+    const position = this.state.position + 1;
     const numItems = this.getNumItems();
 
     if (position > numItems - 1) {
-      this.setState({position:-1,sliderAnimated:false}, ()=>{
-        setTimeout(()=>{
-          this.setState({position:0,sliderAnimated:true});
-        },50);
+      this.setState({ position: -1, sliderAnimated: false }, () => {
+        setTimeout(() => {
+          this.setState({ position: 0, sliderAnimated: true });
+        }, 50);
       });
       return;
     }

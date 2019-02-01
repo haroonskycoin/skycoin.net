@@ -23,16 +23,17 @@ const StyledCarouselContainer = styled(Flex)`
 `;
 
 const CarouselContent = styled(Flex)`    
-    ${(props)=>{
-      if(props.animated){
-        return (`transition:transform ${ANIMATION_DURATION}ms ease;`);
-      }
-    }}
-    transform: translateX(calc(-${props => props.position * ITEM_WIDTH_SM_VALUE}px));
-    ${media.sm.css`
+    ${(props) => {
+    if (props.animated) {
+      return (`transition:transform ${ANIMATION_DURATION}ms ease;`);
+    }
+    return '';
+  }}
+
+  transform: translateX(calc(-${props => props.position * ITEM_WIDTH_SM_VALUE}px));
+  ${media.sm.css`
     transform: translateX(calc(-${props => props.position * ITEM_WIDTH_VALUE}px));
-    `}
-    
+  `}    
 `;
 
 const Wrapper = styled(Flex)`
@@ -57,7 +58,7 @@ class CarouselContainer extends Component {
     return this.props.children.length || 1;
   }
 
-  getPosition(){
+  getPosition() {
     return this.props.position + 1;
   }
 
@@ -73,7 +74,7 @@ class CarouselContainer extends Component {
           <Wrapper>
             <CarouselContent position={this.getPosition()} animated={this.props.animated}>
               <CarouselSlot>
-                {this.props.children[this.props.children.length -1]}
+                {this.props.children[this.props.children.length - 1]}
               </CarouselSlot>
               { this.props.children.map((child, index) => (
                 <CarouselSlot key={index}>
@@ -97,11 +98,13 @@ CarouselContainer.propTypes = {
   position: PropTypes.number.isRequired,
   onMouseEnter: PropTypes.func,
   onMouseLeave: PropTypes.func,
+  animated: PropTypes.bool.isRequired,
 };
 
 CarouselContainer.defaultProps = {
   onMouseEnter: () => {},
   onMouseLeave: () => {},
+  animated: false,
 };
 
 export default CarouselContainer;
