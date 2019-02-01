@@ -138,7 +138,7 @@ export default {
         },
         skywire: {
           title: 'Skycoin is Skywire',
-          description: 'An stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
+          description: 'A stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
         },
         fiber: {
           title: 'Skycoin is Fiber',

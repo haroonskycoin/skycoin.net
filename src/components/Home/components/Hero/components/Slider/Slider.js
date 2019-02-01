@@ -86,7 +86,7 @@ Icon.propTypes = {
 };
 
 
-const TEXT_CYCLE = 4000;
+const TEXT_CYCLE = 6000;
 
 class Slider extends Component {
   constructor(props) {
@@ -94,6 +94,8 @@ class Slider extends Component {
     this.state = {
       position: 0,
       textCycle: true,
+      timeoutId: null,
+      sliderAnimated: true,
     };
   }
 
@@ -104,16 +106,27 @@ class Slider extends Component {
   getNumItems = () => 5
 
   textCycle() {
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       if (this.state.textCycle) {
         this.nextSlide();
       }
       this.textCycle();
     }, TEXT_CYCLE);
+    this.setState({ timeoutId });
+  }
+
+  clearTimeout = () => {
+    if (this.state.timeoutId) {
+      clearTimeout(this.state.timeoutId);
+      this.setState({ timeoutId: null });
+    }
   }
 
 
   handlePrevSlide = () => {
+    this.setState({ sliderAnimated: true });
+    this.clearTimeout();
+    this.textCycle();
     this.prevSlide();
   }
 
@@ -121,12 +134,20 @@ class Slider extends Component {
     const position = this.state.position - 1;
 
     if (position < 0) {
+      this.setState({ position: this.getNumItems(), sliderAnimated: false }, () => {
+        setTimeout(() => {
+          this.setState({ position: this.getNumItems() - 1, sliderAnimated: true });
+        }, 50);
+      });
       return;
     }
     this.doSliding(position);
   }
 
   handleNextSlide = () => {
+    this.setState({ sliderAnimated: true });
+    this.clearTimeout();
+    this.textCycle();
     this.nextSlide();
   }
 
@@ -135,6 +156,11 @@ class Slider extends Component {
     const numItems = this.getNumItems();
 
     if (position > numItems - 1) {
+      this.setState({ position: -1, sliderAnimated: false }, () => {
+        setTimeout(() => {
+          this.setState({ position: 0, sliderAnimated: true });
+        }, 50);
+      });
       return;
     }
 
@@ -167,6 +193,7 @@ class Slider extends Component {
               </Heading>
               <CarouselContainer
                 column
+                animated={this.state.sliderAnimated}
                 position={this.state.position}
                 onMouseEnter={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseLeave}
