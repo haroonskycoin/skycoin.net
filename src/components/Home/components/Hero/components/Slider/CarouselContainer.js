@@ -23,7 +23,7 @@ const StyledCarouselContainer = styled(Flex)`
 `;
 
 const CarouselContent = styled(Flex)`    
-    ${(props) => {
+  ${(props) => {
     if (props.animated) {
       return (`transition:transform ${ANIMATION_DURATION}ms ease;`);
     }
