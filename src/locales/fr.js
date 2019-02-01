@@ -521,33 +521,33 @@ export default {
     title: 'Skywire',
     description: 'Skywire - The Foundation of a New Internet',
     about: {
-      heading: 'What is Skywire?',
-      subheading: 'The Foundation of a New Internet ',
-      quote: 'Everyone will be able to contribute to and benefit from Skywire.',
-      paragraph1: 'Skywire is the next evolutionary step in the internet’s development and use. We want to break the  chokehold that internet service providers (ISPs) have on the market by giving the power back to the  people. We are doing this by providing a decentralized community-driven mesh network where users  themselves will own and control the network’s infrastructure. Our goal is to provide everyone with access  to fast, secure, private and reliable internet.',
-      paragraph2: 'It is time to leave ISPs as a relic of the past. Customers routinely have their browsing data tracked, stored  and sold by ISPs, and at the same time experience unreliable coverage and poor customer service.  Instead of relying on corporate-owned networks, the Skywire mesh network runs on widespread  user-owned nodes which come together to provide the infrastructure for the network,  allowing  communities to power their internet access.',
+      heading: 'Qu\'est-ce que Skywire?',
+      subheading: 'LA FONDATION D\'UN NOUVEL INTERNET',
+      quote: 'Tout le monde pourra contribuer et bénéficier de Skywire.',
+      paragraph1: 'Skywire constitue la prochaine étape évolutive du développement et de l’utilisation de l’internet. Nous voulons sortir de l\'étouffement que les fournisseurs de services Internet (FAI) ont sur le marché en rendant le pouvoir à la population. Pour ce faire, nous fournissons un réseau maillé décentralisé entretenu par la communauté, où les utilisateurs eux-mêmes posséderont et contrôleront l’infrastructure du réseau. Notre objectif est de fournir à tous un accès à un Internet rapide, sécurisé, privé et fiable.',
+      paragraph2: 'Il est temps de laisser les FAI comme un vestige du passé. Les clients font systématiquement suivre leurs données de navigation, les stockent et les vendent, tout en bénéficiant d’une couverture peu fiable et d’un service client de qualité médiocre. Au lieu de s\'appuyer sur des réseaux appartenant à l\'entreprise, le réseau maillé Skywire fonctionne sur de nombreux nœuds appartenant à des utilisateurs, qui s\'unissent pour fournir l\'infrastructure nécessaire au réseau, permettant ainsi aux communautés d\'alimenter leur accès Internet.',
     },
     features: {
-      heading: 'Key Features:',
+      heading: 'Caractéristiques Clé:',
       speed: {
-        title: 'Speed',
-        text: 'We’ve all experienced the network delays, outages and throttling that go hand in hand with current ISPs.  Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.    Skywire supports channel bonding which provides unmatched speed and reliability. The ability to connect  to multiple nodes at once drastically increases throughput and redundancy, democratizing previously  difficult use cases.',
+        title: 'VITESSE',
+        text: 'Nous avons tous connu les connexions lentes, les pannes et la limitation qui vont de pair avec les FAI actuels. Le protocole de Skywire est basé sur un réseau défini par logiciel. Skywire prend en charge la liaison de canaux qui offre une vitesse et une fiabilité inégalées. La possibilité de se connecter à plusieurs nœuds à la fois augmente considérablement le débit et la redondance, démocratisant des cas d\'utilisation auparavant difficiles.',
       },
       privacy: {
-        title: 'Privacy',
-        text: 'With default end-to-end encryption, Skywire ensures that all traffic is private and users will never have  their data tracked, stored, or sold. Third parties will not be able to connect individual packets to any user  or IP address, and they will not be able to read the contents of any network traffic. Relaying nodes will  only have routing information for one single prior and subsequent node for movement of the encrypted  data packet. Users will finally be able to browse with real privacy.',
+        title: 'CONFIDENTIALITÉ',
+        text: 'Avec le cryptage de bout-en-bout par défaut, Skywire garantit que tout le trafic est privé et que les utilisateurs n\'auront jamais leurs données suivies, stockées ou vendues. Les troisième parties ne seront pas en mesure de connecter des paquets individuels à un utilisateur ou à une adresse IP, et ils ne seront pas en mesure de lire le contenu du trafic réseau. Les nœuds de relais ne disposeront d\'informations de routage que pour un seul nœud antérieur et ultérieur pour le déplacement du paquet de données crypté. Les utilisateurs pourront enfin naviguer avec une réelle confidentialité.',
       },
       security: {
-        title: 'Security',
+        title: 'SÉCURITÉ',
         text: 'Today, internet users have no say in how ISPs operate. Skywire gives this decision making power back to  the community in the form of a web-of-trust system. The consensus model allows nodes to be cut off if  deemed malicious, or strengthened if considered trustworthy through collective community agreement.  By making sure everyone has their say, Skywire becomes immune to exploitation, manipulation, and  attack, and safer for all.',
       },
       ecosystem: {
-        title: 'Self-sustaining Ecosystem',
-        text: 'The backbone of Skywire will be the community itself. By providing Skycoin and Coin Hour rewards to  node operators, we offer incentives for people to contribute to the network and in turn, they’ll have Coin  Hours to use for resources and applications on the network. The more the network is used, the stronger,  faster and more robust it becomes, creating a closed-loop, self-sustaining economy.',
+        title: 'ECOSYSTEME AUTONOME',
+        text: 'Le cœur de Skywire sera la communauté elle-même. En fournissant des récompenses Skycoin et Coin Hour aux opérateurs de nœuds, nous offrons des incitations aux personnes qui souhaitent contribuer au réseau. À leur tour, elles auront des Coin Hours à utiliser pour les ressources et les applications du réseau. Plus le réseau est utilisé, plus il devient puissant, rapide et robuste, ce qui crée une économie en boucle fermée et autonome.',
       },
       internet: {
-        title: 'The Foundation of a New Internet',
-        text: 'Skywire lays the foundation for distributed bandwidth, storage, and computation essential to the new  peer-to-peer internet. In the future, this holy trinity of digital commodities will be affordable and easily  accessible to the world through Skywire. And in the not-too-distant future Skywire combined with the  ubiquity of Skywire Miners will provide the nodes to efficiently decentralize the limitless number of  blockchain applications that will run on Skycoin’s Fiber architecture.',
+        title: 'LA FONDATION D\'UN NOUVEL INTERNET',
+        text: 'Skywire pose les bases de la bande passante distribuée, du stockage et du calcul essentiels au nouvel Internet peer-to-peer. À l\'avenir, cette sainte trinité de produits numériques sera abordable et facilement accessible au monde via Skywire. Et dans un avenir pas si lointain, Skywire, combiné à l\'omniprésence de Skywire, fournira les nœuds nécessaires pour décentraliser efficacement le nombre illimité d\'applications blockchain qui fonctionneront sur l\'architecture Fiber de Skycoin.',
       },
     },
   },
@@ -850,7 +850,7 @@ export default {
   whitelist: {
     heading: 'Skywire Testnet Reward Application Form',
     signUp: {
-      title: 'Get Connected, Join Skywire Testnet & Get Rewarded!',
+      title: 'Connectez-vous, rejoignez Skywire Testnet et soyez récompensé!',
     },
   },
   fiber: {
@@ -895,17 +895,17 @@ export default {
     title: 'Obelisk',
     description: 'Obelisk - The Revolutionary Skycoin Consensus Algorithm',
     about: {
-      heading: 'What Is Obelisk?',
-      subheading: 'The Revolutionary Skycoin Consensus Algorithm',
-      quote: '“Centralization issues, 51% attacks, mining problems, slow transaction speeds and energy waste are only a few of the critical disadvantages that old consensus algorithms face. To counter this, Skycoin has developed Obelisk, the new distributed consensus algorithm that solves the problems of previous generations and makes them obsolete.”',
-      author: 'medium source',
-      paragraph1: 'Obelisk is a revolutionary web-of-trust consensus algorithm built to eliminate the issues that previous generations of consensus have introduced into the blockchain space. Web-of-trust architecture creates a perfect system of checks and balances, allowing the community and other nodes the ability to audit network behavior with a high degree of accuracy.',
-      paragraph2: 'With the ability to cut off suspicious nodes for malicious behavior, the network becomes stronger as trust is maintained. The quarantine of nodes can manage trust, and at the same time, this process allows the community to rebalance power in the network.',
+      heading: 'Qu\'est-ce que Obelisk?',
+      subheading: 'L\'ALGORITHME RÉVOLUTIONNAIRE DE CONSENSUS SKYCOIN',
+      quote: '«Les problèmes de centralisation, les attaques à 51%, les problèmes d’exploitation minière, la lenteur des transactions et le gaspillage d’énergie ne sont que quelques-uns des inconvénients majeurs des anciens algorithmes de consensus. Pour remédier à cela, Skycoin a développé Obelisk, le nouvel algorithme de consensus distribué qui résout les problèmes des générations précédentes et les rend obsolètes. ”',
+      author: 'Medium.com',
+      paragraph1: 'Obelisk est un algorithme de consensus révolutionnaire basé sur un réseau de confiance, conçu pour éliminer les problèmes introduits par les générations de consensus précédentes dans l’espace de la blockchain. L’architecture Web-of-trust crée un système parfait d’équilibres, permettant à la communauté et aux autres nœuds d’auditer le comportement du réseau avec un degré élevé de précision.',
+      paragraph2: 'Avec la possibilité de couper les nœuds suspects pour comportement malveillant, le réseau devient plus fort. La mise en quarantaine des noeuds permet de gérer la confiance et, simultanément, ce processus permet à la communauté de rééquilibrer le pouvoir sur le réseau.',
     },
     features: {
-      heading: 'Features of Obelisk',
+      heading: 'Les Caractéristiques d’Obelisk',
       consumption: {
-        title: 'Low Energy Consumption & Highly Scalable',
+        title: 'CONSOMMATION D\'ENERGIE FAIBLE ET TRES SCALABLE',
         text: 'The consensus algorithm was designed to be a scalable and computationally inexpensive alternative to Proof-of-Work (PoW), enabling both the algorithm and block-making to run on budget open-source hardware.',
       },
       attack: {
@@ -985,7 +985,7 @@ export default {
       },
       features: {
         speed: {
-          title: 'Speed',
+          title: 'VITESSE',
           description: 'Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.',
         },
         privacy: {
