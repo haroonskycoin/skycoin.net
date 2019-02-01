@@ -591,7 +591,7 @@ export default {
         title: 'APPLICATIONS DE CXO',
         text: 'Les applications sur CXO sont actuellement testées avec une utilisation légère. SkyBBS est un réseau social similaire à Facebook, Steemit et Twitter. Il est construit sur le CXO et de nombreux autres sont à venir.',
       },
-    }
+    },
   },
   cx: {
     title: 'CX - CX programming language',

@@ -18,7 +18,7 @@ import * as locales from 'locales';
 import Routes from '../Routes';
 import ScrollToTop from '../ScrollToTop';
 
-addLocaleData([...zh, ...ru, ...ko, ...ja,...fr]);
+addLocaleData([...zh, ...ru, ...ko, ...ja, ...fr]);
 
 const theme = {
   colors: flatten(COLORS),
