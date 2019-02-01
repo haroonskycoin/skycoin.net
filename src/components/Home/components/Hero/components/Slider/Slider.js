@@ -19,7 +19,7 @@ import Heading from 'components/Heading';
 
 import { SPACE, COLOR, FONT_SIZES } from 'config';
 import CarouselItem from './CarouselItem';
-import CarouselContainer, { ITEM_WIDTH } from './CarouselContainer';
+import CarouselContainer, { ITEM_WIDTH, ANIMATION_DURATION } from './CarouselContainer';
 
 const Intro = styled(Box)`
   
@@ -95,6 +95,7 @@ class Slider extends Component {
       position: 0,
       textCycle: true,
       timeoutId:null,
+      sliderAnimated:true,
     };
   }
 
@@ -123,6 +124,7 @@ class Slider extends Component {
 
 
   handlePrevSlide = () => {
+    this.setState({sliderAnimated:true});
     this.clearTimeout();
     this.textCycle();
     this.prevSlide();
@@ -132,12 +134,18 @@ class Slider extends Component {
     let position = this.state.position - 1;
 
     if (position < 0) {
-      position = this.getNumItems() -1;
+      this.setState({position:this.getNumItems(),sliderAnimated:false}, ()=>{
+        setTimeout(()=>{
+          this.setState({position:this.getNumItems() -1,sliderAnimated:true});
+        },50);
+      });
+      return;
     }
     this.doSliding(position);
   }
 
   handleNextSlide = () => {
+    this.setState({sliderAnimated:true});
     this.clearTimeout();
     this.textCycle();
     this.nextSlide();
@@ -148,7 +156,12 @@ class Slider extends Component {
     const numItems = this.getNumItems();
 
     if (position > numItems - 1) {
-      position = 0;
+      this.setState({position:-1,sliderAnimated:false}, ()=>{
+        setTimeout(()=>{
+          this.setState({position:0,sliderAnimated:true});
+        },50);
+      });
+      return;
     }
 
     this.doSliding(position);
@@ -180,6 +193,7 @@ class Slider extends Component {
               </Heading>
               <CarouselContainer
                 column
+                animated={this.state.sliderAnimated}
                 position={this.state.position}
                 onMouseEnter={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseLeave}

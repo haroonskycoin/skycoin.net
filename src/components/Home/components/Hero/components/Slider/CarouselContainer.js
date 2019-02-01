@@ -8,6 +8,7 @@ import media from 'utils/media';
 import CarouselPosition from './CarouselPosition';
 
 
+export const ANIMATION_DURATION = 1000;
 export const ITEM_WIDTH_VALUE = 450;
 export const ITEM_WIDTH = `${ITEM_WIDTH_VALUE}px`;
 
@@ -21,8 +22,12 @@ const StyledCarouselContainer = styled(Flex)`
     align-items:center;
 `;
 
-const CarouselContent = styled(Flex)`
-    transition:transform 1s ease;
+const CarouselContent = styled(Flex)`    
+    ${(props)=>{
+      if(props.animated){
+        return (`transition:transform ${ANIMATION_DURATION}ms ease;`);
+      }
+    }}
     transform: translateX(calc(-${props => props.position * ITEM_WIDTH_SM_VALUE}px));
     ${media.sm.css`
     transform: translateX(calc(-${props => props.position * ITEM_WIDTH_VALUE}px));
@@ -52,6 +57,10 @@ class CarouselContainer extends Component {
     return this.props.children.length || 1;
   }
 
+  getPosition(){
+    return this.props.position + 1;
+  }
+
 
   render() {
     return (
@@ -62,12 +71,18 @@ class CarouselContainer extends Component {
       >
         <StyledCarouselContainer row>
           <Wrapper>
-            <CarouselContent position={this.props.position}>
+            <CarouselContent position={this.getPosition()} animated={this.props.animated}>
+              <CarouselSlot>
+                {this.props.children[this.props.children.length -1]}
+              </CarouselSlot>
               { this.props.children.map((child, index) => (
                 <CarouselSlot key={index}>
                   {child}
                 </CarouselSlot>
               )) }
+              <CarouselSlot>
+                {this.props.children[0]}
+              </CarouselSlot>
             </CarouselContent>
           </Wrapper>
         </StyledCarouselContainer>
