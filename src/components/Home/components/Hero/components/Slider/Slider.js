@@ -46,7 +46,7 @@ const ButtonsContainer = styled(Flex)`
 `;
 
 const StyledBuy = styled(Buy)`
-  padding: ${rem(SPACE[3])} ${rem(SPACE[5])};
+  padding: ${rem(SPACE[4])} ${rem(SPACE[5])};
   margin-bottom:${rem(SPACE[3])};
   
   ${media.sm.css`
@@ -57,7 +57,7 @@ const StyledBuy = styled(Buy)`
 `;
 
 const StyledDownloads = styled(Button)`
-  padding: ${rem(SPACE[3])} ${rem(SPACE[5])};
+  padding: ${rem(SPACE[4])} ${rem(SPACE[5])};
 
   ${media.sm.css`
     margin-left:${rem(SPACE[5])};
