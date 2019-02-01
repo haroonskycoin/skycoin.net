@@ -33,24 +33,24 @@ const CarouselContent = styled(Flex)`
   transform: translateX(calc(-${props => props.position * ITEM_WIDTH_SM_VALUE}px));
   ${media.sm.css`
     transform: translateX(calc(-${props => props.position * ITEM_WIDTH_VALUE}px));
-  `}    
+`}    
 `;
 
 const Wrapper = styled(Flex)`
   width:${ITEM_WIDTH_SM};    
     overflow: hidden;
 
-    ${media.sm.css`
+  ${media.sm.css`
     width: ${ITEM_WIDTH};
-  `}
+`}
 `;
 
 const CarouselSlot = styled(Flex)`
 width:${ITEM_WIDTH_SM};
 
-    ${media.sm.css`
+  ${media.sm.css`
       width: ${ITEM_WIDTH};
-  `}
+`}
 `;
 
 class CarouselContainer extends Component {
