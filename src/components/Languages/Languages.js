@@ -25,6 +25,7 @@ const StyledLink = styled(Link)`
 export default () => (
   <Languages>
     <Language><StyledLink to="/">English</StyledLink></Language>
+    <Language><StyledLink to="/fr/">Français</StyledLink></Language>
     <Flag
       name="chinese"
       render={() => (
