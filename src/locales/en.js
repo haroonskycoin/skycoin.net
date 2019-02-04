@@ -1006,6 +1006,16 @@ export default {
         },
       },
     },
+    cx:{
+      hero: {
+        hero: {
+          title: 'CX',
+          heading: 'CX is Skycoin\'s specification and programming language, packed full of features. It allows for the creation of complex contractual agreements that are build with security in mind.',
+          button1: 'Download now',
+          button2: 'Learn more'
+        }
+      }
+    }
   },
 };
 
