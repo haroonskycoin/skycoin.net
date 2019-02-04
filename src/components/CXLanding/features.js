@@ -1,31 +1,41 @@
 
-import speed from './images/speed.svg';
-import privacy from './images/privacy.svg';
-import internet from './images/internet.svg';
-import security from './images/security.svg';
-import ecosystem from './images/ecosystem.svg';
+import affordance from './images/affordance.svg';
+import typing from './images/typing.svg';
+import object from './images/object.svg';
+import more from './images/more.svg';
 
 
 const features = [{
   title: 'landing.cx.features.affordance.title',
   description: 'landing.cx.features.affordance.description',
-  image: speed,
+  image: affordance,
+  width:182,
+  height:171,
 }, {
   title: 'landing.cx.features.typing.title',
   description: 'landing.cx.features.typing.description',
-  image: privacy,
+  image: typing,
+  width:158,
+  height:128,
 }, {
   title: 'landing.cx.features.object.title',
   description: 'landing.cx.features.object.description',
-  image: security,
-}, {
-  title: 'landing.cx.features.ecosystem.title',
-  description: 'landing.cx.features.ecosystem.description',
-  image: ecosystem,
+  image: object,
+  width:183,
+  height:101,
 }, {
   title: 'landing.cx.features.more.title',
-  description: 'landing.cx.features.more.description',
-  image: internet,
+  image: more,
+  width:153,
+  height:88,
+  list:[
+    'landing.cx.features.more.list.deterministic',
+    'landing.cx.features.more.list.compiled',
+    'landing.cx.features.more.list.extensive',
+    'landing.cx.features.more.list.active',
+    'landing.cx.features.more.list.videogame',
+    'landing.cx.features.more.list.system',
+  ]
 }];
 
 export default features;

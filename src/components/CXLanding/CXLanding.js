@@ -18,7 +18,7 @@ import WatchNow from './components/WatchNow';
 import StartNow from './components/StartNow';
 import FeatureItem from './components/FeatureItem';
 
-import banner from './images/skywire.svg';
+import banner from './images/banner.svg';
 
 const LandingContainer = styled.div`
   background-color: ${COLOR.lightGrey};
@@ -45,6 +45,10 @@ const BottomWrapper = styled(Flex)`
   margin-bottom:${rem(SPACE[9])};
 `;
 
+const BottomButtonsWrapper = styled(Flex)`
+flex-direction:row;
+`;
+
 const BottomHeading = styled(DividerHeading)`
   line-height:${rem(SPACE[9])};  
 
@@ -56,12 +60,12 @@ const BottomHeading = styled(DividerHeading)`
 
 const StyledBottomButton = styled(Button)`
   color:${COLOR.white};
-  background-color:${COLOR.base};
+  background-color:${(props)=>props.bg?props.bg:COLOR.base};
   border-radius:5px;
   padding: ${rem(SPACE[4])} ${rem(SPACE[5])};
 
   &:hover{
-    background-color:${COLOR.base};
+    background-color:${(props)=>props.bg?props.bg:COLOR.base};
   }
 `;
 
@@ -78,30 +82,36 @@ const CXLanding = ({ intl }) => (
       banner={banner}
       title="landing.cx.hero.title"
       description="landing.cx.hero.heading"
-      button1Text="landing.cx.hero.button1"
-      to1="/skywire"
-      button2Text="landing.cx.hero.button2"
-      to2="/skywire"
+      buttonText="landing.cx.hero.button1"
+      to="/skywire"
     />
     <Container>
       <WatchNow />
       <StartNow />
       <DividerHeading as="h2" heavy fontSize={rem(FONT_SIZES[7])}>
-        <FormattedMessage id="landing.skyware.divider" />
+        <FormattedMessage id="landing.cx.divider" />
       </DividerHeading>
       { features.map(item =>
         (<FeatureItem
           title={item.title}
           description={item.description}
           image={item.image}
+          list={item.list}
+          iconWidth={item.width}
+          iconHeight={item.height}
         />))}
       <BottomWrapper>
         <BottomHeading heavy textAlign="center" fontSize={rem(FONT_SIZES[7])}>
-          <FormattedHTMLMessage id="landing.skyware.bottom.text" />
+          <FormattedHTMLMessage id="landing.cx.bottom.text" />
         </BottomHeading>
-        <StyledBottomButton href="https://store.skycoin.com">
-          <FormattedMessage id="landing.skyware.bottom.button" />
-        </StyledBottomButton>
+        <BottomButtonsWrapper>
+          <StyledBottomButton href="" mr={rem(SPACE[4])}>
+            <FormattedMessage id="landing.cx.bottom.button1" />
+          </StyledBottomButton>
+          <StyledBottomButton href="" ml={rem(SPACE[4])} bg={COLOR.darkGrey}>
+            <FormattedMessage id="landing.cx.bottom.button2" />
+          </StyledBottomButton>
+        </BottomButtonsWrapper>
       </BottomWrapper>
     </Container>
     <Footer />

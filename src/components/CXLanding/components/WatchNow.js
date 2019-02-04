@@ -13,7 +13,7 @@ import Link from 'components/Link';
 import Title from './Title';
 import { SPACE } from '../../../config';
 
-import watchNow from '../images/watch_now.png';
+import watchNow from '../images/watchNow.png';
 import videos from '../videos';
 
 const Icon = styled.img`

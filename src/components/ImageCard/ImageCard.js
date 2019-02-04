@@ -24,6 +24,10 @@ const Icon = styled.img.attrs({
 
 const CardWrapper = styled.div`
   padding:7px;
+
+  ${media.md.css`
+  width:100%;
+  `}
 `;
 
 const Card = styled(Flex)`
@@ -92,9 +96,9 @@ ImageWrapper.propTypes = {
   ]).isRequired,
 };
 
-export const ImageContainer = ({ height, width, image }) =>
+export const ImageContainer = ({ height, width, image,iconWidth,iconHeight }) =>
   (<ImageWrapper width={width} justify="center" align="center" px={5} height={height}>
-    <Icon src={image} />
+    <Icon src={image} width={iconWidth} height={iconHeight}/>
   </ImageWrapper>
   );
 
@@ -109,8 +113,21 @@ ImageContainer.propTypes = {
     PropTypes.number,
     PropTypes.object,
   ]).isRequired,
+  iconHeight: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
+  iconWidth: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
   image: PropTypes.string.isRequired,
 };
+
+ImageContainer.defaultProps = {
+  iconWidth:'auto',
+  iconHeight:'auto'
+}
 
 const ImageFullWrapper = styled(Flex)`    
   align-items: center;
