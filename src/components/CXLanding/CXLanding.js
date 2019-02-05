@@ -8,7 +8,7 @@ import { Flex } from 'grid-styled';
 
 import Heading from 'components/Heading';
 import Footer from 'components/Footer';
-import Hero from 'components/Hero';
+import Hero from './components/Hero';
 import Button from 'components/Button';
 
 import features from './features';
@@ -82,8 +82,10 @@ const CXLanding = ({ intl }) => (
       banner={banner}
       title="landing.cx.hero.title"
       description="landing.cx.hero.heading"
-      buttonText="landing.cx.hero.button1"
-      to="/skywire"
+      buttonText1="landing.cx.hero.button1"
+      to1=""
+      buttonText2="landing.cx.hero.button2"
+      to2=""
     />
     <Container>
       <WatchNow />
