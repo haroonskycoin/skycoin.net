@@ -8,14 +8,6 @@ import Text from 'components/Text';
 import Title from './Title';
 
 import startNow from '../images/startNow.png';
-import { COLOR } from '../../../config';
-
-
-const SpanLight = styled.span`
-  font-weight:100;
-  color:${COLOR.textGrey};
-  font-style:italic;
-`;
 
 const StyledText = styled(Text)`
   display:flex;
@@ -29,8 +21,8 @@ const StartNow = () => {
   const image = <ImageFullContainer image={startNow} width={['320px', 'auto', 'auto']} height="320px" />;
   return (
     <ImageCard flexDirection="row-reverse" width={['320px', '320px', 'auto']} align="center" image={image}>
-    <Title id="landing.cx.start.title" />
-    <StyledText><FormattedMessage id="landing.cx.start.description" /></StyledText>
+      <Title id="landing.cx.start.title" />
+      <StyledText><FormattedMessage id="landing.cx.start.description" /></StyledText>
     </ImageCard>
   );
 };

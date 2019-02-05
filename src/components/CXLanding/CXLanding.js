@@ -8,9 +8,9 @@ import { Flex } from 'grid-styled';
 
 import Heading from 'components/Heading';
 import Footer from 'components/Footer';
-import Hero from './components/Hero';
 import Button from 'components/Button';
 
+import Hero from './components/Hero';
 import features from './features';
 import { COLOR, SPACE, FONT_SIZES } from '../../config';
 
@@ -60,12 +60,12 @@ const BottomHeading = styled(DividerHeading)`
 
 const StyledBottomButton = styled(Button)`
   color:${COLOR.white};
-  background-color:${(props)=>props.bg?props.bg:COLOR.base};
+  background-color:${props => (props.bg ? props.bg : COLOR.base)};
   border-radius:5px;
   padding: ${rem(SPACE[4])} ${rem(SPACE[5])};
 
   &:hover{
-    background-color:${(props)=>props.bg?props.bg:COLOR.base};
+    background-color:${props => (props.bg ? props.bg : COLOR.base)};
   }
 `;
 

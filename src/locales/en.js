@@ -1006,56 +1006,56 @@ export default {
         },
       },
     },
-    cx:{
+    cx: {
       hero: {
         title: 'CX',
         heading: 'CX is Skycoin\'s specification and programming language, packed full of features. It allows for the creation of complex contractual agreements that are build with security in mind.',
         button1: 'Download now',
-        button2: 'Learn more'
+        button2: 'Learn more',
       },
       watchNow: {
-        title:'Watch now!',
-        description:'Check out the video below to get an introduction on the CX programming language by the lead developer Amaury Aguila. ',
+        title: 'Watch now!',
+        description: 'Check out the video below to get an introduction on the CX programming language by the lead developer Amaury Aguila. ',
         youtube: {
-          introduction:'CX Introduction'
-        }
-      },
-      start:{
-        title:'Start now!',
-        description:'Download CX now and start working on a project.  Join the CX group on Telegram to share your work, get help, gain inspiration and much more.  There is even a group dedicated to making games with CX.',
-      },
-      divider:'CX will provide numerous advancements within the Skycoin project.',
-      features:{
-        affordance:{
-          title:'Affordances',
-          description:'The utilization of affordances allows the permission of packages to be granted or rejected from specific users, aiding in the ability of programmers to confidently create secure code.',
+          introduction: 'CX Introduction',
         },
-        typing:{
-          title:'Strict typing system',
-          description:'Explicit type casting reduces errors and makes CX constitutionally secure for programmers.',
-        },
-        object:{
-          title:'Object explorer',
-          description:'Programmers will have access to an object explorer which will show a graphical view of all objects and their current memory allocation.',
-        },
-        more:{
-          title:'More features...',
-          list:{
-            deterministic:'Deterministic language',
-            compiled:'Compiled & interpreted language',
-            extensive:'Extensive documentation',
-            active:'Active development',
-            videogame:'Video game development',
-            system:'Mac, Linux and Windows support',
-          }
-        }
       },
-      bottom:{
-        text:'Start developing now with CX. Either download it from Github or try the CX playground.',
-        button1:'Download',
-        button2:'CX Playground'
-      }
-    }
+      start: {
+        title: 'Start now!',
+        description: 'Download CX now and start working on a project.  Join the CX group on Telegram to share your work, get help, gain inspiration and much more.  There is even a group dedicated to making games with CX.',
+      },
+      divider: 'CX will provide numerous advancements within the Skycoin project.',
+      features: {
+        affordance: {
+          title: 'Affordances',
+          description: 'The utilization of affordances allows the permission of packages to be granted or rejected from specific users, aiding in the ability of programmers to confidently create secure code.',
+        },
+        typing: {
+          title: 'Strict typing system',
+          description: 'Explicit type casting reduces errors and makes CX constitutionally secure for programmers.',
+        },
+        object: {
+          title: 'Object explorer',
+          description: 'Programmers will have access to an object explorer which will show a graphical view of all objects and their current memory allocation.',
+        },
+        more: {
+          title: 'More features...',
+          list: {
+            deterministic: 'Deterministic language',
+            compiled: 'Compiled & interpreted language',
+            extensive: 'Extensive documentation',
+            active: 'Active development',
+            videogame: 'Video game development',
+            system: 'Mac, Linux and Windows support',
+          },
+        },
+      },
+      bottom: {
+        text: 'Start developing now with CX. Either download it from Github or try the CX playground.',
+        button1: 'Download',
+        button2: 'CX Playground',
+      },
+    },
   },
 };
 

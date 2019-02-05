@@ -96,9 +96,9 @@ ImageWrapper.propTypes = {
   ]).isRequired,
 };
 
-export const ImageContainer = ({ height, width, image,iconWidth,iconHeight }) =>
+export const ImageContainer = ({ height, width, image, iconWidth, iconHeight }) =>
   (<ImageWrapper width={width} justify="center" align="center" px={5} height={height}>
-    <Icon src={image} width={iconWidth} height={iconHeight}/>
+    <Icon src={image} width={iconWidth} height={iconHeight} />
   </ImageWrapper>
   );
 
@@ -125,9 +125,9 @@ ImageContainer.propTypes = {
 };
 
 ImageContainer.defaultProps = {
-  iconWidth:'auto',
-  iconHeight:'auto'
-}
+  iconWidth: 'auto',
+  iconHeight: 'auto',
+};
 
 const ImageFullWrapper = styled(Flex)`    
   align-items: center;

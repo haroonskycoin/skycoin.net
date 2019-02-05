@@ -87,7 +87,7 @@ const StyledButton = styled(Button)`
   `}
 `;
 
-const Hero = ({ title, description, banner,buttonText1, to1,buttonText2, to2 }) => (
+const Hero = ({ title, description, banner, buttonText1, to1, buttonText2, to2 }) => (
   <Wrapper column banner={banner}>
     <StyledLogoContainer>
       <Container>
@@ -103,10 +103,10 @@ const Hero = ({ title, description, banner,buttonText1, to1,buttonText2, to2 }) 
           <Paragraph heavy as="h1" fontSize={[3]} color="white">
             <FormattedMessage id={description} />
           </Paragraph>
-          <StyledButton big color="#fff" bg={COLOR.base} width={['auto']} mt={5} mr={[0,rem(SPACE[3]),rem(SPACE[3])]} to={to1}>
+          <StyledButton big color="#fff" bg={COLOR.base} width={['auto']} mt={5} mr={[0, rem(SPACE[3]), rem(SPACE[3])]} to={to1}>
             <FormattedMessage id={buttonText1} />
           </StyledButton>
-          <StyledButton big color="#fff" bg={COLOR.darkGrey} width={['auto']} mt={5} ml={[0,rem(SPACE[3]),rem(SPACE[3])]} to={to2}>
+          <StyledButton big color="#fff" bg={COLOR.darkGrey} width={['auto']} mt={5} ml={[0, rem(SPACE[3]), rem(SPACE[3])]} to={to2}>
             <FormattedMessage id={buttonText2} />
           </StyledButton>
         </IntroContent>
