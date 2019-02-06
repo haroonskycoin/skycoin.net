@@ -897,7 +897,7 @@ export default {
     about: {
       heading: 'Qu\'est-ce que Obelisk?',
       subheading: 'L\'ALGORITHME RÉVOLUTIONNAIRE DE CONSENSUS SKYCOIN',
-      quote: '«Les problèmes de centralisation, les attaques à 51%, les problèmes d’exploitation minière, la lenteur des transactions et le gaspillage d’énergie ne sont que quelques-uns des inconvénients majeurs des anciens algorithmes de consensus. Pour remédier à cela, Skycoin a développé Obelisk, le nouvel algorithme de consensus distribué qui résout les problèmes des générations précédentes et les rend obsolètes. ”',
+      quote: '"Les problèmes de centralisation, les attaques à 51%, les problèmes d’exploitation minière, la lenteur des transactions et le gaspillage d’énergie ne sont que quelques-uns des inconvénients majeurs des anciens algorithmes de consensus. Pour remédier à cela, Skycoin a développé Obelisk, le nouvel algorithme de consensus distribué qui résout les problèmes des générations précédentes et les rend obsolètes."',
       author: 'Medium.com',
       paragraph1: 'Obelisk est un algorithme de consensus révolutionnaire basé sur un réseau de confiance, conçu pour éliminer les problèmes introduits par les générations de consensus précédentes dans l’espace de la blockchain. L’architecture Web-of-trust crée un système parfait d’équilibres, permettant à la communauté et aux autres nœuds d’auditer le comportement du réseau avec un degré élevé de précision.',
       paragraph2: 'Avec la possibilité de couper les nœuds suspects pour comportement malveillant, le réseau devient plus fort. La mise en quarantaine des noeuds permet de gérer la confiance et, simultanément, ce processus permet à la communauté de rééquilibrer le pouvoir sur le réseau.',
