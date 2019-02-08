@@ -10,7 +10,6 @@ import SignUpSection from 'components/SignUpSection';
 
 import EcosystemSection from './components/EcosystemSection';
 import About from './components/About';
-import Roadmap from './components/Roadmap';
 import Whitepaper from './components/Whitepaper';
 
 import banner from './ecosystem.svg';
@@ -29,7 +28,6 @@ const Ecosystem = ({ intl }) => (
     <TopBanner src={banner} />
     <EcosystemSection />
     <About />
-    <Roadmap />
     <Whitepaper />
     <SignUpSection />
     <Footer />

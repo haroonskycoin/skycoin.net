@@ -49,7 +49,7 @@ const Whitepaper = () => (
             <FormattedHTMLMessage id="ecosystem.whitepaper.body" />
           </Text>
           <Btn
-            href="https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.0.pdf"
+            href="https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.1.pdf"
             color="base"
             bg="white"
             pill
