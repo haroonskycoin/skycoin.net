@@ -481,7 +481,7 @@ export default {
     description: 'Skywire Miner: hardware for the new internet',
     hero: {
       heading: 'Skyminer: <br/>Hardware for the new internet.',
-      button: 'JOIN THE WAIT LIST',
+      button: 'BUY NOW',
     },
     about: {
       heading: 'Explore Skyminer',

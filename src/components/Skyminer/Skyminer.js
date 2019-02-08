@@ -11,7 +11,6 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import News from './components/News';
 import Video from './components/Video';
-import Newsletter from './components/Newsletter';
 
 
 class Ecosystem extends React.PureComponent {
@@ -27,7 +26,7 @@ class Ecosystem extends React.PureComponent {
   }
 
   handleScrollToSection() {
-    this.newsletter.scrollIntoView({ behavior: 'smooth' });
+    window.location = 'https://store.skycoin.net/products/skyminer';
   }
 
   render() {
@@ -48,8 +47,6 @@ class Ecosystem extends React.PureComponent {
         <WhitelistSignUp />
         <Video />
         <Gallery />
-        <Newsletter setRef={this.setRef} />
-
         <Footer />
       </div>
     );
