@@ -46,7 +46,7 @@ export default () => (
           </Text>
           <Flex mt={2} mb={[2, 4]} mx={-2} wrap>
             <Button
-              href={'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.1.pdf'}
+              href={'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.0.pdf'}
               target="_blank"
               color="base"
               pill
