@@ -16,10 +16,6 @@ const Language = styled.span`
 const StyledLink = styled(Link)`
   text-decoration: none;
   line-height:50px;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `;
 
 export default () => (
