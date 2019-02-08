@@ -27,7 +27,6 @@ const Downloads = ({ intl }) => (
     <Header />
     <TopBanner src={bg} />
     <Wallet />
-    <BBS />
     <Whitepappers />
     <Assets />
     <Skywire />
