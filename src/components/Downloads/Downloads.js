@@ -10,7 +10,6 @@ import TopBanner from 'components/TopBanner';
 import Whitepappers from 'components/WhitepapersPage/components/Whitepapers';
 import Assets from './components/Assets';
 import Wallet from './components/Wallet';
-import BBS from './components/BBS';
 import Skywire from './components/Skywire';
 
 import bg from './bg.svg';
@@ -27,7 +26,6 @@ const Downloads = ({ intl }) => (
     <Header />
     <TopBanner src={bg} />
     <Wallet />
-    <BBS />
     <Whitepappers />
     <Assets />
     <Skywire />
