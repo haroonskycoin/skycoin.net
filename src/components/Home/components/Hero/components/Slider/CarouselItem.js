@@ -5,6 +5,7 @@ import { FormattedMessage } from 'react-intl';
 import { FONT_FAMILIES, COLOR, FONT_SIZES } from 'config';
 import { Flex } from 'grid-styled';
 import { rem } from 'polished';
+import Link from 'components/Link';
 
 import Heading from 'components/Heading';
 
@@ -28,21 +29,32 @@ const CarouselItemContainer = styled(Flex)`
   flex-direction:column;
 `;
 
-const CarouselItem = ({ title, content, position, numItems }) =>
-  (<CarouselItemContainer>
-    <Heading heavy as="h6" color="white" fontSize={[4, 5, 5]} mb={[2]}>
-      <StyledSpan>{position}/{numItems}.</StyledSpan> <FormattedMessage id={title} />
-    </Heading>
-    <Paragraph>
-      <FormattedMessage id={content} />
-    </Paragraph>
-  </CarouselItemContainer>);
+const StyledLink = styled(Link)`
+  text-decoration:none;
+`;
+
+const CarouselItem = ({ title, content, position, numItems, to }) =>
+  (<StyledLink to={to}>
+    <CarouselItemContainer>
+      <Heading heavy as="h6" color="white" fontSize={[4, 5, 5]} mb={[2]}>
+        <StyledSpan>{position}/{numItems}.</StyledSpan> <FormattedMessage id={title} />
+      </Heading>
+      <Paragraph>
+        <FormattedMessage id={content} />
+      </Paragraph>
+    </CarouselItemContainer>
+  </StyledLink>);
 
 CarouselItem.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   position: PropTypes.number.isRequired,
   numItems: PropTypes.number.isRequired,
+  to: PropTypes.string,
+};
+
+CarouselItem.defaultProps = {
+  to: '',
 };
 
 export default CarouselItem;

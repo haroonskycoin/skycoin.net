@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 import { rem, rgba } from 'polished';
+import Carousel from 'nuka-carousel';
 
 import Fa from '@fortawesome/react-fontawesome';
 import faChevronLeft from '@fortawesome/fontawesome-free-solid/faChevronLeft';
@@ -19,7 +20,14 @@ import Heading from 'components/Heading';
 
 import { SPACE, COLOR, FONT_SIZES } from 'config';
 import CarouselItem from './CarouselItem';
-import CarouselContainer, { ITEM_WIDTH } from './CarouselContainer';
+
+const AUTOPLAY_INTERVAL = 6000;
+const ANIMATION_SPEED = 1000;
+const ITEM_WIDTH_VALUE = 450;
+const ITEM_WIDTH_SM_VALUE = 250;
+const ITEM_WIDTH_SM = `${ITEM_WIDTH_SM_VALUE}px`;
+const SLIDE_OFFSET = 40;
+const ITEM_WIDTH = `${ITEM_WIDTH_VALUE}px`;
 
 const Intro = styled(Box)`
   
@@ -85,35 +93,28 @@ Icon.propTypes = {
   icon: PropTypes.string.isRequired,
 };
 
-
-const TEXT_CYCLE = 6000;
+const StyledCarousel = styled(Carousel)`
+  width:${ITEM_WIDTH_SM} !important;
+  ${media.sm.css`
+    width:${ITEM_WIDTH} !important;
+  `}
+`;
 
 class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
       position: 0,
-      textCycle: true,
+      autoplay: true,
       timeoutId: null,
       sliderAnimated: true,
     };
   }
 
   componentDidMount() {
-    this.textCycle();
   }
 
   getNumItems = () => 5
-
-  textCycle() {
-    const timeoutId = setTimeout(() => {
-      if (this.state.textCycle) {
-        this.nextSlide();
-      }
-      this.textCycle();
-    }, TEXT_CYCLE);
-    this.setState({ timeoutId });
-  }
 
   clearTimeout = () => {
     if (this.state.timeoutId) {
@@ -124,59 +125,29 @@ class Slider extends Component {
 
 
   handlePrevSlide = () => {
-    this.setState({ sliderAnimated: true });
-    this.clearTimeout();
-    this.textCycle();
     this.prevSlide();
   }
 
   prevSlide = () => {
-    const position = this.state.position - 1;
-
-    if (position < 0) {
-      this.setState({ position: this.getNumItems(), sliderAnimated: false }, () => {
-        setTimeout(() => {
-          this.setState({ position: this.getNumItems() - 1, sliderAnimated: true });
-        }, 50);
-      });
-      return;
-    }
-    this.doSliding(position);
+    this.doSliding(this.state.position - 1);
   }
 
   handleNextSlide = () => {
-    this.setState({ sliderAnimated: true });
-    this.clearTimeout();
-    this.textCycle();
     this.nextSlide();
   }
 
   nextSlide = () => {
-    const position = this.state.position + 1;
-    const numItems = this.getNumItems();
+    this.doSliding(this.state.position + 1);
+  }
 
-    if (position > numItems - 1) {
-      this.setState({ position: -1, sliderAnimated: false }, () => {
-        setTimeout(() => {
-          this.setState({ position: 0, sliderAnimated: true });
-        }, 50);
-      });
-      return;
+  handleAfterSlide = (position) => {
+    if (this.state.position !== position) {
+      this.setState({ position });
     }
-
-    this.doSliding(position);
   }
 
   doSliding = (position) => {
     this.setState({ position });
-  }
-
-  handleMouseEnter = () => {
-    this.setState({ textCycle: false });
-  }
-
-  handleMouseLeave = () => {
-    this.setState({ textCycle: true });
   }
 
   render() {
@@ -191,19 +162,54 @@ class Slider extends Component {
               <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={rem(SPACE[3])} alignItem="center">
                 <FormattedMessage id="home.hero.heading" />
               </Heading>
-              <CarouselContainer
-                column
-                animated={this.state.sliderAnimated}
-                position={this.state.position}
-                onMouseEnter={this.handleMouseEnter}
-                onMouseLeave={this.handleMouseLeave}
+              <StyledCarousel
+                afterSlide={this.handleAfterSlide}
+                slideIndex={this.state.position}
+                autoplay={this.state.autoplay}
+                autoplayInterval={AUTOPLAY_INTERVAL}
+                slideOffset={SLIDE_OFFSET}
+                pauseOnHover
+                speed={ANIMATION_SPEED}
+                withoutControls
+                wrapAround
+                easing="easeLinear"
               >
-                <CarouselItem title="home.hero.slider.revolutionary.title" content="home.hero.slider.revolutionary.description" position={1} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.obelisk.title" content="home.hero.slider.obelisk.description" position={2} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.cx.title" content="home.hero.slider.cx.description" position={3} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.skywire.title" content="home.hero.slider.skywire.description" position={4} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.fiber.title" content="home.hero.slider.fiber.description" position={5} numItems={this.getNumItems()} />
-              </CarouselContainer>
+                <CarouselItem
+                  title="home.hero.slider.revolutionary.title"
+                  content="home.hero.slider.revolutionary.description"
+                  position={1}
+                  numItems={this.getNumItems()}
+                  to="/ecosystem"
+                />
+                <CarouselItem
+                  title="home.hero.slider.obelisk.title"
+                  content="home.hero.slider.obelisk.description"
+                  position={2}
+                  numItems={this.getNumItems()}
+                  to="/obelisk"
+                />
+                <CarouselItem
+                  title="home.hero.slider.cx.title"
+                  content="home.hero.slider.cx.description"
+                  position={3}
+                  numItems={this.getNumItems()}
+                  to="/cx"
+                />
+                <CarouselItem
+                  title="home.hero.slider.skywire.title"
+                  content="home.hero.slider.skywire.description"
+                  position={4}
+                  numItems={this.getNumItems()}
+                  to="/skywire"
+                />
+                <CarouselItem
+                  title="home.hero.slider.fiber.title"
+                  content="home.hero.slider.fiber.description"
+                  position={5}
+                  numItems={this.getNumItems()}
+                  to="/fiber"
+                />
+              </StyledCarousel>
               <ButtonsContainer row spaceBetween align="center" width={[1]}>
                 <StyledBuy color="white" bg="base" width={'100%'} pill>
                   <FormattedMessage id="home.hero.buy" />
