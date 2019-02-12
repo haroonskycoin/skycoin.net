@@ -54,7 +54,7 @@ CarouselItem.propTypes = {
 };
 
 CarouselItem.defaultProps = {
-  to: ''
-}
+  to: '',
+};
 
 export default CarouselItem;
