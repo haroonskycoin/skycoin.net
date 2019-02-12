@@ -174,11 +174,41 @@ class Slider extends Component {
                 wrapAround
                 easing="easeLinear"
               >
-                <CarouselItem title="home.hero.slider.revolutionary.title" content="home.hero.slider.revolutionary.description" position={1} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.obelisk.title" content="home.hero.slider.obelisk.description" position={2} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.cx.title" content="home.hero.slider.cx.description" position={3} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.skywire.title" content="home.hero.slider.skywire.description" position={4} numItems={this.getNumItems()} />
-                <CarouselItem title="home.hero.slider.fiber.title" content="home.hero.slider.fiber.description" position={5} numItems={this.getNumItems()} />
+                <CarouselItem
+                  title="home.hero.slider.revolutionary.title"
+                  content="home.hero.slider.revolutionary.description"
+                  position={1}
+                  numItems={this.getNumItems()}
+                  to="/ecosystem"
+                />
+                <CarouselItem
+                  title="home.hero.slider.obelisk.title"
+                  content="home.hero.slider.obelisk.description"
+                  position={2}
+                  numItems={this.getNumItems()}
+                  to="/obelisk"
+                />
+                <CarouselItem
+                  title="home.hero.slider.cx.title"
+                  content="home.hero.slider.cx.description"
+                  position={3}
+                  numItems={this.getNumItems()}
+                  to="/cx"
+                />
+                <CarouselItem
+                  title="home.hero.slider.skywire.title"
+                  content="home.hero.slider.skywire.description"
+                  position={4}
+                  numItems={this.getNumItems()}
+                  to="/skywire"
+                />
+                <CarouselItem
+                  title="home.hero.slider.fiber.title"
+                  content="home.hero.slider.fiber.description"
+                  position={5}
+                  numItems={this.getNumItems()}
+                  to="/fiber"
+                />
               </StyledCarousel>
               <ButtonsContainer row spaceBetween align="center" width={[1]}>
                 <StyledBuy color="white" bg="base" width={'100%'} pill>
