@@ -172,7 +172,7 @@ class Slider extends Component {
                 speed={ANIMATION_SPEED}
                 withoutControls
                 wrapAround
-                easing="linear"
+                easing="easeLinear"
               >
                 <CarouselItem title="home.hero.slider.revolutionary.title" content="home.hero.slider.revolutionary.description" position={1} numItems={this.getNumItems()} />
                 <CarouselItem title="home.hero.slider.obelisk.title" content="home.hero.slider.obelisk.description" position={2} numItems={this.getNumItems()} />
