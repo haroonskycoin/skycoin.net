@@ -6,12 +6,11 @@ import momentPropTypes from 'react-moment-proptypes';
 import { Flex, Box } from 'grid-styled';
 import PropTypes from 'prop-types';
 import isEqual from 'lodash/isEqual';
+import { rem } from 'polished';
 
-import Heading from 'components/Heading';
-import Text from 'components/Text';
 import Link from 'components/Link';
 
-import { COLOR, BOX_SHADOWS, BORDER_RADIUS, FONT_SIZES } from 'config';
+import { COLOR, BOX_SHADOWS, BORDER_RADIUS, FONT_SIZES, FONT_FAMILIES } from 'config';
 
 import placeholder from './placeholder.svg';
 
@@ -52,8 +51,12 @@ const NewsContainer = styled.div`
   border-radius: ${BORDER_RADIUS.base};
 `;
 
-const DateText = styled(Text)`
+const DateText = styled.p`
   margin: 0;
+  color:${COLOR.textLight};
+  font-size:${2};
+  font-family: ${FONT_FAMILIES.sans};
+  line-height: ${rem(24)};
 `;
 
 const StyledLink = styled(Link)`
@@ -63,15 +66,34 @@ const StyledLink = styled(Link)`
   color: #000;
 `;
 
-const StyledHeading = styled(Heading)`
+const StyledHeading = styled.h4`
+  font-family:${FONT_FAMILIES.sans};
+  font-weight: 400;
   line-height: 1.5;
-  height: ${props => FONT_SIZES[props.fontSize] * 1.5 * 2}px;
+  height: ${FONT_SIZES[4] * 1.5 * 2}px;
   overflow: hidden;
+  margin-bottom:${1};
 `;
 
 
 const NewsItem = ({ title, date, href, image }) => (
   <Flex width={[1, 1 / 2, 1 / 3]} px={[3]} pb={4} mb={[6, 8]} align="flex-start">
+    <StyledLink href={href} target="_blank">
+      <NewsContainer>
+        <ImageContainer>
+          {image ? <ImageBg bg={image} /> : <Image src={placeholder} />}
+        </ImageContainer>
+        <Box px={7} pb={10} pt={6}>
+          <DateText> {date.format('MMMM DD, YYYY')}</DateText>
+          <StyledHeading>{title}</StyledHeading>
+        </Box>
+      </NewsContainer>
+    </StyledLink>
+  </Flex>
+);
+
+/*
+<Flex width={[1, 1 / 2, 1 / 3]} px={[3]} pb={4} mb={[6, 8]} align="flex-start">
     <StyledLink href={href} target="_blank">
       <NewsContainer>
         <ImageContainer>
@@ -88,7 +110,8 @@ const NewsItem = ({ title, date, href, image }) => (
       </NewsContainer>
     </StyledLink>
   </Flex>
-);
+
+*/
 
 NewsItem.propTypes = {
   title: PropTypes.string.isRequired,
