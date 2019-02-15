@@ -11,8 +11,9 @@ import { rem } from 'polished';
 import { COLOR, SPACE } from 'config';
 import media from 'utils/media';
 
+const videoHeight = '480';
 const playerOptions = {
-  height: '480',
+  height: videoHeight,
   width: '854',
   playerVars: {
     rel: 0,
@@ -32,14 +33,14 @@ const Wrapper = styled(Box)`
 const VideoWrapper = styled.div`
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  height:${videoHeight/2}px;
   padding-bottom: 25px;
-  height: 0;
   margin-top: ${rem(SPACE[5])};
   margin-bottom: ${rem(SPACE[4])};
   
   ${media.sm.css`
-    margin-top: ${rem(SPACE[8])};  
+    margin-top: ${rem(SPACE[8])}; 
+    height:${videoHeight}px; 
   `}
   
   & > span {

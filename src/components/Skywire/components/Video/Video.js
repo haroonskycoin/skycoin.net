@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box } from 'grid-styled';
+import { Box,Flex } from 'grid-styled';
 import YouTube from 'react-youtube';
 import Container from 'components/Container';
+import media from 'utils/media';
 
 import { COLOR } from 'config';
 
+const videoHeight = '480';
 const playerOptions = {
-  height: '480',
+  height: videoHeight,
   width: '854',
   playerVars: {
     rel: 0,
@@ -20,12 +22,15 @@ const Wrapper = styled(Box)`
   background: ${COLOR.lightBlue};
 `;
 
-const VideoWrapper = styled.div`
+const VideoWrapper = styled(Box)`
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
   padding-bottom: 25px;
-  height: 0;
+  height:${videoHeight/2}px;
+
+  ${media.sm.css`
+    height:${videoHeight}px;
+  `}
   
   & > span {
     display: block;
