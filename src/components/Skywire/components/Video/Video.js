@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box,Flex } from 'grid-styled';
+import { Box } from 'grid-styled';
 import YouTube from 'react-youtube';
 import Container from 'components/Container';
 import media from 'utils/media';
@@ -26,7 +26,7 @@ const VideoWrapper = styled(Box)`
   position: relative;
   width: 100%;
   padding-bottom: 25px;
-  height:${videoHeight/2}px;
+  height:${videoHeight / 2}px;
 
   ${media.sm.css`
     height:${videoHeight}px;

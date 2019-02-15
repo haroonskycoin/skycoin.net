@@ -33,7 +33,7 @@ const Wrapper = styled(Box)`
 const VideoWrapper = styled.div`
   position: relative;
   width: 100%;
-  height:${videoHeight/2}px;
+  height:${videoHeight / 2}px;
   padding-bottom: 25px;
   margin-top: ${rem(SPACE[5])};
   margin-bottom: ${rem(SPACE[4])};
