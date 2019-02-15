@@ -71,5 +71,8 @@
     "prepublish": "npm run snyk-protect",
     "release": "npm version patch -m 'chore: bump version to [version %s]' && git push upstream --tags"
   },
+  "resolutions": {
+    "styled-components": "2.1.0"
+  },
   "snyk": true
 }
