@@ -1078,8 +1078,8 @@ export default {
     table: {
       headers: {
         name: 'Name',
-        link: 'link',
-        markets: 'markets',
+        link: 'Link',
+        markets: 'Markets',
       },
     },
   },
