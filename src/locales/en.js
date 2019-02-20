@@ -1057,6 +1057,32 @@ export default {
       },
     },
   },
+  exchanges: {
+    any: 'Any',
+    title: 'Exchanges',
+    description: 'Exchanges',
+    exchanges: 'Exchanges',
+    binance: 'Binance',
+    lbank: 'LBank',
+    c2cx: 'C2CX',
+    bitbns: 'Bitbns',
+    '9coin': '9coin',
+    chaoex: 'ChaoEx',
+    cryptopia: 'Cryptopia',
+    iquant: 'iQuant',
+    coinSwaps: 'Coin Swaps',
+    swaplab: 'Swaplab',
+    coinswitch: 'Coinswitch',
+    fiat: 'Fiat',
+    creditDebitCard: 'Cred/Debit Card',
+    table: {
+      headers: {
+        name: 'Name',
+        link: 'link',
+        markets: 'markets',
+      },
+    },
+  },
 };
 
 /* eslint-enable max-len */
