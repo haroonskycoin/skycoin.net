@@ -35,74 +35,35 @@ const GalleryWrapper = styled(Flex)`
     }
   }
   
-  ${StyledBox}:nth-child(4) {
-    width: 100%;
-    order: 4;
-    
-    ${media.sm.css`
-      width: 33%;
-      order: 5;
-    `}
-  
-    ${ImgWrap} {
-      padding-top: 68.6%;
-    }
-  }
-  
   ${StyledBox}:nth-child(2) {
-      width: 50%;
+    width: 100%;
     
     ${media.sm.css`
-      width: 24%;
+      width: 43%;
     `}
   
     ${ImgWrap} {
-      padding-top: 97.6%;
-    }
-  
-  }
-  
-  ${StyledBox}:nth-child(6) {
-    width: 50%;
-    order: 3;    
-    
-    ${media.sm.css`
-      width: 24%;
-      order: 6;
-    `}
-  
-    ${ImgWrap} {
-      padding-top: 97.6%;
+      padding-top: 52%;
     }
   }
+
   
   ${StyledBox}:nth-child(3) {
-    width: 100%;
-    order: 4;
+      width: 100%;
     
     ${media.sm.css`
-      width: 43%;
-      order: 3;
+      width: 24%;
     `}
   
     ${ImgWrap} {
-      padding-top: 52%;
+      padding-top: 97.6%;
     }
+  
   }
   
-  ${StyledBox}:nth-child(5) {
-    width: 100%;
-    order: 6;
-    
-    ${media.sm.css`
-      width: 43%;
-      order: 5;
-    `}
+ 
   
-    ${ImgWrap} {
-      padding-top: 52%;
-    }
-  }
+  
 `;
 
 const GraphicItem = ({ src }) => (
