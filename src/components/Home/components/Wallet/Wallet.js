@@ -14,9 +14,6 @@ const images = [
   img.wallet1,
   img.wallet2,
   img.wallet3,
-  img.wallet4,
-  img.wallet5,
-  img.wallet6,
 ];
 
 const StyledFlex = styled(Flex)`
