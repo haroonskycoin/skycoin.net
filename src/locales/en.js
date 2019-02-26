@@ -943,7 +943,7 @@ export default {
     title: 'You can buy SKY using crypto, your your credit card or an exchange',
     bitcoin: 'Crypto',
     creditCard: 'Credit card',
-    exchanges:'Exchanges'
+    exchanges: 'Exchanges',
   },
   buyFiat: {
     title: 'Buy SKY with credit card',
