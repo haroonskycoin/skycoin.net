@@ -782,6 +782,7 @@ export default {
     title: 'You can buy SKY using crypto or your credit card',
     bitcoin: 'Crypto',
     creditCard: 'Credit card',
+    exchanges: 'Exchanges',
   },
   buyFiat: {
     title: 'Buy SKY with credit card',

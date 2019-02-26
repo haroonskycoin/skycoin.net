@@ -79,6 +79,9 @@ const BuyOptionsPage = () => (<div>
         <StyledButton to="/buy-fiat" {...buttonsProps} >
           <FormattedMessage id="buyOptions.creditCard" />
         </StyledButton>
+        <StyledButton to="/exchanges" {...buttonsProps} >
+          <FormattedMessage id="buyOptions.exchanges" />
+        </StyledButton>
       </FlexRow>
     </StyledContainer>
   </StyledDiv>
