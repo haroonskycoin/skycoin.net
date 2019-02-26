@@ -99,12 +99,6 @@ export const en = {
         picture: 'alphabit.png',
         bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
-      {
-        name: 'Hive Chain Labs',
-        title: '',
-        picture: 'hive_chain_labs.jpg',
-        bio: 'Hive Chain Labs alongside HChain capital originates from Silicon valley and focuses on the researching and incubation of interdisciplinary blockchain base projects. HChain are believer of blockchain technology and have a vision to “Make BLockchain Everywhere”. Their investment cases include ICO.com, TKN.com, Scry, RChain, Polkadot amongst others.',
-      },
     ],
   },
   asia: {
@@ -256,12 +250,6 @@ export const zh = {
         title: '数字货币基金',
         picture: 'alphabit.png',
         bio: 'Alphabit由伦敦对冲基金Light Peak Capital的前货币交易员Liam Robertson共同创立。Alphabit是一个3亿美元的基金，业务内容为开放式共同基金和对冲基金的交叉。Alphabit之前的投资包括Videocoin和Stormx。',
-      },
-      {
-        name: 'Hive Chain Labs',
-        title: '',
-        picture: 'hive_chain_labs.jpg',
-        bio: '来自硅谷的Hive Chain Labs和HChain资本致力于跨学科区块链基础项目的研究和孵化。HChain是区块链技术的信徒，并怀有“让区块链无处不在”的愿景。他们的投资案例包括 ICO.com, TKN.com. Scry, RChain以及Polkadot等。',
       },
     ],
   },
@@ -415,12 +403,6 @@ export const ru = {
         picture: 'alphabit.png',
         bio: 'Co-founded by Liam Robertson, a former currency trader at hedge fund Light Peak Capital in London, Alphabit is a $300 million fund that operates as a cross between an open-ended mutual fund and a hedge fund. Alphabit’s previous investments include Videocoin and Stormx.',
       },
-      {
-        name: 'Hive Chain Labs',
-        title: '',
-        picture: 'hive_chain_labs.jpg',
-        bio: 'Hive Chain Labs alongside HChain capital originates from Silicon valley and focuses on the researching and incubation of interdisciplinary blockchain base projects. HChain are believer of blockchain technology and have a vision to “Make BLockchain Everywhere”. Their investment cases include ICO.com, TKN.com, Scry, RChain, Polkadot amongst others.',
-      },
     ],
   },
   asia: {
@@ -572,12 +554,6 @@ export const ko = {
         title: '디지털 화폐 재단',
         picture: 'alphabit.png',
         bio: 'Alphabit는 런던 헤지 펀드인 Light Peak Capital의 전임 화폐 거래원 Liam Robertson이 연합 창립한 것입니다. Alphabit는 3억 달러의 펀드로서 개방식 공동 펀드와 헤지 펀드의 교차를 업무 내용으로 하고 있습니다. Alphabit는 전에 Videocoin과 Stormx에 투자한 경험이 있습니다.',
-      },
-      {
-        name: 'Hive Chain Labs',
-        title: '',
-        picture: 'hive_chain_labs.jpg',
-        bio: '실리콘 밸리로부터 오게 된 Hive Chain Labs 및 HChain 자본은 학제적 블록체인 기반 프로젝트의 연구와 활성화에 힘을 쏟고 있습니다. HChain은 블록체인 기술을 굳게 믿고 있으며 “블록체인이 곳곳에 존재하는” 비전을 꿈꾸고 있습니다. HChain의 투자 사례는 ICO.com, TKN.com. Scry, RChain 및 Polkadot 등을 포함합니다.',
       },
     ],
   },
@@ -731,12 +707,6 @@ export const ja = {
         picture: 'alphabit.png',
         bio: 'AlphabitはロンドンヘッジファンドLight Peak Capitalの元貨幣取引員であるLiam Robertsonが共同創立された。Alphabitは3億ドルのファンドであり、業務内容がオープン式共同ファンドとヘッジファンドのクロスである。Alphabitが今までの投資はVideocoinとStormxを含めている。',
       },
-      {
-        name: 'Hive Chain Labs',
-        title: '',
-        picture: 'hive_chain_labs.jpg',
-        bio: 'シリコンバレーからのHive Chain LabsとHChain資本は学科を跨ぐブロックチェーン基本プロジェクトの研究やインキュベーションに取組んでいる。HChainはブロックチェーン技術の信者であり、「ブロックチェーンを隅々までに」というビジョンを持っている。彼らの投資実績は ICO.com, TKN.com. Scry、RChainやPolkadotなどを含めている。',
-      },
     ],
   },
   asia: {
@@ -888,12 +858,6 @@ export const fr = {
         title: 'Fonds de monnaie numérique',
         picture: 'alphabit.png',
         bio: 'Cofondé par Liam Robertson, un ancien trader au hedge fund Light Peak Capital à Londres, Alphabit est un fonds de 300 millions de dollars qui opère un fonds de capital variable et d\'un hedge fund. Les investissements précédents d’Alphabit incluent Videocoin et Stormx.',
-      },
-      {
-        name: 'Hive Chain Labs',
-        title: '',
-        picture: 'hive_chain_labs.jpg',
-        bio: 'Hive Chain Labs aux côtés de HChain, le capital provient de Silicon Valley et se concentre sur la recherche et l’incubation de projets interdisciplinaires à base de blockchain. HChain croit à la technologie de la blockchain et a pour vision «Make BLockchain Everywhere». Leurs cas d\'investissement incluent ICO.com, TKN.com, Scry, RChain, Polkadot, entre autres.',
       },
     ],
   },
