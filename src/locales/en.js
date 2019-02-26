@@ -940,7 +940,7 @@ export default {
     },
   },
   buyOptions: {
-    title: 'You can buy SKY using crypto or your credit card',
+    title: 'You can buy SKY using crypto, your your credit card or an exchange',
     bitcoin: 'Crypto',
     creditCard: 'Credit card',
     exchanges:'Exchanges'
