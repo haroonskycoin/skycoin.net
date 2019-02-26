@@ -10,20 +10,11 @@ import Hero from './components/Hero';
 import { COLOR, SPACE, FONT_SIZES } from '../../config';
 import features from './features.js'
 import FeatureItem from './components/FeatureItem'
+import Content from './components/Content'
 
 
 const LandingContainer = styled.div`
   background-color: ${COLOR.lightGrey};
-`;
-
-const Container = styled(Flex)`
-  flex-direction:column;
-  align-items:center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 50rem;
-  padding:${rem(SPACE[7])};
-  box-sizing: border-box;
 `;
 
 
@@ -42,14 +33,14 @@ const SkywalletLanding = ({ intl }) => (
       buttonText="landing.skywallet.hero.button"
       to="/skywire"
     />
-    <Container>
+    <Content>
       { features.map(item =>
         (<FeatureItem
           title={item.title}
           description={item.description}
           image={item.image}
         />))}  
-    </Container>
+    </Content>
     <Footer />
   </LandingContainer>
 );

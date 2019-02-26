@@ -1057,6 +1057,7 @@ export default {
       },
     },
     skywallet:{
+      title:"Skywallet",
       hero:{
         title:'Skywallet',
         heading:'Your hardware multi-coin wallet is your bank vault and it should feel like a premium and secure device.  Shipping Q1 2019. Order now!',

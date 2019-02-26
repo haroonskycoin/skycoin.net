@@ -11,12 +11,11 @@ import Button from 'components/Button';
 import media from 'utils/media';
 import { FONT_FAMILIES, COLOR, FONT_SIZES,SPACE } from 'config';
 import heroImg from '../../images/hero.jpg'
-
+import Content from '../Content'
 
 const Wrapper = styled(Flex)`
 
   position: relative;
-  height: 550px;
   box-sizing: border-box;
   background-color:${COLOR.white};
   background-size: cover;
@@ -36,7 +35,6 @@ const IntroContent = styled(Box)`
 `;
 
 const StyledIntro = styled(Intro)`
-  position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
@@ -48,7 +46,6 @@ const StyledContainer = styled(Container)`
 `;
 
 const StyledLogoContainer = styled.div`
-  position: absolute;
   top: 5%;
   width: 100%;
 `;
@@ -74,29 +71,31 @@ const StyledButton = styled(Button)`
 
 const Hero = ({ title, description, buttonText, banner, to }) => (
   <Wrapper column banner={banner}>
-    <StyledLogoContainer>
-      <Container>
-        <Logo />
-      </Container>
-    </StyledLogoContainer>
-    <StyledIntro align="center">
-      <StyledContainer>
-        <IntroContent width={[1/2]}>
-          <Heading heavy as="h1" fontSize={[9]} color={COLOR.textDark}>
-            <FormattedMessage id={title} />
-          </Heading>
-          <Paragraph heavy as="h1" fontSize={[3]} color="white">
-            <FormattedMessage id={description} />
-          </Paragraph>
-          <StyledButton big color="#fff" bg={COLOR.base} width={['auto']} mt={5} to={to}>
-            <FormattedMessage id={buttonText} />
-          </StyledButton>
-        </IntroContent>
-        <Box width={[1/2]}>
-          <Image src={heroImg} />
-        </Box>
-      </StyledContainer>
-    </StyledIntro>
+    <Content>
+      <StyledLogoContainer>
+        <Container>
+          <Logo />
+        </Container>
+      </StyledLogoContainer>
+      <StyledIntro align="center">
+        <StyledContainer>
+          <IntroContent width={[1/2]}>
+            <Heading heavy as="h1" fontSize={[9]} color={COLOR.textDark}>
+              <FormattedMessage id={title} />
+            </Heading>
+            <Paragraph heavy as="h1" fontSize={[3]} color="white">
+              <FormattedMessage id={description} />
+            </Paragraph>
+            <StyledButton big color="#fff" bg={COLOR.base} width={['auto']} mt={5} to={to}>
+              <FormattedMessage id={buttonText} />
+            </StyledButton>
+          </IntroContent>
+          <Box width={[1/2]}>
+            <Image src={heroImg} />
+          </Box>
+        </StyledContainer>
+      </StyledIntro>
+    </Content>
   </Wrapper>
 );
 
