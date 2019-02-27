@@ -7,7 +7,7 @@ export const downloads = [
       name: 'downloads.wallet.withElectron',
       architectures: [{
         name: '64bit',
-        download: 'https://downloads.skycoin.net/wallet/skycoin-0.25.0-gui-electron-win-setup.exe',
+        download: 'https://downloads.skycoin.net/wallet/skycoin-0.25.1-gui-electron-win-setup.exe',
         signature: 'https://downloads.skycoin.net/wallet/skycoin-0.25.0-gui-electron-win-setup.exe.asc',
         filetype: '.exe',
         filesize: '68mb',
