@@ -32,7 +32,7 @@ const Wallet = () => (
         <Gallery imgList={images} />
       </Box>
 
-      <StyledFlex align="flex-end" column wrap my={[11,8,8]}>
+      <StyledFlex align="flex-end" column wrap my={[11, 8, 8]}>
         <Button to="gallery" color="base" pill outlined>
           <FormattedMessage id="home.miner.morePhotos" />
         </Button>
