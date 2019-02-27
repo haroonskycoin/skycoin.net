@@ -17,14 +17,14 @@ const images = [
 ];
 
 const StyledFlex = styled(Flex)`
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 `;
 
 const Wallet = () => (
   <Box my={[8, 10, 13]}>
     <Container>
 
-      <Heading heavy as="h2" mt={[4, 6]} fontSize={[5, 6, 7]} color="black">
+      <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="black">
         <FormattedMessage id="home.miner.headingHardware" />
       </Heading>
 
@@ -32,7 +32,7 @@ const Wallet = () => (
         <Gallery imgList={images} />
       </Box>
 
-      <StyledFlex align="flex-end" column wrap mb={8} style={{ border: 0 }}>
+      <StyledFlex align="flex-end" column wrap my={[11, 8, 8]}>
         <Button to="gallery" color="base" pill outlined>
           <FormattedMessage id="home.miner.morePhotos" />
         </Button>
