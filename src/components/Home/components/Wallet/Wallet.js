@@ -24,15 +24,15 @@ const Wallet = () => (
   <Box my={[8, 10, 13]}>
     <Container>
 
-      <Heading heavy as="h2" my={[4, 6]} fontSize={[5, 6, 7]} color="black">
+      <Heading heavy as="h2" mt={[4, 6]} fontSize={[5, 6, 7]} color="black">
         <FormattedMessage id="home.miner.headingHardware" />
       </Heading>
 
-      <Box>
+      <Box mb={[7, 8, 10]}>
         <Gallery imgList={images} />
       </Box>
 
-      <StyledFlex align="flex-end" column wrap my={8} style={{ border: 0 }}>
+      <StyledFlex align="flex-end" column wrap mb={8} style={{ border: 0 }}>
         <Button to="gallery" color="base" pill outlined>
           <FormattedMessage id="home.miner.morePhotos" />
         </Button>
