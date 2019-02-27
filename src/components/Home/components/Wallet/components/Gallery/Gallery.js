@@ -67,7 +67,7 @@ const GalleryWrapper = styled(Flex)`
 `;
 
 const GraphicItem = ({ src }) => (
-  <StyledBox p={3}>
+  <StyledBox px={3}>
     <ImgWrap img={src} />
   </StyledBox>
 );
