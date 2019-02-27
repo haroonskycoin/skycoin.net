@@ -28,7 +28,7 @@ const Wallet = () => (
         <FormattedMessage id="home.miner.headingHardware" />
       </Heading>
 
-      <Box my={[7, 8, 10]}>
+      <Box>
         <Gallery imgList={images} />
       </Box>
 
