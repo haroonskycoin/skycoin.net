@@ -1082,7 +1082,7 @@ export default {
         },
         included:{
           title:'Included',
-          description:'TODO'
+          description:'<ul><li>Micro-USB 2.0 cable</li><li>Recovery phrase</li><li>Keychain</li></ul>'
         },
       }
     }

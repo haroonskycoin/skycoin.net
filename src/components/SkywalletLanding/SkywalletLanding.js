@@ -21,10 +21,10 @@ const LandingContainer = styled.div`
 const SkywalletLanding = ({ intl }) => (
   <LandingContainer>
     <Helmet>
-      <title>{intl.formatMessage({ id: 'skywallet.title' })}</title>
+      <title>{intl.formatMessage({ id: 'landing.skywallet.title' })}</title>
       <meta
         name="description"
-        content={intl.formatMessage({ id: 'skywallet.description' })}
+        content={intl.formatMessage({ id: 'landing.skywallet.description' })}
       />
     </Helmet>
     <Hero
@@ -39,6 +39,8 @@ const SkywalletLanding = ({ intl }) => (
           title={item.title}
           description={item.description}
           image={item.image}
+          flexDirection={item.flexDirection}
+          isIcon={item.icon}
         />))}  
     </Content>
     <Footer />
