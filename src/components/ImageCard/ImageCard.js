@@ -14,13 +14,19 @@ const Icon = styled.img.attrs({
 })`
   display: block;
   max-width: 100%;
-  height: auto;
+  height: ${(props) =>props.width};
   margin-bottom: ${rem(SPACE[4])};
+  witdth:${(props) =>props.width};
   
   ${media.sm.css`
     margin-bottom: 0;  
   `}
 `;
+
+Icon.defaultProps = {
+  width:'auto',
+  height:'auto'
+}
 
 const CardWrapper = styled.div`
   padding:7px;
