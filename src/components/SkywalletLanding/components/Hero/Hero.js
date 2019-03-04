@@ -7,11 +7,10 @@ import { Flex, Box } from 'grid-styled';
 import Container from 'components/Container';
 import Logo from 'components/Logo';
 import Heading from 'components/Heading';
+import { FONT_FAMILIES, COLOR, FONT_SIZES, SPACE } from 'config';
+import heroImg from '../../images/hero.jpg';
+import Content from '../Content';
 import Button from '../Button';
-import media from 'utils/media';
-import { FONT_FAMILIES, COLOR, FONT_SIZES,SPACE } from 'config';
-import heroImg from '../../images/hero.jpg'
-import Content from '../Content'
 
 const Wrapper = styled(Flex)`
 
@@ -31,7 +30,7 @@ const IntroContent = styled(Flex)`
   position: relative;
   z-index: 1;
   flex-direction:column; 
-
+  justify-content:center !important;
 `;
 
 const StyledIntro = styled(Intro)`
@@ -43,6 +42,7 @@ const StyledIntro = styled(Intro)`
 const StyledContainer = styled(Container)`
   display:flex;
   flex-direction:row;
+  padding:0 !important;
 `;
 
 const StyledLogoContainer = styled.div`
@@ -60,35 +60,37 @@ const Paragraph = styled.p`
   text-transform: none;
 `;
 
-const Image = styled.img`
-  width:100%;
-  height:auto;
+
+const ImageBox = styled(Box)`
+  height:${rem(370)};
+  background-image:url(${props => props.src});
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
 `;
 
 const Hero = ({ title, description, buttonText, banner, to }) => (
-  <Wrapper column banner={banner}>
+  <Wrapper column banner={banner} pb={[SPACE[2], SPACE[13]]}>
     <Content>
       <StyledLogoContainer>
         <Container>
           <Logo />
         </Container>
       </StyledLogoContainer>
-      <StyledIntro align="center">
+      <StyledIntro>
         <StyledContainer>
-          <IntroContent width={[1,1/2,1/2]} alignItems={['center','flex-start','flex-start']}>
+          <IntroContent width={[1, 0.55, 0.55]}>
             <Heading heavy as="h1" fontSize={[9]} color={COLOR.textDark}>
               <FormattedMessage id={title} />
             </Heading>
             <Paragraph heavy as="h1" fontSize={[3]} color="white">
               <FormattedMessage id={description} />
             </Paragraph>
-            <Button to={to}>
+            <Button to={to} big>
               <FormattedMessage id={buttonText} />
             </Button>
           </IntroContent>
-          <Box width={[0,1/2,1/2]}>
-            <Image src={heroImg} />
-          </Box>
+          <ImageBox width={[0, 0.45, 0.45]} src={heroImg} ml={rem(SPACE[9])} />
         </StyledContainer>
       </StyledIntro>
     </Content>

@@ -1043,35 +1043,35 @@ export default {
         button2: 'CX Playground',
       },
     },
-    skywallet:{
-      hero:{
-        title:'Skywallet',
-        heading:'Your hardware multi-coin wallet is your bank vault and it should feel like a premium and secure device.  Shipping Q1 2019. Order now!',
-        button:'Order now'
+    skywallet: {
+      hero: {
+        title: 'Skywallet',
+        heading: 'Your hardware multi-coin wallet is your bank vault and it should feel like a premium and secure device.  Shipping Q1 2019. Order now!',
+        button: 'Order now',
       },
-      features:{
-        live:{
-          title:'Skywallet Live',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+      features: {
+        live: {
+          title: 'Skywallet Live',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
         },
-        security:{
-          title:'Security',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+        security: {
+          title: 'Security',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
         },
-        support:{
-          title:'Customer support',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+        support: {
+          title: 'Customer support',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
         },
-        intuitive:{
-          title:'Intuitive',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+        intuitive: {
+          title: 'Intuitive',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
         },
-        included:{
-          title:'Included',
-          description:'TODO'
+        included: {
+          title: 'Included',
+          description: 'TODO',
         },
-      }
-    }
+      },
+    },
   },
   exchanges: {
     any: 'Any',

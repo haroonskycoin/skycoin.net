@@ -2,15 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
-import { rem } from 'polished';
 import styled from 'styled-components';
-import { Flex } from 'grid-styled';
 import Footer from 'components/Footer';
 import Hero from './components/Hero';
-import { COLOR, SPACE, FONT_SIZES } from '../../config';
-import features from './features.js'
-import FeatureItem from './components/FeatureItem'
-import Content from './components/Content'
+import { COLOR } from '../../config';
+import features from './features.js';
+import FeatureItem from './components/FeatureItem';
+import Content from './components/Content';
+import Video from './components/Video';
 
 
 const LandingContainer = styled.div`
@@ -41,7 +40,9 @@ const SkywalletLanding = ({ intl }) => (
           image={item.image}
           flexDirection={item.flexDirection}
           isIcon={item.icon}
-        />))}  
+          button={item.button}
+        />))}
+      <Video />
     </Content>
     <Footer />
   </LandingContainer>
