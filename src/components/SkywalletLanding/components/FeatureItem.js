@@ -50,8 +50,8 @@ FeatureItem.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   flexDirection: PropTypes.string.isRequired,
-  button: PropTypes.bool.button.isRequired,
-  isIcon: PropTypes.bool.button.isRequired,
+  button: PropTypes.bool.isRequired,
+  isIcon: PropTypes.bool.isRequired,
 };
 
 FeatureItem.defaultProps = {
