@@ -80,7 +80,7 @@ export default ImageCard;
 
 
 const ImageWrapper = styled(Flex)`
-  background: ${COLOR.dark};
+  background: ${props => props.backgroundColor};
   height: ${props => props.height};
   
   img {
@@ -96,8 +96,8 @@ ImageWrapper.propTypes = {
   ]).isRequired,
 };
 
-export const ImageContainer = ({ height, width, image, iconWidth, iconHeight }) =>
-  (<ImageWrapper width={width} justify="center" align="center" px={5} height={height}>
+export const ImageContainer = ({ height, width, image, iconWidth, iconHeight, backgroundColor }) =>
+  (<ImageWrapper width={width} justify="center" align="center" px={5} height={height} backgroundColor={backgroundColor}>
     <Icon src={image} width={iconWidth} height={iconHeight} />
   </ImageWrapper>
   );
@@ -122,11 +122,13 @@ ImageContainer.propTypes = {
     PropTypes.number,
   ]).isRequired,
   image: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
 };
 
 ImageContainer.defaultProps = {
   iconWidth: 'auto',
   iconHeight: 'auto',
+  backgroundColor: COLOR.dark,
 };
 
 const ImageFullWrapper = styled(Flex)`    

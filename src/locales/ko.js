@@ -993,6 +993,134 @@ export default {
     conversionError: 'Error: unable to get currency conversion. Try again later.',
     transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
   },
+  landing: {
+    skyware: {
+      hero: {
+        title: 'Skywire',
+        heading: 'Skywire is the next evolutionary step in the internet’s development and use. Our goal is to provide everyone with access to fast, secure, private and reliable internet.',
+        button: 'Learn more',
+      },
+      watchNow: {
+        title: 'Watch now!',
+        description: 'Check out these YouTube videos to learn more about Skywire',
+        youtube: {
+          what: 'What is Skywire?',
+          solution: 'A Solution to Censorship',
+          isp: 'Why ISPs need to be Replaced',
+        },
+      },
+      afee: {
+        text: '“To free Crypto from the bonds of corrupt power, we need more than distributed exchanges. We need to bypass the existing Internet. Mesh networks solve this problem. Skywire  is the only one designed by and for the Crypto Space.” ',
+        name: 'John McAfee',
+      },
+      divider: 'Everyone will be able to contribute to and benefit from Skywire',
+      bottom: {
+        text: 'Its <b>private</b>, <b>secure</b> and <b>decentralized</b>. Join over 1,450+ nodes now on Skywire with our current special promotion!',
+        button: 'Order a skyminer',
+      },
+      features: {
+        speed: {
+          title: 'Speed',
+          description: 'Skywire’s protocol is based on software-defined networking, which will make the outdated and inefficient  “hot-potato” packet routing a thing of the past.',
+        },
+        privacy: {
+          title: 'Privacy',
+          description: 'With default end-to-end encryption, Skywire ensures that all traffic is private and users will never have  their data tracked, stored, or sold.',
+        },
+        security: {
+          title: 'Security',
+          description: 'Today, internet users have no say in how ISPs operate. Skywire gives this decision making power back to  the community in the form of a web-of-trust system.',
+        },
+        ecosystem: {
+          title: 'Self-sustaining ecosystem',
+          description: 'By providing Skycoin and Coin Hour rewards to  node operators, we offer incentives for people to contribute to the network.',
+        },
+        internet: {
+          title: 'Foundation of the new internet',
+          description: 'Skywire lays the foundation for distributed bandwidth, storage, and computation essential to the new  peer-to-peer internet',
+        },
+      },
+    },
+    cx: {
+      hero: {
+        title: 'CX',
+        heading: 'CX is Skycoin\'s specification and programming language, packed full of features. It allows for the creation of complex contractual agreements that are build with security in mind.',
+        button1: 'Download now',
+        button2: 'Learn more',
+      },
+      watchNow: {
+        title: 'Watch now!',
+        description: 'Check out the video below to get an introduction on the CX programming language by the lead developer Amaury Aguila. ',
+        youtube: {
+          introduction: 'CX Introduction',
+        },
+      },
+      start: {
+        title: 'Start now!',
+        description: 'Download CX now and start working on a project.  Join the CX group on Telegram to share your work, get help, gain inspiration and much more.  There is even a group dedicated to making games with CX.',
+      },
+      divider: 'CX will provide numerous advancements within the Skycoin project.',
+      features: {
+        affordance: {
+          title: 'Affordances',
+          description: 'The utilization of affordances allows the permission of packages to be granted or rejected from specific users, aiding in the ability of programmers to confidently create secure code.',
+        },
+        typing: {
+          title: 'Strict typing system',
+          description: 'Explicit type casting reduces errors and makes CX constitutionally secure for programmers.',
+        },
+        object: {
+          title: 'Object explorer',
+          description: 'Programmers will have access to an object explorer which will show a graphical view of all objects and their current memory allocation.',
+        },
+        more: {
+          title: 'More features...',
+          list: {
+            deterministic: 'Deterministic language',
+            compiled: 'Compiled & interpreted language',
+            extensive: 'Extensive documentation',
+            active: 'Active development',
+            videogame: 'Video game development',
+            system: 'Mac, Linux and Windows support',
+          },
+        },
+      },
+      bottom: {
+        text: 'Start developing now with CX. Either download it from Github or try the CX playground.',
+        button1: 'Download',
+        button2: 'CX Playground',
+      },
+    },
+    skywallet: {
+      hero: {
+        title: 'Skywallet',
+        heading: 'Your hardware multi-coin wallet is your bank vault and it should feel like a premium and secure device.  Shipping Q1 2019. Order now!',
+        button: 'Order now',
+      },
+      features: {
+        live: {
+          title: 'Skywallet Live',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+        },
+        security: {
+          title: 'Security',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        },
+        support: {
+          title: 'Customer support',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        },
+        intuitive: {
+          title: 'Intuitive',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        },
+        included: {
+          title: 'Included',
+          description: 'TODO',
+        },
+      },
+    },
+  },
   exchanges: {
     any: 'Any',
     title: 'Exchanges',

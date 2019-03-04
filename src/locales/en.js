@@ -1057,6 +1057,37 @@ export default {
         button2: 'CX Playground',
       },
     },
+    skywallet: {
+      title: 'Skywallet',
+      hero: {
+        title: 'Skywallet',
+        heading: 'Your hardware multi-coin wallet is your bank vault and it should feel like a premium and secure device.  Shipping Q1 2019. Order now!',
+        button: 'Order now',
+      },
+      features: {
+        learnMore: 'Learn more',
+        live: {
+          title: 'Skywallet Live',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+        },
+        security: {
+          title: 'Security',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        },
+        support: {
+          title: 'Customer support',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        },
+        intuitive: {
+          title: 'Intuitive',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        },
+        included: {
+          title: 'Included',
+          description: '<ul><li>Micro-USB 2.0 cable</li><li>Recovery phrase</li><li>Keychain</li></ul>',
+        },
+      },
+    },
   },
   exchanges: {
     any: 'Any',
