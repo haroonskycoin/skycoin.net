@@ -16,6 +16,7 @@ import Skyminer from '../Skyminer';
 import Skywire from '../Skywire';
 import SkywireLanding from '../SkywireLanding';
 import SkywalletLanding from '../SkywalletLanding';
+import SkyminerLanding from '../SkyminerLanding';
 import CXO from '../CXO';
 import CX from '../CX';
 import CXLanding from '../CXLanding';
@@ -51,6 +52,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}landing/skywire`} exact component={SkywireLanding} />
       <Route path={`${prefix}landing/cx`} exact component={CXLanding} />
       <Route path={`${prefix}landing/skywallet`} exact component={SkywalletLanding} />
+      <Route path={`${prefix}landing/skyminer`} exact component={SkyminerLanding} />
       <Route path={`${prefix}cxo`} exact component={CXO} />
       <Route path={`${prefix}cx`} exact component={CX} />
       <Route path={`${prefix}fiber`} exact component={Fiber} />
