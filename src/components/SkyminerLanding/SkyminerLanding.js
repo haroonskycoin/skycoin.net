@@ -4,9 +4,10 @@ import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 import Footer from 'components/Footer';
-
+import Hero from './components/Hero';
 import { COLOR } from '../../config';
 
+import Content from './components/Content';
 
 
 const LandingContainer = styled.div`
@@ -17,13 +18,21 @@ const LandingContainer = styled.div`
 const SkyminerLanding = ({ intl }) => (
   <LandingContainer>
     <Helmet>
-      <title>{intl.formatMessage({ id: 'landing.skywallet.title' })}</title>
+      <title>{intl.formatMessage({ id: 'landing.skyminer.title' })}</title>
       <meta
         name="description"
-        content={intl.formatMessage({ id: 'landing.skywallet.description' })}
+        content={intl.formatMessage({ id: 'landing.skyminer.description' })}
       />
     </Helmet>
-    <div>skyminer landing</div>
+    <Hero
+      title="landing.skyminer.hero.title"
+      description="landing.skyminer.hero.heading"
+      buttonText="landing.skyminer.hero.button"
+      to="/skywire"
+    />
+    <Content>
+      
+    </Content>
     <Footer />
   </LandingContainer>
 );
