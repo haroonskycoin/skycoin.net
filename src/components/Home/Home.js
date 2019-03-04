@@ -44,7 +44,7 @@ class Home extends React.PureComponent {
         <HeaderWrapper>
           <Container>
             <Text as="div" fontSize={[0, 0, 1]} color="gray.8" pt={5} mt={0} mb={-3} textAlign="right">
-              <Languages />
+              <Languages lineHeight={50} />
             </Text>
           </Container>
           <Header white social showBuy={false} />
