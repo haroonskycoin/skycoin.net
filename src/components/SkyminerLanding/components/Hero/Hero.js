@@ -8,7 +8,7 @@ import Container from 'components/Container';
 import Logo from 'components/Logo';
 import Heading from 'components/Heading';
 import { FONT_FAMILIES, COLOR, FONT_SIZES, SPACE } from 'config';
-import heroImg from '../../images/hero.jpg';
+import heroImg from '../../images/hero.png';
 import Content from '../Content';
 import Button from '../Button';
 
