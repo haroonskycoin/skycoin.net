@@ -7,7 +7,7 @@ import { Flex, Box } from 'grid-styled';
 import Container from 'components/Container';
 import Logo from 'components/Logo';
 import Heading from 'components/Heading';
-import Button from 'components/Button';
+import Button from '../Button';
 import media from 'utils/media';
 import { FONT_FAMILIES, COLOR, FONT_SIZES,SPACE } from 'config';
 import heroImg from '../../images/hero.jpg'
@@ -27,10 +27,10 @@ const Intro = styled(Flex)`
   z-index: 1;
 `;
 
-const IntroContent = styled(Box)`
+const IntroContent = styled(Flex)`
   position: relative;
   z-index: 1;
-  display: block;
+  flex-direction:column; 
 
 `;
 
@@ -65,10 +65,6 @@ const Image = styled.img`
   height:auto;
 `;
 
-const StyledButton = styled(Button)`
-  border-radius:5px;
-`;
-
 const Hero = ({ title, description, buttonText, banner, to }) => (
   <Wrapper column banner={banner}>
     <Content>
@@ -79,18 +75,18 @@ const Hero = ({ title, description, buttonText, banner, to }) => (
       </StyledLogoContainer>
       <StyledIntro align="center">
         <StyledContainer>
-          <IntroContent width={[1/2]}>
+          <IntroContent width={[1,1/2,1/2]} alignItems={['center','flex-start','flex-start']}>
             <Heading heavy as="h1" fontSize={[9]} color={COLOR.textDark}>
               <FormattedMessage id={title} />
             </Heading>
             <Paragraph heavy as="h1" fontSize={[3]} color="white">
               <FormattedMessage id={description} />
             </Paragraph>
-            <StyledButton big color="#fff" bg={COLOR.base} width={['auto']} mt={5} to={to}>
+            <Button to={to}>
               <FormattedMessage id={buttonText} />
-            </StyledButton>
+            </Button>
           </IntroContent>
-          <Box width={[1/2]}>
+          <Box width={[0,1/2,1/2]}>
             <Image src={heroImg} />
           </Box>
         </StyledContainer>
