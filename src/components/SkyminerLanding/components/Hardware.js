@@ -29,7 +29,7 @@ const Hardware = ()=>{
     const icon = <ImageFullContainer {...props} />;
 
     return (
-        <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection='row-reverse'>
+        <ImageCard image={icon} width={['320px', '320px', 'auto']}>
             <Title id='landing.skyminer.hardware.title' />
             <StyledText>
             <FormattedHTMLMessage id='landing.skyminer.hardware.description' />
