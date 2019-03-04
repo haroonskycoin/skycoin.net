@@ -8,7 +8,12 @@ import Hero from './components/Hero';
 import { COLOR } from '../../config';
 
 import Content from './components/Content';
-
+import Forbes from './components/Forbes';
+import Hardware from './components/Hardware';
+import Operate from './components/Operate';
+import OrderNow from './components/OrderNow';
+import Support from './components/Support';
+import WatchNow from './components/WatchNow';
 
 const LandingContainer = styled.div`
   background-color: ${COLOR.lightGrey};
@@ -31,7 +36,12 @@ const SkyminerLanding = ({ intl }) => (
       to="/skywire"
     />
     <Content>
-      
+      <Hardware/>
+      <Operate/>
+      <WatchNow/>
+      <Support/>
+      <OrderNow/>
+      <Forbes/>      
     </Content>
     <Footer />
   </LandingContainer>
