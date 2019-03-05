@@ -333,7 +333,7 @@ export default {
         item1: '每块主板拥有2 GB RAM',
         item2: '每块主板拥有4个CPU内核',
         item3: '每块主板拥有64 GB的存储空间',
-        item4: '64位Linux系统（Alpine Linux）',
+        item4: '64位Linux系统（Debian）',
         item5: '千兆以太网，8 + 1端口交换机',
       },
     },

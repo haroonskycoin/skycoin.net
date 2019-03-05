@@ -344,7 +344,7 @@ export default {
         item1: 'それぞれのメインボードに2 GB RAMを持つ',
         item2: 'それぞれのメインボードに4个CPUコアを持つ',
         item3: 'それぞれのメインボードに16 GBのメモリを持つ',
-        item4: '64ビットLinuxシステム（Alpine Linux）',
+        item4: '64ビットLinuxシステム（Debian）',
         item5: 'ギガイーサネット、8 + 1ポートスイッチ',
       },
     },
