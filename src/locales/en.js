@@ -1099,14 +1099,14 @@ export default {
       },
       hardware: {
         title: 'Hardware',
-        description: `<ul>
+        description: `
           <li>8 CPU boards</li>
           <li>2 GB of RAM per board</li>
           <li>4 CPU cores per board</li>
           <li>16 GB of storage per board</li>
           <li>64-bit Linux (Alpine Linux)</li>
           <li>100 Mbps Ethernet, 8+1 port switch</li>
-        </ul>`,
+        `,
       },
       operate: 'Operate your Skyminer on the Skywire network to <b>get paid</b> SKY for free!',
       watchNow: {
