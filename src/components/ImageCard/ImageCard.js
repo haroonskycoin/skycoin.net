@@ -14,7 +14,7 @@ const Icon = styled.img.attrs({
 })`
   display: block;
   max-width: 100%;
-  height: ${props => props.width};
+  height: auto;
   margin-bottom: ${rem(SPACE[4])};
   witdth:${props => props.width};
   
