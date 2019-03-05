@@ -38,12 +38,12 @@ const SkyminerLanding = ({ intl }) => (
       to2=""
     />
     <Content>
-      <Hardware/>
-      <Operate/>
-      <WatchNow/>
-      <Support/>
-      <OrderNow/>
-      <Forbes/>      
+      <Hardware />
+      <Operate />
+      <WatchNow />
+      <Support />
+      <OrderNow />
+      <Forbes />
     </Content>
     <Footer />
   </LandingContainer>

@@ -14,9 +14,9 @@ const Icon = styled.img.attrs({
 })`
   display: block;
   max-width: 100%;
-  height: ${(props) =>props.width};
+  height: ${props => props.width};
   margin-bottom: ${rem(SPACE[4])};
-  witdth:${(props) =>props.width};
+  witdth:${props => props.width};
   
   ${media.sm.css`
     margin-bottom: 0;  
@@ -24,9 +24,9 @@ const Icon = styled.img.attrs({
 `;
 
 Icon.defaultProps = {
-  width:'auto',
-  height:'auto'
-}
+  width: 'auto',
+  height: 'auto',
+};
 
 const CardWrapper = styled.div`
   padding:7px;

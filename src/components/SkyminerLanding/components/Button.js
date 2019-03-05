@@ -12,8 +12,16 @@ const StyledButton = styled(Button)`
   background-color:${props => props.backgroundColor};
 `;
 
-const ComponentButton = ({ children, to, big, borderRadius,backgroundColor }) => (
-  <StyledButton big={big} bg={COLOR.base} width={160} mt={5} to={to} borderRadius={borderRadius} backgroundColor={backgroundColor}>
+const ComponentButton = ({ children, to, big, borderRadius, backgroundColor }) => (
+  <StyledButton
+    big={big}
+    bg={COLOR.base}
+    width={160}
+    mt={5}
+    to={to}
+    borderRadius={borderRadius}
+    backgroundColor={backgroundColor}
+  >
     {children}
   </StyledButton>
 );
@@ -26,6 +34,7 @@ ComponentButton.propTypes = {
   to: PropTypes.string,
   big: PropTypes.bool,
   borderRadius: PropTypes.number,
+  backgroundColor: PropTypes.string,
 
 };
 

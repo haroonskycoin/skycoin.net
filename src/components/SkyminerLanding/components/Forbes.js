@@ -1,15 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import ImageCard from 'components/ImageCard';
-import { ImageContainer  } from 'components/ImageCard/ImageCard';
+import { ImageContainer } from 'components/ImageCard/ImageCard';
 import Text from 'components/Text';
 import { FONT_SIZES, SPACE, COLOR } from 'config';
-import Title from './Title';
-import image from '../images/forbes.svg'
-import { FormattedHTMLMessage, FormattedMessage } from 'react-intl';
-
+import { FormattedHTMLMessage } from 'react-intl';
+import image from '../images/forbes.svg';
 
 
 const StyledText = styled(Text)`
@@ -19,23 +16,23 @@ const StyledText = styled(Text)`
   }
 `;
 
-const Forbes = ()=>{
-    const props = {
-        image,
-        height: '320px',
-        width: [1, 1, 1 / 2],
-        iconWidth:'75%',
-        backgroundColor: COLOR.black,
-    };
-    const icon = <ImageContainer {...props} />;
+const Forbes = () => {
+  const imageProps = {
+    image,
+    height: '320px',
+    width: [1, 1, 1 / 2],
+    iconWidth: '75%',
+    backgroundColor: COLOR.black,
+  };
+  const icon = <ImageContainer {...imageProps} />;
 
-    return (
-        <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection='row-reverse'>
-            <StyledText>
-              <FormattedHTMLMessage id='landing.skyminer.forbes.description' />
-            </StyledText>
-        </ImageCard>
-    )
-}
+  return (
+    <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection="row-reverse">
+      <StyledText>
+        <FormattedHTMLMessage id="landing.skyminer.forbes.description" />
+      </StyledText>
+    </ImageCard>
+  );
+};
 
 export default Forbes;

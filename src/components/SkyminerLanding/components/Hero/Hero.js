@@ -11,7 +11,6 @@ import { FONT_FAMILIES, COLOR, FONT_SIZES, SPACE } from 'config';
 import heroImg from '../../images/hero.png';
 import Content from '../Content';
 import Button from '../Button';
-import { ButtonHelper } from 'createjs-module';
 
 const Wrapper = styled(Flex)`
 
@@ -63,7 +62,10 @@ const Paragraph = styled.p`
 
 
 const ImageBox = styled(Box)`
-  height:${rem(370)};
+  position:absolute;
+  right:0;
+  top:0;
+  height:100%;
   background-image:url(${props => props.src});
   background-repeat:no-repeat;
   background-position:center;
@@ -78,7 +80,7 @@ const ButtonsContainer = styled(Flex)`
  
 `;
 
-const Hero = ({ title, description, buttonText,buttonText2, banner, to,to2}) => (
+const Hero = ({ title, description, buttonText, buttonText2, banner, to, to2 }) => (
   <Wrapper column banner={banner} pb={[SPACE[2], SPACE[13]]}>
     <Content>
       <StyledLogoContainer>
@@ -104,10 +106,10 @@ const Hero = ({ title, description, buttonText,buttonText2, banner, to,to2}) => 
               </Button>
             </ButtonsContainer>
           </IntroContent>
-          <ImageBox width={[0, 0.45, 0.45]} src={heroImg} ml={rem(SPACE[9])} />
         </StyledContainer>
       </StyledIntro>
     </Content>
+    <ImageBox width={[0, 0.4, 0.4]} src={heroImg} ml={rem(SPACE[9])} />
   </Wrapper>
 );
 
@@ -115,8 +117,10 @@ Hero.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
+  buttonText2: PropTypes.string.isRequired,
   banner: PropTypes.element.isRequired,
   to: PropTypes.string.isRequired,
+  to2: PropTypes.string.isRequired,
 };
 
 export default Hero;
