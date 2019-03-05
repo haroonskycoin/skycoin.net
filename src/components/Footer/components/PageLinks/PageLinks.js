@@ -9,6 +9,7 @@ const PageLinks = () => (
     <Link to="/buy-fiat" />
     <Link to="/thankyou" />
     <Link to="/exchanges" />
+    <Link to="/landing/skywallet" />
   </div>
 );
 
