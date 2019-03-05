@@ -16,11 +16,17 @@ const Icon = styled.img.attrs({
   max-width: 100%;
   height: auto;
   margin-bottom: ${rem(SPACE[4])};
+  witdth:${props => props.width};
   
   ${media.sm.css`
     margin-bottom: 0;  
   `}
 `;
+
+Icon.defaultProps = {
+  width: 'auto',
+  height: 'auto',
+};
 
 const CardWrapper = styled.div`
   padding:7px;
@@ -163,3 +169,37 @@ ImageFullContainer.propTypes = {
   ]).isRequired,
   image: PropTypes.string.isRequired,
 };
+
+
+const ImageBackgroundWrapper = styled(Flex)`   
+  height:${props => props.height};
+  background-image: url(${props => props.image});
+  background-size:cover;
+  background-position:center;  
+`;
+
+export const ImageBackgroundContainer = ({ width, height, image }) =>
+  (<ImageBackgroundWrapper
+    image={image}
+    width={width}
+    height={height}
+    justify="center"
+    align="center"
+    px={5}
+  />);
+
+
+ImageBackgroundContainer.propTypes = {
+  height: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.object,
+  ]).isRequired,
+  width: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.object,
+  ]).isRequired,
+  image: PropTypes.string.isRequired,
+};
+
