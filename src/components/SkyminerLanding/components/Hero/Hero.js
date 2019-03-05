@@ -11,6 +11,7 @@ import { FONT_FAMILIES, COLOR, FONT_SIZES, SPACE } from 'config';
 import heroImg from '../../images/hero.png';
 import Content from '../Content';
 import Button from '../Button';
+import { ButtonHelper } from 'createjs-module';
 
 const Wrapper = styled(Flex)`
 
@@ -69,7 +70,15 @@ const ImageBox = styled(Box)`
   background-size:cover;
 `;
 
-const Hero = ({ title, description, buttonText, banner, to }) => (
+const ButtonsContainer = styled(Flex)`
+
+  a:first-child{
+    margin-right:20px;
+  }
+ 
+`;
+
+const Hero = ({ title, description, buttonText,buttonText2, banner, to,to2}) => (
   <Wrapper column banner={banner} pb={[SPACE[2], SPACE[13]]}>
     <Content>
       <StyledLogoContainer>
@@ -86,9 +95,14 @@ const Hero = ({ title, description, buttonText, banner, to }) => (
             <Paragraph heavy as="h1" fontSize={[3]} color="white">
               <FormattedMessage id={description} />
             </Paragraph>
-            <Button to={to} big>
-              <FormattedMessage id={buttonText} />
-            </Button>
+            <ButtonsContainer flexDirection="row">
+              <Button to={to} big>
+                <FormattedMessage id={buttonText} />
+              </Button>
+              <Button to={to2} big backgroundColor={COLOR.dark}>
+                <FormattedMessage id={buttonText2} />
+              </Button>
+            </ButtonsContainer>
           </IntroContent>
           <ImageBox width={[0, 0.45, 0.45]} src={heroImg} ml={rem(SPACE[9])} />
         </StyledContainer>

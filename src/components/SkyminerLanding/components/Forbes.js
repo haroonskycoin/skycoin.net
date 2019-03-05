@@ -31,9 +31,8 @@ const Forbes = ()=>{
 
     return (
         <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection='row-reverse'>
-            <Title id='landing.skyminer.forbes.title' />
             <StyledText>
-            <FormattedHTMLMessage id='landing.skyminer.forbes.description' />
+              <FormattedHTMLMessage id='landing.skyminer.forbes.description' />
             </StyledText>
         </ImageCard>
     )

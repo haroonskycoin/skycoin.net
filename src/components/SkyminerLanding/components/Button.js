@@ -9,10 +9,11 @@ import { COLOR } from 'config';
 const StyledButton = styled(Button)`
   border-radius: ${props => props.borderRadius}px !important;
   color:${COLOR.white} !important;
+  background-color:${props => props.backgroundColor};
 `;
 
-const ComponentButton = ({ children, to, big, borderRadius }) => (
-  <StyledButton big={big} bg={COLOR.base} width={160} mt={5} to={to} borderRadius={borderRadius}>
+const ComponentButton = ({ children, to, big, borderRadius,backgroundColor }) => (
+  <StyledButton big={big} bg={COLOR.base} width={160} mt={5} to={to} borderRadius={borderRadius} backgroundColor={backgroundColor}>
     {children}
   </StyledButton>
 );
@@ -32,6 +33,7 @@ ComponentButton.defaultProps = {
   to: '',
   big: false,
   borderRadius: 5,
+  backgroundColor: COLOR.base,
 };
 
 export default ComponentButton;

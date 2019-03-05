@@ -1088,6 +1088,47 @@ export default {
         },
       },
     },
+    skyminer: {
+      hero:{
+        title:'Skyminer',
+        heading:'The Skywire "miner" is meticulously designed and configured to provide a backbone for the new internet.',
+        button:'Order now',
+        button2:'Learn more',      
+      },
+      hardware:{
+        title:'Hardware',
+        description:`<ul>
+          <li>8 CPU boards</li>
+          <li>2 GB of RAM per board</li>
+          <li>4 CPU cores per board</li>
+          <li>16 GB of storage per board</li>
+          <li>64-bit Linux (Alpine Linux)</li>
+          <li>100 Mbps Ethernet, 8+1 port switch</li>
+        </ul>`
+      },
+      operate:'Operate your Skyminer on the Skywire network to <span class="font-blue">get paid</span> SKY for free!',
+      watchNow:{
+        title:'Watch now!',
+        description:'Check out these YouTube videos to learn more about Skyminers',
+        youtube:{
+          video1:'What is a Skyminer?',
+          video2:'Unboxing the Skyminer',
+          video3:'Introducing the Skyminer'
+        }
+      },
+      support:{
+        title:'Excellent support',
+        description:'When purchasing a Skyminer you will get access to fast email support from our help desk ticket system.  Our Telegram community offers help as well with over 2000 members.'
+      },
+      orderNow:{
+        text:`Its <span class="blue">private</span>, <span class="blue">secure</span> and <span class="blue">decentralized</span>. 
+          Join over 1,450+ nodes now with our current special promotion!`,
+        button:'Order now'
+      },
+      forbes:{
+        description:'“Skycoin aims to provide a new internet that is global, decentralized, and not controlled by any country, corporation or government. For privacy gurus or net neutrality enthusiasts… this is a project to stay on top of.”'
+      },
+    },
   },
   exchanges: {
     any: 'Any',

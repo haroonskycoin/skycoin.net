@@ -33,7 +33,9 @@ const SkyminerLanding = ({ intl }) => (
       title="landing.skyminer.hero.title"
       description="landing.skyminer.hero.heading"
       buttonText="landing.skyminer.hero.button"
-      to="/skywire"
+      to=""
+      buttonText2="landing.skyminer.hero.button2"
+      to2=""
     />
     <Content>
       <Hardware/>
