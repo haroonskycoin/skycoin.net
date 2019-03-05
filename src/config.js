@@ -18,6 +18,7 @@ export const COLOR = {
   lightBlueGrey: '#ebf3fd',
   borderGrey: '#d0d0d0',
   red: 'red',
+  black: '#000000',
 };
 export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80];
 export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 30, 36, 40];
