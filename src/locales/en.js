@@ -1089,8 +1089,8 @@ export default {
       },
     },
     skyminer: {
-      title:'Skyminer',
-      description:'Skyminer',
+      title: 'Skyminer',
+      description: 'Skyminer',
       hero: {
         title: 'Skyminer',
         heading: 'The Skywire "miner" is meticulously designed and configured to provide a backbone for the new internet.',
