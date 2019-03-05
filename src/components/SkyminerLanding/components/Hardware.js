@@ -2,13 +2,11 @@ import React from 'react';
 import { FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
 import { rem } from 'polished';
-import { injectIntl } from 'react-intl';
 
 
 import ImageCard from 'components/ImageCard';
 import { ImageBackgroundContainer } from 'components/ImageCard/ImageCard';
-import Text from 'components/Text';
-import { FONT_SIZES, SPACE, COLOR,FONT_FAMILIES } from 'config';
+import { FONT_SIZES, SPACE, COLOR, FONT_FAMILIES } from 'config';
 import Title from './Title';
 import image from '../images/hardware.png';
 
