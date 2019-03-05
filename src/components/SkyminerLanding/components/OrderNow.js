@@ -5,6 +5,7 @@ import { rem } from 'polished';
 import styled from 'styled-components';
 import { Flex } from 'grid-styled';
 import Heading from 'components/Heading';
+import media from 'utils/media';
 import Button from './Button';
 
 const DividerHeading = styled(Heading)`
@@ -23,7 +24,13 @@ const BottomWrapper = styled(Flex)`
 `;
 
 const BottomHeading = styled(DividerHeading)`
-  line-height:${rem(SPACE[9])};  
+  line-height:${rem(SPACE[7])};
+  text-align:center;
+
+  ${media.md.css`
+    line-height:${rem(SPACE[10])};
+  `}
+
 
   b{
     font-weight:normal;
@@ -44,7 +51,12 @@ const StyledBottomButton = styled(Button)`
 
 const OrderNow = () =>
   (<BottomWrapper px={rem(SPACE[3])}>
-    <BottomHeading heavy textAlign="center" fontSize={rem(FONT_SIZES[7])}>
+    <BottomHeading
+      as="h2"
+      heavy
+      fontSize={[rem(FONT_SIZES[6]), rem(FONT_SIZES[7]), rem(FONT_SIZES[7])]}
+      width={['70%', '90%', '90%']}
+    >
       <FormattedHTMLMessage id="landing.skyminer.orderNow.text" />
     </BottomHeading>
     <StyledBottomButton href="" big>

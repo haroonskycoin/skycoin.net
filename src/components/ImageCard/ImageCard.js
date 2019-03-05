@@ -169,3 +169,37 @@ ImageFullContainer.propTypes = {
   ]).isRequired,
   image: PropTypes.string.isRequired,
 };
+
+
+const ImageBackgroundWrapper = styled(Flex)`   
+  height:${props => props.height};
+  background-image: url(${props => props.image});
+  background-size:cover;
+  background-position:center;  
+`;
+
+export const ImageBackgroundContainer = ({ width, height, image }) =>
+  (<ImageBackgroundWrapper
+    image={image}
+    width={width}
+    height={height}
+    justify="center"
+    align="center"
+    px={5}
+  />);
+
+
+ImageBackgroundContainer.propTypes = {
+  height: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.object,
+  ]).isRequired,
+  width: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.object,
+  ]).isRequired,
+  image: PropTypes.string.isRequired,
+};
+

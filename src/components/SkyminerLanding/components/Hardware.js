@@ -1,11 +1,11 @@
 import React from 'react';
-import { FormattedHTMLMessage,FormattedMessage } from 'react-intl';
+import { FormattedHTMLMessage } from 'react-intl';
 import styled from 'styled-components';
 import { rem } from 'polished';
 
 
 import ImageCard from 'components/ImageCard';
-import { ImageFullContainer } from 'components/ImageCard/ImageCard';
+import { ImageBackgroundContainer } from 'components/ImageCard/ImageCard';
 import Text from 'components/Text';
 import { FONT_SIZES, SPACE, COLOR } from 'config';
 import Title from './Title';
@@ -22,11 +22,15 @@ const StyledText = styled(Text)`
 `;
 
 
-
-
 const Hardware = () => {
-  
-  const icon = <ImageFullContainer image={image} height='320px' width={[1, 1, 1 / 2]} backgroundColor={COLOR.base}/>;
+  const icon = (<ImageBackgroundContainer
+    image={image}
+    height="320px"
+    width={[1, 1, 1 / 2]}
+    backgroundColor={COLOR.base}
+    iconHeight="320px"
+    iconWidth="360px"
+  />);
 
   return (
     <ImageCard image={icon} width={['320px', '320px', 'auto']}>
@@ -34,7 +38,7 @@ const Hardware = () => {
       <StyledText>
         <FormattedHTMLMessage id="landing.skyminer.hardware.description" />
       </StyledText>
-      
+
     </ImageCard>
   );
 };

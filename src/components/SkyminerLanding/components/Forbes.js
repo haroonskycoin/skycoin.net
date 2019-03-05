@@ -4,16 +4,17 @@ import { rem } from 'polished';
 import ImageCard from 'components/ImageCard';
 import { ImageContainer } from 'components/ImageCard/ImageCard';
 import Text from 'components/Text';
-import { FONT_SIZES, SPACE, COLOR } from 'config';
+import { SPACE, COLOR } from 'config';
 import { FormattedHTMLMessage } from 'react-intl';
+import media from 'utils/media';
 import image from '../images/forbes.svg';
 
-
 const StyledText = styled(Text)`
-  ul{
-    font-size:${rem(FONT_SIZES[5])};
-    line-height:${rem(SPACE[8])} !important;
-  }
+  line-height:${rem(SPACE[6])};
+
+  ${media.md.css`
+  line-height:${rem(SPACE[7])};
+  `}
 `;
 
 const Forbes = () => {
