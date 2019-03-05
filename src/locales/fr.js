@@ -494,7 +494,7 @@ export default {
         item1: '2 Go de RAM par carte',
         item2: '4 cœurs de processeur par carte',
         item3: '16 Go de stockage par carte',
-        item4: 'Linux 64 bits (Alpine Linux)',
+        item4: 'Linux 64 bits (Debian)',
         item5: 'Ethernet Gigabit, commutateur à 8 + 1 ports',
       },
     },
