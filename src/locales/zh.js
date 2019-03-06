@@ -5,6 +5,7 @@ export default {
     navigation: {
       home: 'Home',
       downloads: '下载 ',
+      twitter:'Twitter',
       wallet: 'Wallet',
       explorer: '浏览器',
       ecosystem: '生态系统',
