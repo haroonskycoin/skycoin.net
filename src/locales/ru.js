@@ -6,7 +6,7 @@ export default {
       home: 'Главная',
       distribution: 'Распространение',
       distributionEvent: 'Распространение',
-      twitter:'Twitter',
+      twitter: 'Twitter',
       whitepapers: 'Документация',
       downloads: 'Загрузки',
       wallet: 'Wallet',

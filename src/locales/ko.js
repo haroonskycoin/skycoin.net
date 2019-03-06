@@ -6,7 +6,7 @@ export default {
       home: 'Home',
       distribution: '배포',
       distributionEvent: '배포 이벤트',
-      twitter:'Twitter',
+      twitter: 'Twitter',
       whitepapers: '백서',
       downloads: '다운로드',
       wallet: 'Wallet',
