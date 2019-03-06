@@ -6,6 +6,7 @@ export default {
     navigation: {
       home: 'Home',
       downloads: 'ダウンロード',
+      twitter: 'Twitter',
       wallet: 'Wallet',
       explorer: 'ブラウザ',
       ecosystem: '生態システム',
