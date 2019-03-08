@@ -106,3 +106,7 @@ dd, ol, ul {
   font-family: 'SkycoinSans', sans-serif;
   margin: 0 0 0 1em;
 }
+
+a {
+  cursor:pointer !important;
+}
