@@ -6,18 +6,19 @@ import { rem } from 'polished';
 
 import ImageCard from 'components/ImageCard';
 import { ImageBackgroundContainer } from 'components/ImageCard/ImageCard';
-import Text from 'components/Text';
-import { FONT_SIZES, SPACE, COLOR } from 'config';
+import { FONT_SIZES, SPACE, COLOR, FONT_FAMILIES } from 'config';
 import Title from './Title';
 import image from '../images/hardware.png';
 
 
-const StyledText = styled(Text)`
-  ul{
-    font-size:${rem(FONT_SIZES[3])};
-    line-height:${rem(SPACE[7])} !important;
-    margin-bottom:0;
+const StyledText = styled.ul`
+  font-family: ${FONT_FAMILIES.sans};
+  a {
+    color: ${props => (props.linkColor ? props.linkColor : 'inherit')};
   }
+
+  font-size:${rem(FONT_SIZES[3])};
+  line-height:${rem(SPACE[7])} !important;
   margin-bottom:0;
 `;
 
@@ -38,7 +39,6 @@ const Hardware = () => {
       <StyledText>
         <FormattedHTMLMessage id="landing.skyminer.hardware.description" />
       </StyledText>
-
     </ImageCard>
   );
 };

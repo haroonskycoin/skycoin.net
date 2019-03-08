@@ -88,7 +88,7 @@ const Hero = ({ title, description, buttonText, buttonText2, banner, to, to2 }) 
           <Logo />
         </Container>
       </StyledLogoContainer>
-      <StyledIntro>
+      <StyledIntro mt={rem(SPACE[10])}>
         <StyledContainer>
           <IntroContent width={[1, 0.4, 0.6]}>
             <Heading heavy as="h1" fontSize={[9]} color={COLOR.textDark}>
