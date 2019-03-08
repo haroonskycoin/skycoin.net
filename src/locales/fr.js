@@ -9,6 +9,7 @@ export default {
       // distributionEvent: 'Distribution event',
       // whitepapers: 'Whitepapers',
       downloads: 'Téléchargements',
+      twitter: 'Twitter',
       wallet: 'Wallet',
       explorer: 'Explorateur',
       ecosystem: 'Écosystème',

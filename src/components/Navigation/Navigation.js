@@ -13,9 +13,9 @@ import Link from 'components/Link';
 import Button from 'components/Button';
 import media from 'utils/media';
 import telegram from './telegram.svg';
-import discord from './discord.svg';
+import twitter from './twitter.svg';
+import twitterWhite from './twitterWhite.svg';
 import telegramWhite from './telegramWhite.svg';
-import discordWhite from './discordWhite.svg';
 
 import menuIc from './icMenu.svg';
 import menuBlueIc from './icMenuBlue.svg';
@@ -464,10 +464,10 @@ class Navigation extends React.PureComponent {
                   <FormattedMessage id="header.navigation.telegram" />
                 </StyledLink>
 
-                <StyledLink white={white} isMobile={isMobile} social={social} href="https://discord.gg/EgBenrW" target="_blank">
-                  {socialWhite && <Icon srcXs={discord} src={discordWhite} />}
-                  {!socialWhite && <Img src={discord} alt="Discord" />}
-                  <FormattedMessage id="header.navigation.discord" />
+                <StyledLink white={white} isMobile={isMobile} social={social} href="https://twitter.com/skycoinproject" target="_blank">
+                  {socialWhite && <Icon srcXs={twitter} src={twitterWhite} />}
+                  {!socialWhite && <Img src={twitter} alt="Twitter" />}
+                  <FormattedMessage id="header.navigation.twitter" />
                 </StyledLink>
               </GroupWrapper>
               <GroupWrapper isMobile={isMobile} show={showBuy}>
