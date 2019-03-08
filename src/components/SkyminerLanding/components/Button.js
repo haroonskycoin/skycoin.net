@@ -10,6 +10,10 @@ const StyledButton = styled(Button)`
   border-radius: ${props => props.borderRadius}px !important;
   color:${COLOR.white} !important;
   background-color:${props => props.backgroundColor};
+
+  &:hover{
+    background-color:${props => props.backgroundColor};
+  }
 `;
 
 const ComponentButton = ({ children, to, big, borderRadius, backgroundColor }) => (
