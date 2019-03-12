@@ -110,3 +110,7 @@ dd, ol, ul {
 a {
   cursor:pointer !important;
 }
+
+.not-pointer{
+  cursor:auto !important;
+}

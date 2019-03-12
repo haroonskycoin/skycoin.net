@@ -126,7 +126,7 @@ const Press = () => (
         <Logos align="center" wrap mt={[5, 7]} pt={[3, 5]} mb={3} mx={-2} px={0}>
           {partners.map((item, i) => (
             <LogoWrapper width={[1 / 4, 1 / 4, 1 / 7]}>
-              <Link href={item.url} target="_blank">
+              <Link href={item.url} target="_blank" className="not-pointer">
                 <Logo key={i} src={item.image} />
               </Link>
             </LogoWrapper>
