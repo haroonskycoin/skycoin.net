@@ -10,10 +10,6 @@ export default [{
     link: 'https://www.lbank.info/',
     markets: 'BTC/LBCN',
   }, {
-    name: 'exchanges.c2cx',
-    link: 'https://www.c2cx.me/',
-    markets: 'BTC/PAX/USDT',
-  }, {
     name: 'exchanges.bitbns',
     link: 'https://bitbns.com/',
     markets: 'INR',
