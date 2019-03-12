@@ -69,7 +69,7 @@
     "eject": "react-scripts eject",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
-    "release": "npm version patch -m 'chore: bump version to [version %s]' && git push upstream --tags"
+    "release": "npm version patch -m 'chore: bump version to [version %s]' && git push origin master --tags"
   },
   "resolutions": {
     "styled-components": "2.1.0"
