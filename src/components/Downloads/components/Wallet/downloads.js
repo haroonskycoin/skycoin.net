@@ -3,6 +3,7 @@ export const downloads = [
   {
     platform: 'downloads.wallet.windows',
     icon: 'windows',
+    mobile: false,
     builds: [{
       name: 'downloads.wallet.withElectron',
       architectures: [{
@@ -32,6 +33,7 @@ export const downloads = [
   {
     platform: 'downloads.wallet.macos',
     icon: 'macos',
+    mobile: false,
     builds: [{
       name: 'downloads.wallet.withElectron',
       architectures: [{
@@ -55,6 +57,7 @@ export const downloads = [
   {
     platform: 'downloads.wallet.linux',
     icon: 'linux',
+    mobile: false,
     builds: [{
       name: 'downloads.wallet.withElectron',
       architectures: [{
@@ -84,6 +87,7 @@ export const downloads = [
   {
     platform: 'downloads.wallet.android',
     icon: 'android',
+    mobile: true,
     builds: [
       {
         name: 'downloads.wallet.androidRecommended',
@@ -110,6 +114,7 @@ export const downloads = [
   {
     platform: 'downloads.wallet.ios',
     icon: 'macos',
+    mobile: true,
     builds: [
       {
         name: 'downloads.wallet.iosRecommended',

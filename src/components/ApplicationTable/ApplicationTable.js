@@ -84,6 +84,7 @@ const Row = styled.tr`
   text-align: center;
   background-color: ${props => (props.light ? COLOR.lightBlueGrey : 'white')};
   opacity: ${props => (props.recommended ? 1 : 0.7)};
+  
 
   ${media.sm.css`
     height: 80px;
@@ -169,7 +170,7 @@ const ApplicationTable = ({ list }) => {
     <TableWrapper mb={[7, 10, 13]}>
       <Table>
         <tbody>
-          {list.map(({ platform, icon, builds }, platformIndex) =>
+          {list.map(({ platform, icon, builds, mobile }, platformIndex) =>
             builds.map((build, buildIndex) =>
               build.architectures.map((architecture, architectureIndex) => (
                 <Row
@@ -178,6 +179,7 @@ const ApplicationTable = ({ list }) => {
                   display={platformIndex === OSName}
                   isFirst={buildIndex === 0 && architectureIndex === 0}
                   recommended={platformIndex === OSName || OSName < 0}
+                  mobile={mobile}
                 >
                   {buildIndex === 0 &&
                     <Th
