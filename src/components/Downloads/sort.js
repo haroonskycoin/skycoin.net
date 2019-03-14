@@ -6,4 +6,4 @@ const sortByMobile = list => list.sort((a, b) => {
   if (isMobile) return a.isMobile ? 1 : -1;
   return a.isMobile ? -1 : 1;
 });
-export default { sortByMobile };
+export default sortByMobile;
