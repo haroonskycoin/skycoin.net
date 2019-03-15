@@ -43,6 +43,7 @@ const StyledText = styled(Text)`
 
   ${media.md.css`
     text-align: left;
+    font-weight:bold;
   `};
 `;
 
@@ -74,8 +75,8 @@ const BannerStore = () => (
   <Wrapper py={0}>
     <Container>
       <Content>
-        <TextContainer>
-          <StyledText as="p" heavy fontSize={[5, 5, 7]} color={COLOR.base} m={0} lineHeight="1.2">
+        <TextContainer width={['100%','40%','40%']}>
+          <StyledText as="p" heavy fontSize={[5, 5, 5]} color={COLOR.base} m={0}>
             <FormattedMessage id="home.bannerStore.heading" />
           </StyledText>
         </TextContainer>
