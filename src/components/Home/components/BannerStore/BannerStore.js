@@ -75,7 +75,7 @@ const BannerStore = () => (
   <Wrapper py={0}>
     <Container>
       <Content>
-        <TextContainer width={['100%','40%','40%']}>
+        <TextContainer width={['100%', '40%', '40%']}>
           <StyledText as="p" heavy fontSize={[5, 5, 5]} color={COLOR.base} m={0}>
             <FormattedMessage id="home.bannerStore.heading" />
           </StyledText>
