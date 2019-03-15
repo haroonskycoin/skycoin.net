@@ -17,7 +17,7 @@ const Wrapper = styled(Box)`
     align-items: flex-end;
   `};
   
-  background: ${COLOR.white};
+  background: #f2f5fa;
   text-align: center;
   display: flex;
   align-items: center;
