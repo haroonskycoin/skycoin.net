@@ -71,7 +71,7 @@ export default {
       button: '写真チェック',
     },
     bannerStore: {
-      heading: 'Order a Skyminer today!',
+      heading: 'Skywallets and Skyminers now available!',
       button: 'Visit store',
     },
     hero: {
