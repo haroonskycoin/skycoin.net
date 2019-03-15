@@ -9,6 +9,9 @@ import ApplicationTable from 'components/ApplicationTable';
 import { COLOR } from 'config';
 
 import { downloads, version } from './downloads';
+import sortByMobile from '../../sort';
+
+const orderedDownloads = sortByMobile(downloads);
 
 const Wallet = () => (
   <div>
@@ -22,7 +25,7 @@ const Wallet = () => (
           <FormattedMessage id="downloads.wallet.build" values={{ version }} />
         </SubHeading>
       </Box>
-      <ApplicationTable list={downloads} />
+      <ApplicationTable list={orderedDownloads} />
     </Container>
   </div>
 );
