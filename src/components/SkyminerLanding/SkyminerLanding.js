@@ -4,9 +4,10 @@ import { Helmet } from 'react-helmet';
 import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 import Footer from 'components/Footer';
-import Hero from './components/Hero';
-import { COLOR } from '../../config';
+import { rem } from 'polished';
+import { COLOR, SPACE } from 'config';
 
+import Hero from './components/Hero';
 import Content from './components/Content';
 import Forbes from './components/Forbes';
 import Hardware from './components/Hardware';
@@ -33,11 +34,11 @@ const SkyminerLanding = ({ intl }) => (
       title="landing.skyminer.hero.title"
       description="landing.skyminer.hero.heading"
       buttonText="landing.skyminer.hero.button"
-      to=""
+      to="https://store.skycoin.net/products/skyminer"
       buttonText2="landing.skyminer.hero.button2"
-      to2=""
+      to2="https://skycoin.net/skyminer"
     />
-    <Content>
+    <Content mb={rem(SPACE[3])} mx="auto">
       <Hardware />
       <Operate />
       <WatchNow />

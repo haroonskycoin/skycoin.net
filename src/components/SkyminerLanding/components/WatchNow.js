@@ -65,9 +65,9 @@ const WatchNow = () => {
         <FormattedHTMLMessage id="landing.skyminer.watchNow.description" />
       </StyledText>
       <YoutubeWrapper>
-        <Video text="landing.skyminer.watchNow.youtube.video1" icon={youtube} url="" />
-        <Video text="landing.skyminer.watchNow.youtube.video2" icon={youtube} url="" />
-        <Video text="landing.skyminer.watchNow.youtube.video3" icon={youtube} url="" />
+        <Video text="landing.skyminer.watchNow.youtube.video1" icon={youtube} url="https://www.youtube.com/watch?v=vG1QdyZzBzo" />
+        <Video text="landing.skyminer.watchNow.youtube.video2" icon={youtube} url="https://www.youtube.com/watch?v=1F27ZWZPd8A" />
+        <Video text="landing.skyminer.watchNow.youtube.video3" icon={youtube} url="https://www.youtube.com/watch?v=-CbSdVIwr8E" />
       </YoutubeWrapper>
     </ImageCard>
   );

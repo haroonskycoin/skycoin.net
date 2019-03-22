@@ -45,7 +45,7 @@ const StyledButton = styled(Button)`
 
 const Operate = () =>
   (
-    <Wrapper px={rem(SPACE[3])}>
+    <Wrapper px={rem(SPACE[3])} pt={rem(SPACE[5])}>
       <DividerHeading
         as="h2"
         heavy
@@ -54,7 +54,7 @@ const Operate = () =>
       >
         <FormattedHTMLMessage id="landing.skyminer.operate.text" />
       </DividerHeading>
-      <StyledButton href="" big width={300}>
+      <StyledButton to="https://store.skycoin.net/products/skyminer" big width={300}>
         <FormattedMessage id="landing.skyminer.operate.button" />
       </StyledButton>
     </Wrapper>);

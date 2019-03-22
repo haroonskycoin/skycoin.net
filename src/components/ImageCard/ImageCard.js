@@ -29,8 +29,6 @@ Icon.defaultProps = {
 };
 
 const CardWrapper = styled.div`
-  padding:7px;
-
   ${media.md.css`
   width:100%;
   `}

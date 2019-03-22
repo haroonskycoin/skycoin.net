@@ -1132,7 +1132,7 @@ export default {
         button: 'Order now',
       },
       forbes: {
-        title: 'Forbes’ #1 project picked to watch in 2019',
+        title: 'Forbes’ #1 project picked for 2019',
         description: '“Skycoin aims to provide a new internet that is global, decentralized, and not controlled by any country, corporation or government. For privacy gurus or net neutrality enthusiasts… this is a project to stay on top of.”',
       },
     },
