@@ -22,7 +22,7 @@ const ComponentButton = ({ children, to, big, borderRadius, backgroundColor, wid
     bg={COLOR.base}
     width={width}
     mt={5}
-    to={to}
+    href={to}
     borderRadius={borderRadius}
     backgroundColor={backgroundColor}
   >

@@ -18,6 +18,11 @@ const StyledText = styled(Text)`
   `}
 `;
 
+const Link = styled.a`
+  color:${COLOR.black} !important;
+  text-decoration: none;
+`;
+
 const Forbes = () => {
   const imageProps = {
     image,
@@ -29,12 +34,15 @@ const Forbes = () => {
   const icon = <ImageContainer {...imageProps} />;
 
   return (
-    <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection="row-reverse">
-      <Title id="landing.skyminer.forbes.title" />
-      <StyledText>
-        <FormattedHTMLMessage id="landing.skyminer.forbes.description" />
-      </StyledText>
-    </ImageCard>
+    <Link target="_blank" href="http://forbes.com/sites/andrewrossow/2018/10/04/trick-or-treat-13-blockchain-companies-by-industry-that-will-have-your-cauldrons-bubbling-for-2019/">
+      <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection="row-reverse">
+        <Title id="landing.skyminer.forbes.title" />
+        <StyledText>
+          <FormattedHTMLMessage id="landing.skyminer.forbes.description" />
+
+        </StyledText>
+      </ImageCard>
+    </Link>
   );
 };
 

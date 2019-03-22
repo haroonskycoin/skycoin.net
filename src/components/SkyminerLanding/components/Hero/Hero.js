@@ -80,13 +80,14 @@ const ButtonsContainer = styled(Flex)`
  
 `;
 
+
 const Hero = ({ title, description, buttonText, buttonText2, banner, to, to2 }) => (
   <Wrapper column banner={banner} pb={[SPACE[2], SPACE[13]]} px={[rem(SPACE[5]), rem(SPACE[5]), 0]}>
-    <Content>
+    <Content mx="auto">
       <StyledLogoContainer>
-        <Container>
+        <StyledContainer>
           <Logo />
-        </Container>
+        </StyledContainer>
       </StyledLogoContainer>
       <StyledIntro mt={rem(SPACE[10])}>
         <StyledContainer>
