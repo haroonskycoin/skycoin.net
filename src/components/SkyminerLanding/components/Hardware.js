@@ -26,7 +26,7 @@ const StyledText = styled.ul`
 const Hardware = () => {
   const icon = (<ImageBackgroundContainer
     image={image}
-    height="320px"
+    height="360px"
     width={[1, 1, 1 / 2]}
     backgroundColor={COLOR.base}
     iconHeight="320px"

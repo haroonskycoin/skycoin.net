@@ -52,7 +52,7 @@ Video.propTypes = {
 const WatchNow = () => {
   const props = {
     image,
-    height: '320px',
+    height: '360px',
     width: [1, 1, 1 / 2],
     backgroundColor: COLOR.base,
   };
