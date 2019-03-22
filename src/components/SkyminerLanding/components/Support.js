@@ -20,7 +20,7 @@ const StyledText = styled(Text)`
 const Support = () => {
   const props = {
     image,
-    height: '320px',
+    height: '400px',
     width: [1, 1, 1 / 2],
     backgroundColor: COLOR.base,
   };

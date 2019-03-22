@@ -119,7 +119,7 @@ export default {
       button: 'View photos',
     },
     bannerStore: {
-      heading: 'Order a Skyminer today!',
+      heading: 'Skywallets and Skyminers now available!',
       button: 'Visit store',
     },
     hero: {
@@ -1090,11 +1090,11 @@ export default {
       },
     },
     skyminer: {
-      title: 'Skyminer',
-      description: 'Skyminer',
+      title: 'The Skyminer',
+      description: 'The Skyminer',
       hero: {
-        title: 'Skyminer',
-        heading: 'The Skywire "miner" is meticulously designed and configured to provide a backbone for the new internet.',
+        title: 'The Skyminer',
+        heading: 'Meticulously designed using open standards and configured to become a node in the backbone of Skywire, the ‘miner’ is your key to participating in the new Internet and to earn SKY for doing so.',
         button: 'Order now',
         button2: 'Learn more',
       },
@@ -1105,14 +1105,18 @@ export default {
           <li>2 GB of RAM per board</li>
           <li>4 CPU cores per board</li>
           <li>16 GB of storage per board</li>
-          <li>64-bit Linux (Alpine Linux)</li>
+          <li>64-bit OS (Debian)</li>
           <li>100 Mbps Ethernet, 8+1 port switch</li>
+          <li>Custom aluminum & Plexigas case</li>
         `,
       },
-      operate: 'Operate your Skyminer on the Skywire network to <b>get paid</b> SKY for free!',
+      operate: {
+        text: 'Earning is easy with a Skyminer!<br>Participate in the network using your Skyminer and <b>get paid SKY</b> for doing so.',
+        button: 'Order now and start earning',
+      },
       watchNow: {
-        title: 'Watch now!',
-        description: 'Check out these YouTube videos to learn more about Skyminers',
+        title: 'Watch and learn!',
+        description: 'Check out this collection of Youtube videos to gain a deeper understanding of Skyminer. ',
         youtube: {
           video1: 'What is a Skyminer?',
           video2: 'Unboxing the Skyminer',
@@ -1120,15 +1124,15 @@ export default {
         },
       },
       support: {
-        title: 'Excellent support',
-        description: 'When purchasing a Skyminer you will get access to fast email support from our help desk ticket system.  Our Telegram community offers help as well with over 2000 members.',
+        title: 'Top-notch Support – we’ve got your back',
+        description: 'With the purchase of a Skyminer you automatically get access to super fast email support from our help desk support ticket system. Additionally, our Telegram Skywire community consisting of over 2000 members, also offers community based support.   ',
       },
       orderNow: {
-        text: `Its <b>private</b>, <b>secure</b> and <b>decentralized</b>. 
-          Join over 1,450+ nodes now with our current special promotion!`,
+        text: 'Skywire. <b>private</b>, <b>secure</b> and <b>decentralized</b>. Join the future now with a Skyminer and become one of an ever-growing number of nodes on the Skywire network. ',
         button: 'Order now',
       },
       forbes: {
+        title: 'Forbes’ #1 project picked for 2019',
         description: '“Skycoin aims to provide a new internet that is global, decentralized, and not controlled by any country, corporation or government. For privacy gurus or net neutrality enthusiasts… this is a project to stay on top of.”',
       },
     },

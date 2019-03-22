@@ -7,7 +7,6 @@ import { SPACE } from '../../../config';
 const Content = styled(Flex)`
   flex-direction:column;
   align-items:center;
-  margin: 0 auto;
   width: 100%;
   max-width: 50rem;
   padding-top:${rem(SPACE[7])};

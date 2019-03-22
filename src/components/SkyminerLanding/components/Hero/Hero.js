@@ -80,17 +80,18 @@ const ButtonsContainer = styled(Flex)`
  
 `;
 
+
 const Hero = ({ title, description, buttonText, buttonText2, banner, to, to2 }) => (
   <Wrapper column banner={banner} pb={[SPACE[2], SPACE[13]]} px={[rem(SPACE[5]), rem(SPACE[5]), 0]}>
-    <Content>
+    <Content mx="auto">
       <StyledLogoContainer>
-        <Container>
+        <StyledContainer>
           <Logo />
-        </Container>
+        </StyledContainer>
       </StyledLogoContainer>
       <StyledIntro mt={rem(SPACE[10])}>
         <StyledContainer>
-          <IntroContent width={[1, 0.4, 0.6]}>
+          <IntroContent width={[1, 1, 0.5]}>
             <Heading heavy as="h1" fontSize={[9]} color={COLOR.textDark}>
               <FormattedMessage id={title} />
             </Heading>
@@ -109,7 +110,7 @@ const Hero = ({ title, description, buttonText, buttonText2, banner, to, to2 }) 
         </StyledContainer>
       </StyledIntro>
     </Content>
-    <ImageBox width={[0, 0.6, 0.4]} src={heroImg} ml={rem(SPACE[9])} />
+    <ImageBox width={[0, 0, 0.5]} src={heroImg} ml={rem(SPACE[9])} />
   </Wrapper>
 );
 

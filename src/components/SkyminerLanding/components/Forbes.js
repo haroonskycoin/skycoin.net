@@ -8,6 +8,7 @@ import { SPACE, COLOR } from 'config';
 import { FormattedHTMLMessage } from 'react-intl';
 import media from 'utils/media';
 import image from '../images/forbes.svg';
+import Title from './Title';
 
 const StyledText = styled(Text)`
   line-height:${rem(SPACE[6])};
@@ -17,10 +18,15 @@ const StyledText = styled(Text)`
   `}
 `;
 
+const Link = styled.a`
+  color:${COLOR.black} !important;
+  text-decoration: none;
+`;
+
 const Forbes = () => {
   const imageProps = {
     image,
-    height: '320px',
+    height: '430px',
     width: [1, 1, 1 / 2],
     iconWidth: '75%',
     backgroundColor: COLOR.black,
@@ -28,11 +34,15 @@ const Forbes = () => {
   const icon = <ImageContainer {...imageProps} />;
 
   return (
-    <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection="row-reverse">
-      <StyledText>
-        <FormattedHTMLMessage id="landing.skyminer.forbes.description" />
-      </StyledText>
-    </ImageCard>
+    <Link target="_blank" href="http://forbes.com/sites/andrewrossow/2018/10/04/trick-or-treat-13-blockchain-companies-by-industry-that-will-have-your-cauldrons-bubbling-for-2019/">
+      <ImageCard image={icon} width={['320px', '320px', 'auto']} flexDirection="row-reverse">
+        <Title id="landing.skyminer.forbes.title" />
+        <StyledText>
+          <FormattedHTMLMessage id="landing.skyminer.forbes.description" />
+
+        </StyledText>
+      </ImageCard>
+    </Link>
   );
 };
 

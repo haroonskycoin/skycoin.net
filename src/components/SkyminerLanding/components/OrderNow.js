@@ -50,7 +50,7 @@ const StyledBottomButton = styled(Button)`
 `;
 
 const OrderNow = () =>
-  (<BottomWrapper px={rem(SPACE[3])}>
+  (<BottomWrapper px={rem(SPACE[3])} pt={rem(SPACE[5])}>
     <BottomHeading
       as="h2"
       heavy
@@ -59,7 +59,7 @@ const OrderNow = () =>
     >
       <FormattedHTMLMessage id="landing.skyminer.orderNow.text" />
     </BottomHeading>
-    <StyledBottomButton href="" big>
+    <StyledBottomButton to="https://store.skycoin.net/products/skyminer" big>
       <FormattedMessage id="landing.skyminer.orderNow.button" />
     </StyledBottomButton>
   </BottomWrapper>);
