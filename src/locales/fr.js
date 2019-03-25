@@ -33,7 +33,7 @@ export default {
       events: 'Events',
       explorerApi: 'Explorer API',
       merchandise: 'Marchandises',
-      hardwareStore: 'Hardware store',
+      hardwareStore: 'Quincaillerie',
     },
   },
   footer: {
@@ -119,8 +119,8 @@ export default {
       button: 'View photos',
     },
     bannerStore: {
-      heading: 'Skywallets and Skyminers now available!',
-      button: 'VISITER LE MAGASIN',
+      heading: 'Commandez un Skyminer aujourd\'hui!',
+      button: 'Visit store',
     },
     hero: {
       heading: 'Qu\'est-ce que Skycoin?',
@@ -142,11 +142,11 @@ export default {
           description: 'Un protocole de réseau et Internet plus fort, plus rapide et plus sécurisé.',
         },
         fiber: {
-          title: 'Skycoin is Fiber',
-          description: 'An infinitely scalable, fully customizable platform capable of Visa-like speeds and security.',
+          title: 'Skycoin est Fiber',
+          description: 'Une plate-forme personnalisable, évolutive, offrant des vitesses et une sécurité comparables à celles de Visa."',
         },
       },
-      buy: 'Buy Skycoin',
+      buy: 'Acheter des Skycoin',
       // community: 'Community',
       // whitepapers: 'Whitepapers',
       wallet: {
@@ -219,11 +219,11 @@ export default {
       link: 'Become a node',
       more: 'EN APPRENDRE PLUS',
       morePhotos: 'VOIR PLUS DE PHOTOS',
-      headingHardware: 'La suite matérielle Skycoin continue à se matérialiser',
+      headingHardware: 'The Skycoin hardware suite continues to materialize',
     },
     press: {
       heading: 'Skycoin Picked As Top 5 Crypto Projects For 2018',
-      subheading: 'The #1 Project to watch out for in 2019',
+      subheading: 'Le projet n ° 1 à surveiller en 2019',
       forbes: 'Holding itself out as the “third generation cryptocurrency,” Skycoin aims to provide a “new internet” that is global, decentralized, and not controlled by any country, corporation, or government entity.  For privacy gurus or net neutrality enthusiasts, this is a project to stay on top of.',
       huffingtonPost: 'Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.',
     },
@@ -295,7 +295,7 @@ export default {
       heading: 'Nouvelles',
     },
     signup: {
-      heading: 'Join Our Skyfleet Newsletter and Soar to New Heights with Skycoin!',
+      heading: 'Joignez-vous à notre newsletter Skyfleet et prenez de la hauteur avec Skycoin!',
       body: 'Restez au courant, recevez des mises à jour de la part de l\'équipe Skycoin en vous inscrivant à notre newsletter! Entrez votre adresse e-mail personnelle et préparez-vous au décollage aujourd\'hui.',
       button: 'Sign Up',
     },
@@ -907,7 +907,7 @@ export default {
       heading: 'Les Caractéristiques d’Obelisk',
       consumption: {
         title: 'CONSOMMATION D\'ENERGIE FAIBLE ET TRES SCALABLE',
-        text: 'The consensus algorithm was designed to be a scalable and computationally inexpensive alternative to Proof-of-Work (PoW), enabling both the algorithm and block-making to run on budget open-source hardware.',
+        text: 'L\'algorithme de consensus a été conçu pour être évolutive et peu coûteuse en termes de validation des travaux, permettant à la fois à l\'algorithme et à la fabrication de blocs de fonctionner sur du matériel à source ouverte et à budget réduit.',
       },
       attack: {
         title: 'Resistant aux attaques à 51%',

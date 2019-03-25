@@ -29,7 +29,7 @@ export default {
       events: 'Events',
       explorerApi: 'ブラウザ API ',
       merchandise: 'ショップ',
-      hardwareStore: 'Hardware store',
+      hardwareStore: 'ハードウェアショップ',
     },
   },
   footer: {
@@ -71,8 +71,8 @@ export default {
       button: '写真チェック',
     },
     bannerStore: {
-      heading: 'Skywallets and Skyminers now available!',
-      button: 'ショップへ',
+      heading: '今日はスカイマイニングマシンを一台注文しましょうか',
+      button: 'Visit store',
     },
     hero: {
       heading: 'スカイコインって何？',
@@ -95,11 +95,11 @@ export default {
           description: '更に強く、速く、安全なインターネット、ネットワークプロトコルとバンド幅ルーターアルゴリズム',
         },
         fiber: {
-          title: 'Skycoin is Fiber',
-          description: 'An infinitely scalable, fully customizable platform capable of Visa-like speeds and security.',
+          title: 'スカイコインはFiberです',
+          description: '無限拡張可能、完全カスタマイズ可能なプラットフォームであり、ビザに類似するスピードやセキュリティ性を備えています',
         },
       },
-      buy: 'Skycoinを購入',
+      buy: 'スカイコイン購を入する',
       wallet: {
         get: '財布をダウンロード',
       },
@@ -124,7 +124,7 @@ export default {
     },
     press: {
       heading: 'Skycoin Picked As Top 5 Crypto Projects For 2018',
-      subheading: 'The #1 Project to watch out for in 2019',
+      subheading: '2019年最も注目価値のあるプロジェクト',
       forbes: 'Holding itself out as the “third generation cryptocurrency,” Skycoin aims to provide a “new internet” that is global, decentralized, and not controlled by any country, corporation, or government entity.  For privacy gurus or net neutrality enthusiasts, this is a project to stay on top of.',
       huffingtonPost: 'Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.',
     },
