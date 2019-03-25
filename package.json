@@ -1,6 +1,6 @@
 {
   "name": "skycoin.net",
-  "version": "0.7.156",
+  "version": "0.7.157",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
