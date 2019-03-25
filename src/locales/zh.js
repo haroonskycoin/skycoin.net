@@ -68,27 +68,27 @@ export default {
     },
     bannerStore: {
       heading: 'Skywallets and Skyminers now available!',
-      button: 'Visit store',
+      button: '访问商城',
     },
     hero: {
-      heading: '新时代的新互联网',
+      heading: 'Skycoin是什么？',
       paragraph: 'Skycoin 平台是世界上最先进的区块链应用生态系统。Skycoin 由比特币和以太 坊的早期贡献者共同开发，它是一个完全安全、可无限扩展、并且独立于 ISP 的平台。Skycoin 以带宽、存储和算力作为后盾，旨在实现中本聪的最初愿景。',
       slider: {
         revolutionary: {
-          title: 'Skycoin is Revolutionary',
-          description: 'A new blockchain ecosystem built from the ground up.',
+          title: 'Skycoin是一场革命',
+          description: '一个从头开始构建的全新区块链生态系统',
         },
         obelisk: {
-          title: 'Skycoin is Obelisk',
-          description: 'A new consensus protocol solving core inefficiencies in PoS and PoW.',
+          title: 'Skycoin是Obelisk',
+          description: '一种新的共识协议，解决了PoS和PoW共识协议中的低效问题。',
         },
         cx: {
-          title: 'Skycoin is CX',
-          description: 'A new, powerful, turing complete language for blockchain development.',
+          title: 'Skycoin是CX',
+          description: '区块链的一种全新的、功能强大的图灵完备编程语言',
         },
         skywire: {
-          title: 'Skycoin is Skywire',
-          description: 'A stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
+          title: 'Skycoin是Skywire',
+          description: '更强大、更快速、更安全的互联网，网络协议和带宽路由算法',
         },
         fiber: {
           title: 'Skycoin is Fiber',

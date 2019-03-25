@@ -120,26 +120,26 @@ export default {
     },
     bannerStore: {
       heading: 'Skywallets and Skyminers now available!',
-      button: 'Visit store',
+      button: 'VISITER LE MAGASIN',
     },
     hero: {
-      heading: 'What is Skycoin?',
+      heading: 'Qu\'est-ce que Skycoin?',
       slider: {
         revolutionary: {
-          title: 'Skycoin is Revolutionary',
-          description: 'A new blockchain ecosystem built from the ground up.',
+          title: 'Skycoin est révolutionnaire',
+          description: 'Un nouvel écosystème blockchain construit à partir de zero.',
         },
         obelisk: {
-          title: 'Skycoin is Obelisk',
-          description: 'A new consensus protocol solving core inefficiencies in PoS and PoW.',
+          title: 'Skycoin est Obelisk',
+          description: 'Un nouveau protocole consensuel destiné à résoudre les problèmes d’inefficacité des systèmes PoS et PoW.',
         },
         cx: {
           title: 'Skycoin is CX',
-          description: 'A new, powerful, turing complete language for blockchain development.',
+          description: 'Un nouveau langage complet et puissant pour le développement de blockchain.',
         },
         skywire: {
-          title: 'Skycoin is Skywire',
-          description: 'An stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
+          title: 'Skycoin est Skywire',
+          description: 'Un protocole de réseau et Internet plus fort, plus rapide et plus sécurisé.',
         },
         fiber: {
           title: 'Skycoin is Fiber',

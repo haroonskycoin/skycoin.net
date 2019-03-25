@@ -116,27 +116,27 @@ export default {
     },
     bannerStore: {
       heading: 'Skywallets and Skyminers now available!',
-      button: 'Visit store',
+      button: '스토어 방문하기',
     },
     hero: {
-      heading: '새로운 시대속 신형 브라우저',
+      heading: '스카이 코인이란?',
       paragraph: 'Skycoin 플랫폼은 세계적으로 가장 선진적인 블록체인 어플리케이션의 생태시스템입니다. Skycoin은 비트코인과 이더리움의 초기 공헌자들이 공동으로 개발한 것으로, 절대적으로 안전하고 무한 확장 가능하며 ISP과는 독립된 플랫폼입니다. Skycoin은 대역폭, 스토리지 및 해시레이트를 방패막으로 하여 사토시(Satoshi)의 가장 초기 전망을 구현하는 것을 목적으로 개발 되었습니다.',
       slider: {
         revolutionary: {
-          title: 'Skycoin is Revolutionary',
-          description: 'A new blockchain ecosystem built from the ground up.',
+          title: '스카이 코인은 하나의 혁명입니다',
+          description: '완전히 새로운 블록체인 생태계 정보.',
         },
         obelisk: {
-          title: 'Skycoin is Obelisk',
-          description: 'A new consensus protocol solving core inefficiencies in PoS and PoW.',
+          title: '스카이 코인은 Obelisk입니다',
+          description: '하나의 새로운 커뮤니티 프로토콜은 PoS와 PoW중 코어 효율의 저하 문제를 해결했습니다.',
         },
         cx: {
-          title: 'Skycoin is CX',
-          description: 'A new, powerful, turing complete language for blockchain development.',
+          title: '스카이 코인은 CX입니다',
+          description: '블록체인 개발에 초점을 둔 새롭고 강한 튜링 완성형 언어.',
         },
         skywire: {
-          title: 'Skycoin is Skywire',
-          description: 'A stronger, faster, more secure internet, networking protocol and bandwidth routing algorithm.',
+          title: '스카이 코인은 Skywire입니다',
+          description: '더 강해지고 더 빨라지고 더 안전해진 네트워크, 네트워크 프로토콜 및 대역폭 라우팅 알고리즘.',
         },
         fiber: {
           title: 'Skycoin is Fiber',
