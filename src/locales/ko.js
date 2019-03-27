@@ -359,7 +359,7 @@ export default {
       download: '다운로드',
       skywireWhitepaper: 'Skywire 백서 - 곧 출시 예정',
       skycoinWhitepaper: 'Skycoin백서',
-      skycoinWhitepaperV32: 'Skycoin백서 V3.2',
+      skycoinWhitepaperV32: 'Skycoin백서 V1.2',
       cryptocurrencyNetwork: '加密货币网络分布式共识算法白皮书',
       skyFramework: 'Sky: P2P 네트워크에서 커뮤니케이션을 구축한 동적 프레임 및 모델',
       skyHashConsensus: 'SkyHash: P2P 네트워크에 건립한 Hash 커뮤니케이션의 동적 모델',

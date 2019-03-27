@@ -29,7 +29,6 @@ const Downloads = ({ intl }) => (
     <Whitepappers />
     <Assets />
     <Skywire />
-
     <GetStarted />
     <Footer />
   </div>
