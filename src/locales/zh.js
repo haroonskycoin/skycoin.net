@@ -233,7 +233,7 @@ export default {
       download: '下载',
       skywireWhitepaper: 'Skywire白皮书 - 即将推出',
       skycoinWhitepaper: 'Skycoin白皮书',
-      skycoinWhitepaperV32: 'Skycoin白皮书V3.2中文版',
+      skycoinWhitepaperV32: 'Skycoin白皮书V1.2中文版',
       cryptocurrencyNetwork: '加密货币网络分布式共识算法白皮书',
       skyFramework: 'Sky：在P2P网络上建立共识的观点动态框架和模型',
       skyHashConsensus: 'SkyHash：在P2P网络上建立哈希共识的观点动态模型',
