@@ -9,9 +9,10 @@ import Button from 'components/Button';
 
 import media from 'utils/media';
 import { COLOR } from 'config';
+import { rem } from 'polished';
+
 import banner from './banner.png';
 import { FONT_SIZES, SPACE } from '../../../../config';
-import { rem } from 'polished';
 
 const Wrapper = styled(Box)`
   ${media.md.css`
