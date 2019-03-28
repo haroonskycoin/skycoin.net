@@ -9,7 +9,10 @@ import Button from 'components/Button';
 
 import media from 'utils/media';
 import { COLOR } from 'config';
+import { rem } from 'polished';
+
 import banner from './banner.png';
+import { FONT_SIZES, SPACE } from '../../../../config';
 
 const Wrapper = styled(Box)`
   ${media.md.css`
@@ -40,6 +43,11 @@ const TextContainer = styled(Flex)`
 
 const StyledText = styled(Text)`
   text-align: center;
+  width:100%;
+  font-size:${rem(FONT_SIZES[6])};
+  line-height:${rem(FONT_SIZES[6])};
+  padding-bottom:${rem(SPACE[1])};
+  padding-top:${rem(SPACE[1])};
 
   ${media.md.css`
     text-align: left;
