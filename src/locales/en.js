@@ -758,7 +758,7 @@ export default {
       },
     },
     accordion4: {
-      title: 'Go Programming Language Engineer OR Trainee',
+      title: 'Go Programming Language Engineer',
       description: 'Study relevant technical materials to compile the proper English materials for foreign members making up 80% of total team members. Since 90% of the tasks must be carried out in English, good proficiency in English is a requirement for admission.',
       responsibilities: {
         title: 'Responsibilities',
@@ -771,7 +771,7 @@ export default {
         title: 'Requirements',
         item1: "Hold a bachelor's degree or above in computer science or related discipline, and have a certain kind of ability to use in English, read and analyze codes;",
         item2: 'Be passionate about the programming, be fond of studying technique, and be strongly interested in the blockchain technology;',
-        item3: 'Be proficient in Go Programming Language development, have good habits of programming and proficiency in file compilation;',
+        item3: 'Experience writing Go (Golang);',
         item4: 'Have experience in developing Linux platform;',
         item5: 'Master the technique in data structure and algorithm, be proficient in network programming, and be familiar with network protocols such as TCP/IP, HTTP and P2P;',
         item6: 'Have development experience among one of three relevant following sectors--- computer network, cryptography, trading/payment system, etc.;',
@@ -790,7 +790,7 @@ export default {
       },
     },
     accordion5: {
-      title: 'C Programming Language Engineer OR Trainee',
+      title: 'C Programming Language Engineer',
       description: 'Carry out 90% of the tasks in English and work together with English-speaking members making up 80% of total team members. Good communication skills and proficiency in English are requirements for admission; experiences in large international companies are preferred.',
       responsibilities: {
         title: 'Responsibilities',

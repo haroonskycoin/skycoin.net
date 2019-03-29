@@ -16,23 +16,24 @@ const Title = styled(Text) `
   border-bottom: ${props => (props.last ? '1px' : 0)} solid #92A4BA;
   padding: 20px 18px 20px 0;
   margin-bottom: 0;
+  cursor: pointer; 
 
   ${media.md.css`
     font-size: ${rem(FONT_SIZES[5])};  
     padding: 30px 0;
   `}
 `;
-const A = styled.a`
+const A = styled.div`
   display: block;
   position: relative;
   font-family: SkycoinSans, sans-serif;
-  cursor: pointer; 
   text-decoration: none;
 `;
 const Arrow = styled.img`
   position: absolute;
   right: 0;
   top: 28px;
+  cursor: pointer; 
   margin-left: 12px;
   & path {
     fill: #0072FF;
@@ -65,10 +66,8 @@ export default class Expander extends React.Component {
     const { collapsed } = this.state;
     return (
       <div>
-        {collapsed && <A
-          onClick={() => this.toggleExpander()}
-        >
-          <Title>
+        {collapsed && <A>
+          <Title onClick={() => this.toggleExpander()}>
             {title} <Arrow dir="up" src={ArrowIcon} />
           </Title>
           <div>{children}</div>
