@@ -44,14 +44,14 @@ const TextContainer = styled(Flex)`
 const StyledText = styled(Text)`
   text-align: center;
   width:100%;
-  font-size:${rem(FONT_SIZES[7])};
-  line-height:${rem(FONT_SIZES[7])};
+  font-size:${rem(FONT_SIZES[6])};
   padding-bottom:${rem(SPACE[1])};
   padding-top:${rem(SPACE[1])};
 
   ${media.md.css`
     text-align: left;
     font-weight:bold;
+    font-size:${rem(FONT_SIZES[7])};
     line-height:${rem(FONT_SIZES[6])};
   `};
 `;
