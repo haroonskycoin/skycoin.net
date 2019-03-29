@@ -418,9 +418,6 @@ const renderAccordion4Content = () => (
         <FormattedMessage id="jobs.accordion4.requirements.item4" />
       </NumberedListItem>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.requirements.item5" />
-      </NumberedListItem>
-      <NumberedListItem>
         <FormattedMessage id="jobs.accordion4.requirements.item6" />
       </NumberedListItem>
       <NumberedListItem>
