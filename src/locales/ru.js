@@ -594,7 +594,7 @@ export default {
     angular: 'Angular',
     or: ' or ',
     react: 'React.js.',
-    ourTeam: 'Our team is spread across the world and you will be working remotely. We communicate using',
+    ourTeam: 'Our team is spread across the world and you will be working either remotely or at one of our offices in Shanghai. We communicate using',
     accordion1: {
       title: 'Mechanical Engineer OR Intern',
       description: 'Description',
