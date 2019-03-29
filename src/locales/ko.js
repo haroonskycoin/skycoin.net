@@ -647,7 +647,7 @@ export default {
       telegram: 'Telegram username',
     },
     ourProject: 'All of our projects are developed in Go. For frontend work, we use ',
-    angular: 'Angular 2',
+    angular: 'Angular',
     or: ' or ',
     react: 'React.js.',
     ourTeam: 'Our team is spread across the world and you will be working remotely. We communicate using',

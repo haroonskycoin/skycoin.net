@@ -163,9 +163,6 @@ const renderAccordion1Content = () => (
     </Subtitle>
     <NumberedList>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion1.requirements.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
         <FormattedMessage id="jobs.accordion1.requirements.item2" />
       </NumberedListItem>
       <NumberedListItem>
@@ -244,9 +241,6 @@ const renderAccordion2Content = () => (
       <FormattedMessage id="jobs.accordion2.requirements.title" />
     </Subtitle>
     <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion2.requirements.item1" />
-      </NumberedListItem>
       <NumberedListItem>
         <FormattedMessage id="jobs.accordion2.requirements.item2" />
       </NumberedListItem>
@@ -329,9 +323,6 @@ const renderAccordion3Content = () => (
       <FormattedMessage id="jobs.accordion3.requirements.title" />
     </Subtitle>
     <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion3.requirements.item1" />
-      </NumberedListItem>
       <NumberedListItem>
         <FormattedMessage id="jobs.accordion3.requirements.item2" />
       </NumberedListItem>
@@ -418,9 +409,6 @@ const renderAccordion4Content = () => (
     </Subtitle>
     <NumberedList>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.requirements.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
         <FormattedMessage id="jobs.accordion4.requirements.item2" />
       </NumberedListItem>
       <NumberedListItem>
@@ -473,9 +461,6 @@ const renderAccordion5Content = () => (
     </Subtitle>
     <NumberedList>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.requirements.item1" />
-      </NumberedListItem>
-      <NumberedListItem>
         <FormattedMessage id="jobs.accordion5.requirements.item2" />
       </NumberedListItem>
       <NumberedListItem>
@@ -518,9 +503,6 @@ const renderAccordion7Content = () => (
       <FormattedMessage id="jobs.accordion7.requirements.title" />
     </Subtitle>
     <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion7.requirements.item1" />
-      </NumberedListItem>
       <NumberedListItem>
         <FormattedMessage id="jobs.accordion7.requirements.item2" />
       </NumberedListItem>
