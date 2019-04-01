@@ -158,8 +158,7 @@ class News extends PureComponent {
 
   async componentDidMount() {
     const isLocal = window.location.hostname === 'localhost';
-    //const rss = isLocal ? 'blog.xml' : this.props.rss;
-    const rss = this.props.rss;
+    const rss = isLocal ? 'blog.xml' : this.props.rss;
     const posts = await getXml(rss);
 
     if (!isEqual(this.state.posts, posts)) {
