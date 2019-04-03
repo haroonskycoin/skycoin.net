@@ -5,7 +5,6 @@ import moment from 'moment';
 import momentPropTypes from 'react-moment-proptypes';
 import { Flex, Box } from 'grid-styled';
 import PropTypes from 'prop-types';
-import isEqual from 'lodash/isEqual';
 import { rem } from 'polished';
 
 import Link from 'components/Link';
@@ -92,27 +91,6 @@ const NewsItem = ({ title, date, href, image }) => (
   </Flex>
 );
 
-/*
-<Flex width={[1, 1 / 2, 1 / 3]} px={[3]} pb={4} mb={[6, 8]} align="flex-start">
-    <StyledLink href={href} target="_blank">
-      <NewsContainer>
-        <ImageContainer>
-          {image ? <ImageBg bg={image} /> : <Image src={placeholder} />}
-        </ImageContainer>
-        <Box px={7} pb={10} pt={6}>
-          <DateText color={COLOR.textLight} fontSize={2}>
-            {date.format('MMMM DD, YYYY')}
-          </DateText>
-          <StyledHeading as="h4" mb={1} fontSize={4}>
-            {title}
-          </StyledHeading>
-        </Box>
-      </NewsContainer>
-    </StyledLink>
-  </Flex>
-
-*/
-
 NewsItem.propTypes = {
   title: PropTypes.string.isRequired,
   date: momentPropTypes.momentObj.isRequired,
@@ -158,27 +136,31 @@ class News extends PureComponent {
 
   async componentDidMount() {
     const isLocal = window.location.hostname === 'localhost';
-    const rss = isLocal ? 'blog.xml' : this.props.rss;
-    const posts = await getXml(rss);
+    const rss = isLocal ? '/blog.xml' : this.props.rss;
 
-    if (!isEqual(this.state.posts, posts)) {
-      // eslint-disable-next-line react/no-did-mount-set-state
-      this.setState({
-        posts,
-        loaded: true,
-      });
-    }
+    await this.loadRss(rss);
   }
 
   async componentWillReceiveProps({ rss }) {
-    if (rss !== this.props.rss) {
-      const posts = await getXml(rss);
+    await this.loadRss(rss);
+  }
 
-      this.setState({
-        posts,
-        loaded: true,
-      });
+  async loadRss(rss) {
+    let arrayRss = rss;
+    if (!Array.isArray(rss)) {
+      arrayRss = [rss];
     }
+
+    const promises = arrayRss.map(url => this.loadRssUrl(url));
+
+    await Promise.all(promises);
+    // disable react/no-did-mount-set-state
+    this.setState({ loaded: true });
+  }
+
+
+  async loadRssUrl(rss) {
+    this.setState({ posts: this.state.posts.concat(await getXml(rss)) });
   }
 
   render() {
