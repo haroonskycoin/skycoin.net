@@ -178,7 +178,7 @@ class News extends PureComponent {
     });
 
     result = result.sort((a, b) => a.date > b.date);
-    return result.slice(0,3);
+    return result.slice(0, 3);
   }
 
   render() {
