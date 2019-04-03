@@ -160,7 +160,25 @@ class News extends PureComponent {
 
 
   async loadRssUrl(rss) {
-    this.setState({ posts: this.state.posts.concat(await getXml(rss)) });
+    const newPosts = await getXml(rss);
+    const posts = this.joinFilterAndSort(this.state.posts, newPosts);
+
+
+    this.setState({ posts });
+  }
+
+  joinFilterAndSort(posts, newPosts) {
+    let result = posts;
+    newPosts.map((newPost) => {
+      if (!posts.includes(newPost)) {
+        result.push(newPost);
+        return true;
+      }
+      return false;
+    });
+
+    result = result.sort((a, b) => a.date > b.date);
+    return result;
   }
 
   render() {
