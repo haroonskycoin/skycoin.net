@@ -23,8 +23,8 @@ const SkyminerNews = ({ locale }) => {
     ? `https://www.skycoin.net/blog/${locale}/tags/skyminer/index.xml`
     : 'https://www.skycoin.net/blog/tags/skyminer/index.xml';
   const rssSkywallet = locale !== DEFAULT_LOCALE
-    ? `https://www.skycoin.net/blog/${locale}/tags/skywallet/index.xml`
-    : 'https://www.skycoin.net/blog/tags/skywallet/index.xml';
+    ? `https://www.skycoin.net/blog/${locale}/tags/skywire/index.xml`
+    : 'https://www.skycoin.net/blog/tags/skywire/index.xml';
 
   const rss = [rssSkyminer, rssSkywallet];
 
