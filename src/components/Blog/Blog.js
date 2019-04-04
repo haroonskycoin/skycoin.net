@@ -136,7 +136,7 @@ class News extends PureComponent {
 
   async componentDidMount() {
     const isLocal = window.location.hostname === 'localhost';
-    const rss = isLocal ? ['/blog.xml','/blog2.xml'] : this.props.rss;
+    const rss = isLocal ? ['/blog.xml', '/blog2.xml'] : this.props.rss;
 
     await this.loadRss(rss);
   }
@@ -155,7 +155,7 @@ class News extends PureComponent {
 
     await Promise.all(promises);
     // disable react/no-did-mount-set-state
-    this.setState({ loaded: true, posts: this.state.posts.slice(0,3)  });
+    this.setState({ loaded: true, posts: this.state.posts.slice(0, 3) });
   }
 
 
