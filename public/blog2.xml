@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skywallet on Blog</title>
+    <link>https://www.skycoin.net/blog/tags/skywallet/</link>
+    <description>Recent content in Skywallet on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.skycoin.net/blog/tags/skywallet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skycoin Ledger Integration</title>
+      <link>https://www.skycoin.net/blog/posts/skycoin-ledger-integration/</link>
+      <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/blog/posts/skycoin-ledger-integration/</guid>
+      <description>Use a Ledger or Skywallet to Securely Store Your Skycoin Skycoin is a complete blockchain ecosystem that has been in development for years. Skycoin is not an ERC20 token or fork, and each part of the Skycoin platform has been carefully built from the ground up. As the Skywire Mainnet and our suite of hardware devices come to fruition, we’ve aligned the release of our Ledger integration with our drive to increase the adoption and usage of Skycoin.</description>
+    </item>
+    
+    <item>
+      <title>Designing Skywallet, the $30 Trezor killer</title>
+      <link>https://www.skycoin.net/blog/posts/designing-skywallet-the-30-dollar-trezor-killer/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.skycoin.net/blog/posts/designing-skywallet-the-30-dollar-trezor-killer/</guid>
+      <description>After months in the making, we&amp;rsquo;re excited to announce that prototypes for Skywallet, our new hardware wallet, are finalized and ready for mass production. When you store or access your cryptocurrency, you are your own bank, so the process should be simple and intuitive. Your hardware wallet is your bank vault and it should feel like a premium and secure device. We&amp;rsquo;ve spent months iterating over designs and incorporating user feedback in order to make Skywallet the best hardware wallet experience on the market.</description>
+    </item>
+    
+  </channel>
+</rss>

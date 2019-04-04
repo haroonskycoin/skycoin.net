@@ -136,7 +136,7 @@ class News extends PureComponent {
 
   async componentDidMount() {
     const isLocal = window.location.hostname === 'localhost';
-    const rss = isLocal ? '/blog.xml' : this.props.rss;
+    const rss = isLocal ? ['/blog.xml', '/blog2.xml'] : this.props.rss;
 
     await this.loadRss(rss);
   }
@@ -155,14 +155,13 @@ class News extends PureComponent {
 
     await Promise.all(promises);
     // disable react/no-did-mount-set-state
-    this.setState({ loaded: true });
+    this.setState({ loaded: true, posts: this.state.posts.slice(0, 3) });
   }
 
 
   async loadRssUrl(rss) {
     const newPosts = await getXml(rss);
     const posts = this.joinFilterAndSort(this.state.posts, newPosts);
-
 
     this.setState({ posts });
   }
@@ -177,8 +176,8 @@ class News extends PureComponent {
       return false;
     });
 
-    result = result.sort((a, b) => a.date > b.date);
-    return result.slice(0, 3);
+    result = result.sort((a, b) => b.date.valueOf() - a.date.valueOf());
+    return result;
   }
 
   render() {
