@@ -19,9 +19,14 @@ const Wrapper = styled(Box)`
 const DEFAULT_LOCALE = 'en';
 
 const SkyminerNews = ({ locale }) => {
-  const rss = locale !== DEFAULT_LOCALE
-    ? `https://www.skycoin.net/blog/${locale}/categories/skyminer/index.xml`
-    : 'https://www.skycoin.net/blog/categories/skyminer/index.xml';
+  const rssSkyminer = locale !== DEFAULT_LOCALE
+    ? `https://www.skycoin.net/blog/${locale}/tags/skyminer/index.xml`
+    : 'https://www.skycoin.net/blog/tags/skyminer/index.xml';
+  const rssSkywallet = locale !== DEFAULT_LOCALE
+    ? `https://www.skycoin.net/blog/${locale}/tags/skywire/index.xml`
+    : 'https://www.skycoin.net/blog/tags/skywire/index.xml';
+
+  const rss = [rssSkyminer, rssSkywallet];
 
   return (
     <Wrapper pt={[10, 13]} pb={[7, 8]}>
