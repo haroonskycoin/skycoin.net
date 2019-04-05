@@ -387,41 +387,17 @@ const renderAccordion4Content = () => (
     </Text>
 
     <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion4.responsibilities.title" />
+      <FormattedMessage id="jobs.accordion4.projects.title" />
     </Subtitle>
     <NumberedList>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.responsibilities.item1" />
+        <StyledLink href="https://github.com/skycoin/skycoin" target="_blank">https://github.com/skycoin/skycoin</StyledLink>
       </NumberedListItem>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.responsibilities.item2" />
+        <StyledLink href="https://github.com/skycoin/skywire" target="_blank">https://github.com/skycoin/skywire</StyledLink>
       </NumberedListItem>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.responsibilities.item3" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.responsibilities.item4" />
-      </NumberedListItem>
-    </NumberedList>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion4.requirements.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.requirements.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.requirements.item3" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.requirements.item4" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.requirements.item6" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion4.requirements.item7" />
+        <StyledLink href="https://github.com/skycoin/cx" target="_blank">https://github.com/skycoin/cx</StyledLink>
       </NumberedListItem>
     </NumberedList>
   </div>
@@ -436,39 +412,37 @@ const renderAccordion5Content = () => (
     </Text>
 
     <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion5.responsibilities.title" />
+      <FormattedMessage id="jobs.accordion4.projects.title" />
     </Subtitle>
     <NumberedList>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.responsibilities.item1" />
+        <StyledLink href="https://github.com/skycoin/hardware-wallet" target="_blank">https://github.com/skycoin/hardware-wallet</StyledLink>
       </NumberedListItem>
       <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.responsibilities.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.responsibilities.item3" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.responsibilities.item4" />
-      </NumberedListItem>
-    </NumberedList>
-
-    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id="jobs.accordion5.requirements.title" />
-    </Subtitle>
-    <NumberedList>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.requirements.item2" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.requirements.item3" />
-      </NumberedListItem>
-      <NumberedListItem>
-        <FormattedMessage id="jobs.accordion5.requirements.item4" />
+        <StyledLink href="https://github.com/skycoin/ledger-nano" target="_blank">https://github.com/skycoin/ledger-nano</StyledLink>
       </NumberedListItem>
     </NumberedList>
   </div>
 );
+const renderAccordion6Content = () => (
+  <div>
+    <Subtitle fontSize={[2, 2, 3]} heavy mb={[2, 3]}>
+      <FormattedMessage id="jobs.accordion6.responsibilities.title" />
+    </Subtitle>
+    <NumberedList>
+      <NumberedListItem>
+        <FormattedMessage id="jobs.accordion6.responsibilities.item1" />
+      </NumberedListItem>
+      <NumberedListItem>
+        <FormattedMessage id="jobs.accordion6.responsibilities.item2" />
+      </NumberedListItem>
+      <NumberedListItem>
+        <FormattedMessage id="jobs.accordion6.responsibilities.item3" />
+      </NumberedListItem>
+    </NumberedList>
+  </div>
+);
+
 
 const JobsPage = () => (
   <div>
@@ -569,6 +543,9 @@ const JobsPage = () => (
               {renderAccordion5Content()}
             </Expander>
 
+            <Expander title={<FormattedMessage id="jobs.accordion6.title" />}>
+              {renderAccordion6Content()}
+            </Expander>
 
             <Line />
           </Box>
