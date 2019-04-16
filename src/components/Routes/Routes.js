@@ -64,6 +64,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}gallery`} exact component={GalleryPage} />
       <Route path={`${prefix}buy-fiat`} exact component={BuyFiatPage} />
       <Route path={`${prefix}thankyou`} exact component={ThankYouPage} />
+      <Route path='/business-whitepaper' component={() => { window.location = 'https://downloads.skycoin.net/whitepapers/Skycoin-Whitepaper-v1.2.pdf'; return null;} }/>
       <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}whitepapers`} />
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
